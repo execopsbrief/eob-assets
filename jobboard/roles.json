@@ -1,5 +1,5 @@
 {
-  "_note": "REAL curated Executive Assistant, Executive Operations, and Chief of Staff roles for The Exec Ops Brief job board, aggregated from recruiting agencies, direct job boards, and VC portfolio feeds. PAY FLOOR (enforced in code since 2026-07-13): every role on this board carries a compensation figure PUBLISHED BY THE SOURCE whose midpoint -- (comp_low + comp_high) / 2, or the single figure where only one is published -- is at least $100,000. A role whose published midpoint falls below $100k is excluded, and a role whose source publishes no comp figure at all is excluded (there are no 'comp not listed' rows). No comp figure is ever estimated, inferred, or invented; comp honesty outranks board size. Where a posting publishes an HOURLY rate instead of a salary, comp_period='hr' and comp_low/comp_high hold the verbatim $/hr figures (annualized at 2080h ONLY to apply the floor, never for display). Most roles also carry a short summary excerpted VERBATIM from the posting (never paraphrased); summary is null rather than invented when the source lacks readable role-specific text. A benefits list (bonus, equity, 401(k), health coverage, PTO, etc) is detected only where the posting states it. Apply links point to the original source listing.",
+  "_note": "Executive Assistant, Executive Operations, and Chief of Staff roles for The Exec Ops Brief job board, aggregated from recruiting agencies, direct job boards, and VC portfolio feeds. The board is aggregated, not vetted, screened, hand-picked or curated; llms.txt states this and this note must agree with it. PAY FLOOR (enforced in code since 2026-07-13): every role on this board carries a compensation figure PUBLISHED BY THE SOURCE whose midpoint -- (comp_low + comp_high) / 2, or the single figure where only one is published -- is at least $100,000. A role whose published midpoint falls below $100k is excluded, and a role whose source publishes no comp figure at all is excluded (there are no 'comp not listed' rows). No comp figure is ever estimated, inferred, or invented; comp honesty outranks board size. Where a posting publishes an HOURLY rate instead of a salary, comp_period='hr' and comp_low/comp_high hold the verbatim $/hr figures (annualized at 2080h ONLY to apply the floor, never for display). Most roles also carry a short summary excerpted VERBATIM from the posting (never paraphrased); summary is null rather than invented when the source lacks readable role-specific text. A benefits list (bonus, equity, 401(k), health coverage, PTO, etc) detected only where the posting states them. Apply links point to the original source listing.",
   "updated": "2026-09-16",
   "count": 265,
   "roles": [
@@ -2159,7 +2159,7 @@
       "comp_high": 130000,
       "location": "Chicago, Illinois",
       "remote": "Onsite",
-      "date_posted": "2026-09-13",
+      "date_posted": "2026-09-09",
       "apply_url": "https://www.thelasallenetwork.com/jobs/executive-assistant-travel-162012/",
       "source": "LaSalle Network",
       "summary": "3-7+ years of experience in executive assistance, executive travel coordination or corporate travel management.",
@@ -2434,7 +2434,7 @@
       "date_posted": "2026-08-03",
       "apply_url": "https://boards.greenhouse.io/figma/jobs/6132356004?gh_jid=6132356004",
       "source": "a16z Portfolio",
-      "summary": "Apply Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
       "benefits": [
         "Bonus",
         "Equity",
@@ -2708,7 +2708,7 @@
       "date_posted": "2026-04-30",
       "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8523677002",
       "source": "a16z Portfolio",
-      "summary": "Note: This information will only be used to ensure compliance with U.S. sanctions and export controls.\\",
+      "summary": null,
       "benefits": [
         "Bonus",
         "Equity",
@@ -2892,7 +2892,7 @@
       "date_posted": "2026-07-16",
       "apply_url": "https://boards.greenhouse.io/figma/jobs/6115082004?gh_jid=6115082004",
       "source": "a16z Portfolio",
-      "summary": "Apply Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
       "benefits": [
         "Bonus",
         "Equity",
@@ -2937,7 +2937,7 @@
       "date_posted": "2026-04-15",
       "apply_url": "https://boards.greenhouse.io/figma/jobs/5969046004?gh_jid=5969046004",
       "source": "a16z Portfolio",
-      "summary": "Apply Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
       "benefits": [
         "Bonus",
         "Equity",
@@ -3185,7 +3185,7 @@
       "date_posted": "2026-06-18",
       "apply_url": "https://boards.greenhouse.io/figma/jobs/6092343004?gh_jid=6092343004",
       "source": "a16z Portfolio",
-      "summary": "Apply Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
       "benefits": [
         "Bonus",
         "Equity",
@@ -3270,7 +3270,7 @@
       "date_posted": "2026-04-10",
       "apply_url": "https://jobs.ashbyhq.com/whatnot/3c505635-0d3c-4ab5-a2c7-3728f50d96c9?utm_source=portfoliojobs.a16z.com",
       "source": "a16z Portfolio",
-      "summary": "The salary or hourly rate range may be inclusive of several levels that would be applicable to the position. Final salary or hourly rate will be based on a number of factors including, level, relevant prior experience, skills, and expertise.",
+      "summary": null,
       "benefits": [
         "Equity",
         "401(k)",
@@ -3337,7 +3337,7 @@
       "date_posted": "2026-04-10",
       "apply_url": "https://jobs.ashbyhq.com/whatnot/2e1f9b0b-0ae0-4281-9a83-3a5703e2163a?utm_source=portfoliojobs.a16z.com",
       "source": "a16z Portfolio",
-      "summary": "The salary or hourly rate range may be inclusive of several levels that would be applicable to the position. Final salary or hourly rate will be based on a number of factors including, level, relevant prior experience, skills, and expertise.",
+      "summary": null,
       "benefits": [
         "Equity",
         "401(k)",
@@ -3583,7 +3583,7 @@
       "date_posted": "2026-09-04",
       "apply_url": "https://job-boards.greenhouse.io/chainguard/jobs/4707375006",
       "source": "Sequoia Portfolio",
-      "summary": "Apply Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk.",
+      "summary": "Chainguard is the trusted source for open source. By delivering hardened, secure, and production-ready builds of all the open source software engineers and AI agents rely on, Chainguard helps organizations build faster, stay compliant, and eliminate risk.",
       "benefits": [
         "Equity",
         "Health coverage",
@@ -3645,7 +3645,7 @@
       "date_posted": "2026-01-06",
       "apply_url": "https://job-boards.greenhouse.io/viseai/jobs/4669992003",
       "source": "Sequoia Portfolio",
-      "summary": "Apply We’re hiring a Business Operations Lead to drive high-impact, cross-functional initiatives that support Vise’s next stage of growth. This is a highly analytical and strategic role for someone who can break down ambiguous problems, build structure, and execute with speed and precision.",
+      "summary": "We’re hiring a Business Operations Lead to drive high-impact, cross-functional initiatives that support Vise’s next stage of growth. This is a highly analytical and strategic role for someone who can break down ambiguous problems, build structure, and execute with speed and precision.",
       "benefits": [
         "Equity",
         "401(k)",
@@ -4977,7 +4977,6 @@
       "date_posted": "2026-09-16",
       "apply_url": "https://paypal.eightfold.ai/careers/job/274922421926",
       "source": "Accel Portfolio",
-      "comp_period": "hr",
       "summary": "PayPal has been revolutionizing commerce globally for more than 25 years. Creating innovative experiences that make moving money, selling, and shopping simple, personalized, and secure, PayPal empowers consumers and businesses in approximately 200 markets to join and thrive in the global economy.",
       "benefits": [
         "Bonus",
@@ -4985,6 +4984,7 @@
         "Health coverage",
         "Paid time off"
       ],
+      "comp_period": "hr",
       "metro": "Other",
       "source_type": "VC portfolio"
     },
@@ -5001,7 +5001,6 @@
       "date_posted": "2026-09-16",
       "apply_url": "https://paypal.eightfold.ai/careers/job/274922421771",
       "source": "Accel Portfolio",
-      "comp_period": "hr",
       "summary": "This job provides strategic multi-faceted support to executive management, ensuring the smooth operation and support in daily activities, which are fundamental to the efficient functioning of the business.",
       "benefits": [
         "Bonus",
@@ -5009,6 +5008,7 @@
         "Health coverage",
         "Paid time off"
       ],
+      "comp_period": "hr",
       "metro": "SF Bay Area",
       "source_type": "VC portfolio"
     },
@@ -5069,7 +5069,7 @@
       "date_posted": "2026-09-12",
       "apply_url": "https://jobs.paloaltonetworks.com/en/job/santa-clara/senior-executive-assistant-to-svp-of-product-sase/47263/100494228880",
       "source": "Accel Portfolio",
-      "summary": "At Palo Alto Networks®, we’re united by a shared mission—to protect our digital way of life. We thrive at the intersection of innovation and impact, solving real-world problems with cutting-edge technology and bold thinking. Here, everyone has a voice, and every idea counts.",
+      "summary": null,
       "benefits": [],
       "source_type": "VC portfolio"
     },
@@ -5150,7 +5150,7 @@
       "date_posted": "2026-09-02",
       "apply_url": "https://jobs.paloaltonetworks.com/en/job/plano/senior-executive-assistant/47263/99722095696",
       "source": "Accel Portfolio",
-      "summary": "At Palo Alto Networks®, we’re united by a shared mission—to protect our digital way of life. We thrive at the intersection of innovation and impact, solving real-world problems with cutting-edge technology and bold thinking. Here, everyone has a voice, and every idea counts.",
+      "summary": null,
       "benefits": [],
       "source_type": "VC portfolio"
     },
@@ -5252,7 +5252,7 @@
       "date_posted": "2026-08-21",
       "apply_url": "https://jobs.paloaltonetworks.com/en/job/santa-clara/director-strategy-and-operations-of-account-health-management/47263/99514100544",
       "source": "Accel Portfolio",
-      "summary": "At Palo Alto Networks®, we’re united by a shared mission—to protect our digital way of life. We thrive at the intersection of innovation and impact, solving real-world problems with cutting-edge technology and bold thinking. Here, everyone has a voice, and every idea counts.",
+      "summary": null,
       "benefits": [],
       "source_type": "VC portfolio"
     },
@@ -5529,7 +5529,7 @@
       "date_posted": "2026-07-15",
       "apply_url": "https://boards.greenhouse.io/iterativehealth/jobs/4696945006",
       "source": "Insight Partners Portfolio",
-      "summary": "Apply Iterative Health is a healthcare technology and services company powering the acceleration of clinical research to transform patient outcomes.",
+      "summary": "Iterative Health is a healthcare technology and services company powering the acceleration of clinical research to transform patient outcomes.",
       "benefits": [
         "401(k)",
         "Health coverage",
