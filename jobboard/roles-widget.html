@@ -208,7 +208,7 @@
 
   <div class="eob-head">
     <span class="eob-eyebrow">The Job Board</span>
-    <h2>Exec-ops roles, all paying $100k or more.</h2>
+    <h2>High-paying exec ops roles, $100k midpoint or better.</h2>
     <p>Every listing carries a comp figure the source firm published, and the midpoint of that figure is at least $100,000. If a firm didn't publish a number, the role isn't here. Nothing's estimated. Filter to what fits, then get the week's set delivered in The Brief.</p>
   </div>
 
@@ -275,10 +275,6 @@
   <div class="eob-bar">
     <div class="eob-count" id="eob-count">Loading roles</div>
     <div class="eob-bar-right">
-      <label class="eob-toggle" for="eob-nocomp">
-        <input type="checkbox" id="eob-nocomp" checked>
-        <span>Include roles without listed comp</span>
-      </label>
       <button type="button" class="eob-reset" id="eob-reset">Reset filters</button>
     </div>
   </div>
@@ -324,7 +320,6 @@
     srctype:     root.querySelector("#eob-srctype"),
     remote:      root.querySelector("#eob-remote"),
     comp:        root.querySelector("#eob-comp"),
-    nocomp:      root.querySelector("#eob-nocomp"),
     count:       root.querySelector("#eob-count"),
     reset:       root.querySelector("#eob-reset"),
     results:     root.querySelector("#eob-results"),
@@ -381,7 +376,11 @@
     var k = n / 1000;
     return (Math.round(k * 10) / 10).toString().replace(/\.0$/, "") + "k";
   }
-  function fmtComp(lo, hi){ return "$" + fmtK(lo) + " - $" + fmtK(hi); }
+  function fmtComp(lo, hi){
+    // A source that publishes one figure gets one figure. Rendering it as
+    // "$150k - $150k" invents a range the source never published.
+    return (lo === hi) ? "$" + fmtK(lo) : "$" + fmtK(lo) + " - $" + fmtK(hi);
+  }
   function hasComp(r){ return r.comp_low != null && r.comp_high != null; }
   function fmtHr(v){
     // 44.5 -> "44.50" (money style), 50 -> "50"
@@ -425,7 +424,7 @@
     var then = new Date(iso + "T00:00:00");
     var now = new Date();
     var days = Math.round((now - then) / 86400000);
-    if (isNaN(days)) return "Recently posted";
+    if (isNaN(days)) return "Posting date not published";
     if (days <= 0) return "Posted today";
     if (days === 1) return "Posted yesterday";
     if (days < 7) return "Posted " + days + " days ago";
@@ -450,8 +449,7 @@
       metro: els.metro ? els.metro.value : "",
       srctype: els.srctype ? els.srctype.value : "",
       remote: els.remote.value,
-      minComp: parseInt(els.comp.value, 10) || 0,
-      includeNoComp: els.nocomp ? els.nocomp.checked : true
+      minComp: parseInt(els.comp.value, 10) || 0
     };
   }
 
@@ -474,15 +472,10 @@
     if (f.metro && role.metro !== f.metro) return false;
     if (f.srctype && role.source_type !== f.srctype) return false;
     if (f.remote && role.remote !== f.remote) return false;
-    // Minimum comp: applies only to roles that have a published comp range.
-    // Roles without listed comp are kept unless the include toggle is off.
-    if (f.minComp){
-      if (hasComp(role)){
-        if (annualMid(role) < f.minComp) return false;
-      } else if (!f.includeNoComp){
-        return false;
-      }
-    }
+    // Minimum comp. Every role on this board carries a published figure (the
+    // pay floor is enforced at ingest), so a role without comp cannot reach the
+    // widget; hasComp stays as a defensive guard only.
+    if (f.minComp && hasComp(role) && annualMid(role) < f.minComp) return false;
     if (f.q){
       var hay = [role.title, role.org_type, role.location, role.metro, role.category,
                  role.seniority, role.source, role.source_type,
@@ -591,7 +584,6 @@
     if (els.srctype) els.srctype.value = "";
     els.remote.value = "";
     els.comp.value = "0";
-    if (els.nocomp) els.nocomp.checked = true;
     render();
   }
 
@@ -604,7 +596,6 @@
   ["sort", "seniority", "metro", "srctype"].forEach(function(k){
     if (els[k]) els[k].addEventListener("change", filterChanged);
   });
-  if (els.nocomp) els.nocomp.addEventListener("change", filterChanged);
   els.reset.addEventListener("click", function(){ resetFilters(); searchMetric(); });
 
   var subForm = root.querySelector("#eob-subscribe");
