@@ -82,16 +82,16 @@
   },
   "premium": {
    "p25": 120000,
-   "median": 140000,
-   "p75": 160000,
-   "medianPublishedLow": 125000,
+   "median": 143112,
+   "p75": 160625,
+   "medianPublishedLow": 127500,
    "medianPublishedHigh": 150000,
-   "sample": 167,
+   "sample": 164,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
    "selection": "Only postings with a published pay midpoint of at least $100,000",
-   "asOf": "2026-09-26",
+   "asOf": "2026-09-27",
    "hourlyExcluded": 12
   },
   "geography": {
@@ -165,14 +165,14 @@
   "premium": {
    "p25": 165000,
    "median": 199500,
-   "p75": 225000,
-   "medianPublishedLow": 166500,
+   "p75": 226000,
+   "medianPublishedLow": 171500,
    "medianPublishedHigh": 225000,
    "sample": 64,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-09-26"
+   "asOf": "2026-09-27"
   },
   "bonusContext": {
    "prevalence": 0.57,
@@ -190,16 +190,16 @@
  },
  "executiveOperations": {
   "premium": {
-   "p25": 151644,
-   "median": 185750,
+   "p25": 152762,
+   "median": 181500,
    "p75": 232500,
-   "medianPublishedLow": 162500,
-   "medianPublishedHigh": 208625,
-   "sample": 38,
+   "medianPublishedLow": 160000,
+   "medianPublishedHigh": 202250,
+   "sample": 39,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-09-26"
+   "asOf": "2026-09-27"
   },
   "blsProxies": [
    {
