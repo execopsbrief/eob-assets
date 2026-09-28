@@ -22,10 +22,10 @@
   .filters{display:flex;flex-direction:column;gap:10px;margin-bottom:6px}
   .frow{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
   .flabel{font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);min-width:74px}
-  .chip{font-family:'Public Sans',system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:.35rem .7rem;border:1px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:2px;cursor:pointer}
+  .chip{font-family:'Public Sans',system-ui,sans-serif;font-size:.8rem;font-weight:600;padding:.55rem .75rem;min-height:44px;border:1px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:2px;cursor:pointer}
   .chip[aria-pressed="true"]{background:var(--ox);border-color:var(--ox);color:#fff}
   .chip:hover{border-color:var(--ox)}
-  select{font-family:'Public Sans',system-ui,sans-serif;font-size:.8rem;padding:.35rem .5rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px}
+  select{font-family:'Public Sans',system-ui,sans-serif;font-size:.8rem;padding:.55rem .65rem;min-height:44px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px}
 
   .count{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 0;border-bottom:1px solid var(--ink)}
   .count b{color:var(--ink)}
@@ -135,7 +135,15 @@
 
   function sorted(list){
     var out=list.slice();
-    if(state.sort==='price-asc') out.sort(function(a,b){ return (a.price_min==null)-(b.price_min==null) || (a.price_min||0)-(b.price_min||0); });
+    if(state.sort==='default') out.sort(function(a,b){
+      var clusterOrder=Object.keys(DB.clusters);
+      var byCluster=clusterOrder.indexOf(a.cluster)-clusterOrder.indexOf(b.cluster);
+      if(byCluster) return byCluster;
+      var aMissing=!a.price_published || a.price_min==null;
+      var bMissing=!b.price_published || b.price_min==null;
+      return aMissing-bMissing || (a.price_min||0)-(b.price_min||0) || a.name.localeCompare(b.name);
+    });
+    else if(state.sort==='price-asc') out.sort(function(a,b){ return (a.price_min==null)-(b.price_min==null) || (a.price_min||0)-(b.price_min||0); });
     else if(state.sort==='price-desc') out.sort(function(a,b){ return (a.price_min==null)-(b.price_min==null) || (b.price_min||0)-(a.price_min||0); });
     else if(state.sort==='name') out.sort(function(a,b){ return a.name.localeCompare(b.name); });
     return out;

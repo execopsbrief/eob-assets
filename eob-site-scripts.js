@@ -1261,7 +1261,8 @@
   // pasted page is refreshed from the corrected pages_html sources.
   var LINK_FIXES = {
     '/first-90-days-tool': '/first-90-days',
-    '/guide-become-chief-of-staff': '/how-to-become-a-chief-of-staff',
+    '/guide-become-chief-of-staff': '/how-to-become-a-chief-of-staff-static',
+    '/how-to-become-a-chief-of-staff': '/how-to-become-a-chief-of-staff-static',
     '/library/first-90-days-operating-plan': '/library/first-90-days-chief-of-staff-operating-plan'
   };
   function fixLinks(){
@@ -1335,34 +1336,9 @@
   // feedback). This module binds any form the page script missed. Idempotent:
   // it respects the same data-eobBound flag the page scripts set.
   function formFeedback(){
-    var forms = document.querySelectorAll('.eob-ml-form');
-    if (!forms.length) return;
-    if (!document.querySelector('iframe[name="eob-ml-frame"]')){
-      var frame = document.createElement('iframe');
-      frame.name = 'eob-ml-frame';
-      frame.style.display = 'none';
-      frame.setAttribute('aria-hidden', 'true');
-      document.body.appendChild(frame);
-    }
-    forms.forEach(function(form){
-      if (form.dataset.eobBound === '1') return;
-      form.dataset.eobBound = '1';
-      form.setAttribute('target', 'eob-ml-frame');
-      form.addEventListener('submit', function(){
-        // GA4 conversion: fire newsletter_signup on any opt-in submit (single opt-in, so submit ~= signup).
-        try {
-          var _idm = /\/forms\/(\d+)\/subscribe/.exec(form.getAttribute('action') || '');
-          var _fid = _idm ? _idm[1] : '';
-          if (window.gtag) { window.gtag('event', 'newsletter_signup', { method: 'mailerlite', form_id: _fid }); }
-          else if (window.dataLayer) { window.dataLayer.push({ event: 'newsletter_signup', method: 'mailerlite', form_id: _fid }); }
-        } catch(e){}
-        var button = form.querySelector('button[type="submit"]');
-        if (button){ button.disabled = true; button.textContent = 'Sending...'; }
-        window.setTimeout(function(){
-          form.innerHTML = '<div class="eob-form-success" role="status">You\'re in. Check your inbox for the next note.</div>';
-        }, 900);
-      });
-    });
+    // The provider-confirmed capture handler below owns all native page forms.
+    // Mark them so legacy page fallbacks do not add another success timer.
+    document.querySelectorAll('.eob-ml-form').forEach(function(form){ form.dataset.eobBound='1'; });
   }
 
   // ---- 8. Subscriber memory ------------------------------------------------
@@ -1399,15 +1375,7 @@
         window.history.replaceState(null, "", window.location.pathname + (clean.length > 1 ? clean : "") + window.location.hash);
       }
     } catch(e){}
-    // (b) learn from any opt-in submit (capture phase; UI stays with the page
-    // scripts / module 7, works regardless of who bound the form)
-    document.addEventListener("submit", function(ev){
-      var f = ev.target;
-      if (!f || !f.classList || !f.classList.contains("eob-ml-form")) return;
-      var inp = f.querySelector('input[type="email"]');
-      var idm = /\/forms\/(\d+)\/subscribe/.exec(f.getAttribute("action") || "");
-      if (inp && inp.value) rememberSub(inp.value.trim(), idm ? idm[1] : "");
-    }, true);
+    // Remember email only after provider confirmation (EOBForms), never on an attempt.
     // (c) known-subscriber transform for opt-in forms site-wide. The
     // /resources picker page owns its own UI (its bar id marks the new markup).
     var email = subEmail();
@@ -1419,14 +1387,11 @@
       if (!inp || !btn) return;
       form.dataset.eobKnown = "1";
       var idm = /\/forms\/(\d+)\/subscribe/.exec(form.getAttribute("action") || "");
-      if (idm && idm[1] === BRIEF_FORM_ID){
-        form.innerHTML = '<div class="eob-form-success" role="status">' + "You're on the list." + "</div>";
-        return;
-      }
+      // A stored address is a convenience, not proof of current subscription.
       inp.value = email;
-      inp.hidden = true;
+      inp.hidden = false;
       btn.dataset.eobOrig = btn.textContent;
-      btn.textContent = "Send to my inbox";
+      if (!idm || idm[1] !== BRIEF_FORM_ID) btn.textContent = "Send to my inbox";
       var esc = document.createElement("button");
       esc.type = "button";
       esc.textContent = "Not you? Use a different email";
@@ -1466,11 +1431,11 @@
         '#eob-pick-bar .note{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:#d9a7a2}' +
         '#eob-pick-bar form{display:flex;gap:.5rem;flex:1;min-width:16rem;max-width:26rem;margin-left:auto}' +
         '#eob-pick-bar input{flex:1;min-width:0;border:1px solid #33465a;border-radius:2px;padding:.62rem .9rem;font-family:"Public Sans",system-ui,sans-serif;font-size:.92rem;color:#fff;background:#16232f}' +
-        '#eob-pick-bar input::placeholder{color:#7f8b98}' +
+        '#eob-pick-bar input::placeholder{color:#A9B2BD}' +
         '#eob-pick-bar input:focus{outline:none;border-color:#7A2129}' +
         '#eob-pick-bar button[type="submit"]{display:inline-flex;align-items:center;justify-content:center;font-family:"Public Sans",system-ui,sans-serif;font-weight:600;font-size:.88rem;border-radius:2px;cursor:pointer;border:1px solid transparent;padding:.62rem 1.1rem;background:#7A2129;color:#fff;white-space:nowrap;transition:background .16s}' +
         '#eob-pick-bar button[type="submit"]:hover{background:#5E181F}' +
-        '#eob-pick-bar #eob-pick-notyou{background:none;border:none;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:#7f8b98;text-decoration:underline;padding:0}' +
+        '#eob-pick-bar #eob-pick-notyou{background:none;border:none;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:#A9B2BD;text-decoration:underline;padding:0}' +
         '@media(max-width:560px){#eob-pick-bar .bar-wrap{gap:.6rem}#eob-pick-bar form{min-width:100%;margin-left:0}}';
       document.head.appendChild(st);
     }
@@ -1561,7 +1526,7 @@
   // actually true. Exact-string map, text nodes only, so nothing else on the
   // page can be touched; a re-paste from corrected source makes it a no-op.
   var COPY_FIXES = [
-    ['Curated roles and operator playbooks', 'New $100k+ roles and operator playbooks'],
+    ['Curated roles and operator playbooks', 'New roles with published pay and operator playbooks'],
     ['A curated digest of EA, exec-ops, and Chief of Staff roles',
      'A weekly digest of EA, exec-ops, and Chief of Staff roles'],
     ['A curated set of executive assistant, chief of staff, and operations openings',
@@ -1623,7 +1588,7 @@
     box.id = 'eob-roles-optin';
     box.innerHTML =
       '<p class="ro-k">Weekly roles alert</p>' +
-      '<h2 class="ro-h">Get the week\'s new $100k+ roles in your inbox.</h2>' +
+      '<h2 class="ro-h">Get the week\'s new roles with published pay in your inbox.</h2>' +
       '<p class="ro-p">The board below is always free and always current. The Monday email is the part you can\'t get by bookmarking it: only the roles that posted since last week, so you\'re not re-reading the same list to find what changed.</p>' +
       '<form class="eob-ml-form" action="https://assets.mailerlite.com/jsonp/2493859/forms/' +
         ROLES_ALERT_FORM_ID + '/subscribe" method="post" target="eob-ml-frame">' +
@@ -1697,21 +1662,21 @@
       var allowed = {
         job_search: ['category','work_arrangement','location_group','search_used','result_count'],
         job_apply_click: ['job_id','category','listing_source','work_arrangement'],
-        newsletter_signup_attempt: ['form_id','placement'],
-        product_click: ['product_id','placement']
+        newsletter_signup_attempt: ['form_id'],
+        product_click: ['product_id']
       };
       if (!Object.prototype.hasOwnProperty.call(allowed, d.name)) return;
       var frame = Array.prototype.find.call(document.querySelectorAll('iframe'), function(f){
         try {
           var u = new URL(f.src);
           return f.contentWindow === ev.source && u.origin === ev.origin &&
-            ((u.pathname === '/execops-brief-assets/jobboard/roles-widget.html' && d.name !== 'product_click') ||
-             (u.pathname === '/execops-brief-assets/tools/salary-benchmarker.html' &&
+            ((u.pathname === '/eob-assets/jobboard/roles-widget.html' && d.name !== 'product_click') ||
+             (u.pathname === '/eob-assets/tools/salary-benchmarker.html' &&
               (d.name === 'product_click' || d.name === 'newsletter_signup_attempt')));
         } catch(e){ return false; }
       });
       if (!frame || typeof window.gtag !== 'function') return;
-      var params = {measurement_version: 'eob_funnel_v2',
+      var params = {measurement_version: 'eob_funnel_v3',
         placement: /roles-widget\.html$/.test(new URL(frame.src).pathname) ? 'job_board' : 'salary_benchmarker'};
       allowed[d.name].forEach(function(k){
         var v = d.params[k];
@@ -1735,12 +1700,68 @@
     var browse = el('a','display:inline-block;background:#7A2129;color:#fff;padding:.8rem 1.1rem;text-decoration:none;font-weight:600;','Browse current openings');
     browse.href = '#eob-roles-frame';
     browse.addEventListener('click',function(){ frame.setAttribute('tabindex','0'); frame.focus({preventScroll:true}); });
-    var brief = el('a','color:#7A2129;text-decoration:underline;text-underline-offset:3px;','Get six roles weekly in The Brief');
+    var brief = el('a','color:#7A2129;text-decoration:underline;text-underline-offset:3px;','Get up to six roles weekly in The Brief');
     brief.href = '/the-brief';
     nav.appendChild(browse);nav.appendChild(brief);
     lead.parentNode.insertBefore(nav,lead.nextSibling);
     frame.style.scrollMarginTop = '100px';
   }
+
+/* EOB native form handling: provider confirmation, never timer-based success. */
+(function(){
+  'use strict';
+  if (window.__eobFormsV3) return;
+  window.__eobFormsV3 = true;
+  var pending = new WeakMap();
+  function submit(form){
+    if (pending.has(form)) return pending.get(form);
+    var action;
+    try { action = new URL(form.action); } catch(e){}
+    if (!action || action.origin !== 'https://assets.mailerlite.com' || action.username || action.password || !/^\/jsonp\/2493859\/forms\/\d+\/subscribe$/.test(action.pathname)) return Promise.resolve(false);
+    var controller = new AbortController();
+    var timer = setTimeout(function(){ controller.abort(); },10000);
+    var params = new URLSearchParams(new FormData(form));
+    params.set('ajax','1'); params.set('guid','eob_' + Date.now() + '_' + Math.random().toString(36).slice(2));
+    // MailerLite's public form endpoint returns JSON with Access-Control-Allow-Origin: *.
+    // No API key, callback, cookie, analytics payload or logged URL carries this request.
+    var request = fetch(action.origin + action.pathname + '?' + params.toString(),{
+      method:'GET',mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal
+    }).then(function(response){ if(!response.ok || response.type==='opaque') throw new Error('Unconfirmed'); return response.json(); })
+      .then(function(response){ return !!response && response.success===true; })
+      .catch(function(){ return false; })
+      .finally(function(){ clearTimeout(timer); });
+    pending.set(form, request);
+    return request.then(function(ok){ pending.delete(form); return ok; });
+  }
+  window.EOBSubmitForm = submit;
+  window.addEventListener('submit',function(event){
+    var form = event.target;
+    if (!form || !form.matches || !form.matches('form.eob-ml-form')) return;
+    event.preventDefault(); event.stopImmediatePropagation();
+    if (form.dataset.eobPending === '1' || !form.reportValidity()) return;
+    form.dataset.eobBound = '1'; form.dataset.eobPending = '1';
+    var input = form.querySelector('input[type="email"]'), email = input ? input.value.trim() : '';
+    var button = form.querySelector('button[type="submit"]'), label = button ? button.textContent : '';
+    var status = form.querySelector('.eob-form-status');
+    if (!status){ status=document.createElement('div');status.className='eob-form-status';status.setAttribute('role','status');status.style.cssText='flex-basis:100%;font-size:.85rem;line-height:1.5;margin-top:.6rem;';form.style.flexWrap='wrap';form.appendChild(status); }
+    status.textContent='Sending...';
+    if(button){button.disabled=true;button.textContent='Sending...';}
+    submit(form).then(function(ok){
+      delete form.dataset.eobPending;
+      if(button){button.disabled=false;button.textContent=label;}
+      if(ok){
+        status.textContent=form.dataset.eobSuccess || 'Request confirmed. Check your inbox.';
+        try { if(email) localStorage.setItem('eob_sub_email',email); } catch(e){}
+        try { if(typeof window.gtag==='function') window.gtag('event','newsletter_signup',{method:'mailerlite',form_id:new URL(form.action).pathname.split('/')[4],measurement_version:'eob_funnel_v3'}); } catch(e){}
+      }else{
+        status.textContent="We couldn't confirm your subscription. Check your connection and try again.";
+        // Retire the old submit-means-subscribed memory if a legacy handler populated it.
+        try { if(localStorage.getItem('eob_sub_email')===email) localStorage.removeItem('eob_sub_email'); } catch(e){}
+      }
+    });
+  },true);
+})();
+
 
   // ---- boot --------------------------------------------------------------
   function run(){
@@ -1772,3 +1793,481 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
   else run();
 })();
+
+/* EOB confirmed commerce measurement; checkout disabled until verified. */
+(function (root, factory) {
+  "use strict";
+
+  var api = factory();
+
+  if (typeof module === "object" && module.exports) {
+    module.exports = api;
+  }
+
+  if (root && root.document) {
+    root.EOBCommerceMeasurement = api;
+
+    if (root.__EOB_COMMERCE_AUTOSTART__ !== false) {
+      var start = function () {
+        api.init({ window: root, document: root.document });
+      };
+
+      if (root.document.readyState === "loading") {
+        root.document.addEventListener("DOMContentLoaded", start, { once: true });
+      } else {
+        start();
+      }
+    }
+  }
+})(typeof window !== "undefined" ? window : null, function () {
+  "use strict";
+
+  var INSTANCE_KEY = "__EOB_COMMERCE_MEASUREMENT_V1__";
+  var ADD_BUTTON_SELECTOR = ".sqs-add-to-cart-button";
+  var CART_QUANTITY_SELECTOR = ".sqs-cart-quantity";
+  var CHECKOUT_SELECTOR = ".cart-checkout-button";
+  var CART_TITLE_SELECTOR = ".cart-row-title";
+  var CART_QUANTITY_INPUT_SELECTOR = ".cart-row-qty-input";
+  var DEFAULT_PENDING_MS = 8000;
+
+  function cleanText(value, maxLength) {
+    if (typeof value !== "string") return "";
+    return value.replace(/\s+/g, " ").trim().slice(0, maxLength || 200);
+  }
+
+  function finiteMoney(value) {
+    if (value === null || value === undefined || value === "") return null;
+    var number = Number(value);
+    if (!Number.isFinite(number) || number < 0) return null;
+    return Math.round(number * 100) / 100;
+  }
+
+  function validCurrency(value) {
+    var currency = cleanText(value, 3).toUpperCase();
+    return /^[A-Z]{3}$/.test(currency) ? currency : "";
+  }
+
+  function productFromContext(detail) {
+    if (!detail) return null;
+
+    var raw = detail.getAttribute("data-context");
+    if (!raw) return null;
+
+    try {
+      var context = JSON.parse(raw);
+      var product = context && context.product;
+      var priceData = product && product.price;
+      var itemId = cleanText(
+        (product && product.id) || detail.getAttribute("data-product-id"),
+        200
+      );
+      var itemName = cleanText(product && product.title, 200);
+      var price = finiteMoney(priceData && priceData.value);
+      var currency = validCurrency(priceData && priceData.currency);
+
+      if (!itemId || !itemName || price === null || !currency) return null;
+
+      return {
+        detail: detail,
+        item: {
+          item_id: itemId,
+          item_name: itemName,
+          price: price,
+          quantity: 1
+        },
+        currency: currency,
+        value: price
+      };
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function productFromJsonLd(doc, detail) {
+    var scripts = doc.querySelectorAll('script[type="application/ld+json"]');
+
+    function findProduct(value) {
+      if (!value || typeof value !== "object") return null;
+      if (value["@type"] === "Product") return value;
+      if (Array.isArray(value)) {
+        for (var index = 0; index < value.length; index += 1) {
+          var item = findProduct(value[index]);
+          if (item) return item;
+        }
+      }
+      if (Array.isArray(value["@graph"])) return findProduct(value["@graph"]);
+      return null;
+    }
+
+    for (var scriptIndex = 0; scriptIndex < scripts.length; scriptIndex += 1) {
+      try {
+        var product = findProduct(JSON.parse(scripts[scriptIndex].textContent || ""));
+        if (!product) continue;
+
+        var offers = Array.isArray(product.offers) ? product.offers[0] : product.offers;
+        var itemId = cleanText(
+          (detail && detail.getAttribute("data-product-id")) ||
+            product.productID ||
+            product.sku ||
+            product["@id"],
+          200
+        );
+        var itemName = cleanText(product.name, 200);
+        var price = finiteMoney(offers && offers.price);
+        var currency = validCurrency(offers && offers.priceCurrency);
+
+        if (!itemId || !itemName || price === null || !currency) continue;
+
+        return {
+          detail: detail,
+          item: {
+            item_id: itemId,
+            item_name: itemName,
+            price: price,
+            quantity: 1
+          },
+          currency: currency,
+          value: price
+        };
+      } catch (error) {
+        // Ignore malformed or unrelated JSON-LD blocks.
+      }
+    }
+
+    return null;
+  }
+
+  function readProduct(doc) {
+    var detail = doc.querySelector(
+      '.product-detail[data-product-id], [data-controller="ProductDetail"][data-product-id]'
+    );
+    return productFromContext(detail) || productFromJsonLd(doc, detail);
+  }
+
+  function readCartQuantity(doc) {
+    var nodes = doc.querySelectorAll(CART_QUANTITY_SELECTOR);
+    var values = [];
+
+    for (var index = 0; index < nodes.length; index += 1) {
+      var match = cleanText(nodes[index].textContent, 30).match(/\d+/);
+      if (match) values.push(Number(match[0]));
+    }
+
+    if (!values.length) return null;
+    return Math.max.apply(Math, values);
+  }
+
+  function slugFromHref(href) {
+    if (!href) return "";
+
+    try {
+      var url = new URL(href, "https://measurement.invalid");
+      var parts = url.pathname.split("/").filter(Boolean);
+      return cleanText(parts[parts.length - 1] || "", 200);
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function parseMoney(text, currencyHint) {
+    var source = cleanText(text, 500);
+    if (!source) return null;
+
+    var isoMatch = source.match(/\b(USD|CAD|AUD|EUR|GBP)\b/i);
+    var currency = validCurrency(currencyHint) || (isoMatch ? isoMatch[1].toUpperCase() : "");
+
+    if (!currency) return null;
+
+    var numberMatch = source.match(/(?:USD|CAD|AUD|EUR|GBP)?\s*[$€£]?\s*(\d[\d,]*(?:\.\d{1,2})?)/i);
+    var value = finiteMoney(numberMatch && numberMatch[1].replace(/,/g, ""));
+    return value === null ? null : { currency: currency, value: value };
+  }
+
+  function findCartRow(title) {
+    var node = title && title.parentElement;
+
+    for (var depth = 0; node && depth < 8; depth += 1, node = node.parentElement) {
+      if (
+        node.querySelector(CART_QUANTITY_INPUT_SELECTOR) &&
+        (validCurrency(node.getAttribute("data-currency")) ||
+          node.querySelector('[data-currency]') ||
+          /\b(?:USD|CAD|AUD|EUR|GBP)\b/i.test(node.textContent))
+      ) {
+        return node;
+      }
+    }
+
+    return null;
+  }
+
+  function readRowMoney(row) {
+    var unitPrice = row.getAttribute("data-unit-price");
+    if (unitPrice !== null) {
+      var numericPrice = finiteMoney(unitPrice);
+      var attributeCurrency = validCurrency(row.getAttribute("data-currency"));
+      if (numericPrice !== null && attributeCurrency) {
+        return { currency: attributeCurrency, value: numericPrice };
+      }
+    }
+
+    var selectors = [
+      ".cart-row-price .sqs-money-native",
+      ".cart-row-price",
+      ".cart-row-price-value",
+      '[class*="cart-row-price"]',
+      '[data-test*="price"]',
+      '[data-testid*="price"]'
+    ];
+
+    for (var index = 0; index < selectors.length; index += 1) {
+      var nodes = row.querySelectorAll(selectors[index]);
+      for (var nodeIndex = 0; nodeIndex < nodes.length; nodeIndex += 1) {
+        var money = parseMoney(
+          nodes[nodeIndex].textContent,
+          nodes[nodeIndex].getAttribute("data-currency") || row.getAttribute("data-currency")
+        );
+        if (money) return money;
+      }
+    }
+
+    return null;
+  }
+
+  function readCartItem(title) {
+    var row = findCartRow(title);
+    if (!row) return null;
+
+    var quantityInput = row.querySelector(CART_QUANTITY_INPUT_SELECTOR);
+    var quantity = Number(quantityInput && quantityInput.value);
+    var money = readRowMoney(row);
+    var itemId = cleanText(
+      row.getAttribute("data-product-id") ||
+        row.getAttribute("data-item-id") ||
+        slugFromHref(title.getAttribute("href")),
+      200
+    );
+    var itemName = cleanText(title.textContent, 200);
+
+    if (
+      !itemId ||
+      !itemName ||
+      !Number.isInteger(quantity) ||
+      quantity < 1 ||
+      !money
+    ) {
+      return null;
+    }
+
+    return {
+      currency: money.currency,
+      item: {
+        item_id: itemId,
+        item_name: itemName,
+        price: money.value,
+        quantity: quantity
+      }
+    };
+  }
+
+  function readCart(doc) {
+    var titles = doc.querySelectorAll(CART_TITLE_SELECTOR);
+    if (!titles.length) return null;
+
+    var items = [];
+    var currency = "";
+    var value = 0;
+
+    for (var index = 0; index < titles.length; index += 1) {
+      var parsed = readCartItem(titles[index]);
+      if (!parsed) return null;
+      if (currency && parsed.currency !== currency) return null;
+
+      currency = parsed.currency;
+      items.push(parsed.item);
+      value += parsed.item.price * parsed.item.quantity;
+    }
+
+    if (!currency || !items.length) return null;
+    return { currency: currency, value: finiteMoney(value), items: items };
+  }
+
+  function defaultEmitter(win) {
+    return function (name, params) {
+      if (typeof win.gtag === "function") {
+        win.gtag("event", name, params);
+      }
+    };
+  }
+
+  function isDisabled(element) {
+    return Boolean(
+      !element ||
+        element.disabled ||
+        element.getAttribute("aria-disabled") === "true"
+    );
+  }
+
+  function init(options) {
+    options = options || {};
+    var win = options.window || (typeof window !== "undefined" ? window : null);
+    var doc = options.document || (win && win.document);
+    if (!win || !doc) return null;
+
+    if (!options.force && win[INSTANCE_KEY]) return win[INSTANCE_KEY];
+
+    var emit = typeof options.emit === "function" ? options.emit : defaultEmitter(win);
+    var pendingWindowMs = Number(options.pendingWindowMs) || DEFAULT_PENDING_MS;
+    var checkoutVerified = options.checkoutVerified === true;
+    var product = readProduct(doc);
+    var pendingAdd = null;
+    var checkoutSent = false;
+    var observer = null;
+    var timer = null;
+
+    function send(name, params) {
+      try {
+        emit(name, params);
+      } catch (error) {
+        // Analytics must never interrupt the storefront.
+      }
+    }
+
+    function clearPending() {
+      pendingAdd = null;
+      if (timer !== null) {
+        win.clearTimeout(timer);
+        timer = null;
+      }
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
+    }
+
+    function checkPendingAdd() {
+      if (!pendingAdd) return false;
+      if (Date.now() > pendingAdd.expiresAt) {
+        clearPending();
+        return false;
+      }
+
+      var currentQuantity = readCartQuantity(doc);
+      var button = pendingAdd.button;
+      var addedMarker = Boolean(
+        button &&
+          (button.classList.contains("cart-added") ||
+            (button.parentElement && button.parentElement.classList.contains("cart-added")))
+      );
+      if (
+        currentQuantity === null ||
+        currentQuantity <= pendingAdd.beforeQuantity ||
+        !addedMarker
+      ) return false;
+
+      var addedQuantity = currentQuantity - pendingAdd.beforeQuantity;
+      var item = {
+        item_id: pendingAdd.product.item.item_id,
+        item_name: pendingAdd.product.item.item_name,
+        price: pendingAdd.product.item.price,
+        quantity: addedQuantity
+      };
+
+      send("add_to_cart", {
+        currency: pendingAdd.product.currency,
+        value: finiteMoney(item.price * item.quantity),
+        items: [item]
+      });
+      clearPending();
+      return true;
+    }
+
+    function beginPendingAdd(button) {
+      if (!product || isDisabled(button) || pendingAdd) return;
+      if (product.detail && !product.detail.contains(button)) return;
+
+      var beforeQuantity = readCartQuantity(doc);
+      if (beforeQuantity === null) return;
+
+      pendingAdd = {
+        beforeQuantity: beforeQuantity,
+        button: button,
+        expiresAt: Date.now() + pendingWindowMs,
+        product: product
+      };
+
+      if (typeof win.MutationObserver === "function") {
+        observer = new win.MutationObserver(function () {
+          checkPendingAdd();
+        });
+        observer.observe(doc.documentElement, {
+          childList: true,
+          characterData: true,
+          attributes: true,
+          attributeFilter: ["class"],
+          subtree: true
+        });
+      }
+
+      timer = win.setTimeout(clearPending, pendingWindowMs + 50);
+    }
+
+    function handleClick(event) {
+      var target = event && event.target;
+      if (!target || typeof target.closest !== "function") return;
+
+      var addButton = target.closest(ADD_BUTTON_SELECTOR);
+      if (addButton) {
+        beginPendingAdd(addButton);
+        return;
+      }
+
+      var checkoutButton = target.closest(CHECKOUT_SELECTOR);
+      if (
+        !checkoutVerified ||
+        !checkoutButton ||
+        isDisabled(checkoutButton) ||
+        checkoutSent
+      ) return;
+
+      var cart = readCart(doc);
+      if (!cart) return;
+
+      checkoutSent = true;
+      send("begin_checkout", {
+        currency: cart.currency,
+        value: cart.value,
+        items: cart.items
+      });
+    }
+
+    doc.addEventListener("click", handleClick, true);
+
+    if (product) {
+      send("view_item", {
+        currency: product.currency,
+        value: product.value,
+        items: [product.item]
+      });
+    }
+
+    var tracker = {
+      checkPendingAdd: checkPendingAdd,
+      destroy: function () {
+        clearPending();
+        doc.removeEventListener("click", handleClick, true);
+        if (win[INSTANCE_KEY] === tracker) delete win[INSTANCE_KEY];
+      }
+    };
+
+    win[INSTANCE_KEY] = tracker;
+    return tracker;
+  }
+
+  return {
+    init: init,
+    parseMoney: parseMoney,
+    readCart: readCart,
+    readCartQuantity: readCartQuantity,
+    readProduct: readProduct
+  };
+});

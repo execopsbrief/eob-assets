@@ -413,7 +413,7 @@
    "price_display": "$701 (bundle; no exam-only option)",
    "price_min": 701,
    "price_published": true,
-   "gate": "none",
+   "gate": "experience-or-exam",
    "audience": "UK, EU, public-sector adjacent",
    "url": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
    "note": ""
@@ -428,7 +428,7 @@
    "price_display": "$250-$2,495 (trainer-set)",
    "price_min": 250,
    "price_published": true,
-   "gate": "none",
+   "gate": "experience-or-exam",
    "audience": "Operators near engineering",
    "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
    "note": "Range dated Oct 2023 by the provider's own footnote; renewal required."
@@ -443,7 +443,7 @@
    "price_display": "$200, no renewal ever",
    "price_min": 200,
    "price_published": true,
-   "gate": "none",
+   "gate": "experience-or-exam",
    "audience": "Best value in this cluster",
    "url": "https://www.scrum.org/assessments/professional-scrum-master-i-certification",
    "note": ""
@@ -476,7 +476,7 @@
    "gate": "experience-or-exam",
    "audience": "Manufacturing and healthcare ops",
    "url": "https://asq.org/cert/six-sigma-green-belt",
-   "note": "Requires documented project experience."
+   "note": "Requires three years of full-time, paid on-the-job experience in one or more areas of the CSSGB Body of Knowledge. ASQ provides no educational waiver. A proctored exam is also required."
   },
   {
    "id": "hbs-hplp",
@@ -715,7 +715,7 @@
    "price_published": true,
    "gate": "application",
    "audience": "10+ yrs experience",
-   "url": null,
+   "url": "https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/high-potential-leaders-accelerating-your-impact/",
    "note": "Application and English fluency required."
   },
   {
@@ -730,7 +730,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "Execs moving into strategy roles",
-   "url": null,
+   "url": "https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/strategy-and-management-for-competitive-advantage/",
    "note": "Most defensible campus option for an ops person signaling strategy."
   },
   {
@@ -745,7 +745,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "5-7 yrs experience",
-   "url": null,
+   "url": "https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/leadership-and-management-certificate-online/",
    "note": "No admission; certificate plus digital badge."
   },
   {
@@ -760,7 +760,7 @@
    "price_published": true,
    "gate": "experience-or-exam",
    "audience": "Screened; sponsor expected",
-   "url": null,
+   "url": "https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/edp/",
    "note": "Genuine admissions screening at general-manager level."
   },
   {
@@ -775,7 +775,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "Best CoS topical fit at Kellogg",
-   "url": null,
+   "url": "https://www.kellogg.northwestern.edu/executive-education/individual-programs/executive-programs/team/",
    "note": "Registration only; no travel."
   },
   {
@@ -805,7 +805,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "Decision makers",
-   "url": null,
+   "url": "https://executive.mit.edu/course/understanding-and-solving-complex-business-problems/a056g00000URaNBAA1.html",
    "note": "MIT System Dynamics; genuinely distinctive toolkit."
   },
   {
@@ -835,7 +835,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "Strongest generalist option",
-   "url": null,
+   "url": "https://ecornell.cornell.edu/certificates/leadership-and-strategic-management/executive-leadership/",
    "note": "80 professional development hours; SHRM and PMI credits."
   },
   {
@@ -850,7 +850,7 @@
    "price_published": true,
    "gate": "none",
    "audience": "Modern BizOps",
-   "url": null,
+   "url": "https://ecornell.cornell.edu/certificates/financial-management/digital-business-operations/",
    "note": "Closer to startup BizOps than the Operations Management certificate."
   }
  ]

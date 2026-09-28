@@ -16,9 +16,8 @@
     --paper:#F3F0E9; --ink:#1B1712; --navy:#1C2C3A; --oxblood:#7A2129; --oxblood-deep:#631a20;
     --muted:#6B6255; --line:#D8D0BF; --white:#ffffff;
     --paper-deep:#EAE6DB; --oxblood-tint:#f3e2e0;
-    --radius:14px; --radius-sm:9px;
-    --shadow:0 1px 2px rgba(27,23,18,.05), 0 10px 30px rgba(27,23,18,.06);
-    --shadow-lift:0 2px 6px rgba(27,23,18,.08), 0 24px 48px rgba(27,23,18,.12);
+    --radius:3px; --radius-sm:2px;
+    --shadow:none; --shadow-lift:none;
     font-family:'Public Sans',system-ui,-apple-system,sans-serif;
     color:var(--navy); line-height:1.62; -webkit-font-smoothing:antialiased;
     max-width:900px; margin:0 auto; padding:0 4px; box-sizing:border-box;
@@ -55,6 +54,7 @@
   #eob-first90 .eob-fill{height:100%;width:0;background:var(--oxblood);border-radius:100px;transition:width .35s ease}
   #eob-first90 .eob-btn{
     font-family:'Public Sans',sans-serif;font-weight:600;font-size:.82rem;padding:.5rem .95rem;
+    min-height:44px;
     border-radius:var(--radius-sm);cursor:pointer;transition:all .15s;border:1px solid var(--line);
     background:transparent;color:var(--muted);
   }
@@ -141,7 +141,7 @@
   #eob-first90 .eob-cta .eob-eyebrow{color:var(--oxblood-tint);position:relative}
   #eob-first90 .eob-cta h3{color:#fff;font-size:1.5rem;margin:.4rem 0;position:relative}
   #eob-first90 .eob-cta p{color:#c9c2b6;font-size:.95rem;max-width:32rem;position:relative}
-  #eob-first90 .eob-cta form{display:flex;gap:.6rem;min-width:300px;position:relative;flex-wrap:wrap}
+  #eob-first90 .eob-cta form{display:flex;gap:.6rem;min-width:0;width:100%;max-width:100%;position:relative;flex-wrap:wrap}
   #eob-first90 .eob-cta input{
     flex:1;min-width:0;border:1px solid #3a3530;background:#26221d;color:#fff;
     border-radius:var(--radius-sm);padding:.78rem .95rem;font-family:inherit;font-size:.94rem;
@@ -162,7 +162,8 @@
   @media (max-width:640px){
     #eob-first90 .eob-card{padding:1.3rem 1.15rem}
     #eob-first90 .eob-cta{grid-template-columns:1fr;padding:1.6rem}
-    #eob-first90 .eob-cta form{flex-direction:column}
+    #eob-first90 .eob-cta form{flex-direction:column;min-width:0;width:100%}
+    #eob-first90 .eob-cta input,#eob-first90 .eob-cta button{width:100%;max-width:100%}
     #eob-first90 .eob-phase-head{flex-direction:column;gap:.5rem}
     #eob-first90 .eob-progress-top{gap:.5rem}
   }
@@ -406,15 +407,15 @@
   <div class="eob-cta">
     <div>
       <span class="eob-eyebrow">The Brief</span>
-      <h3>Get the full First 90 Days PDF plus weekly playbooks.</h3>
-      <p>The Brief is the free weekly newsletter from The Exec Ops Brief: a First 90 Days deep-dive guide, operator templates, and one hard-won insight every week.</p>
+      <h3>Get the First 90 Days Operating Plan.</h3>
+      <p>We'll email the free plan as a PDF and add you to The Brief, our weekly newsletter with exec-ops roles and one practical operator insight.</p>
       <div class="eob-cta-note">Free. No spam. Unsubscribe in one click.</div>
     </div>
-<form id="eob-subscribe" action="https://assets.mailerlite.com/jsonp/2493859/forms/192281502704207669/subscribe" method="post" target="eob-ml-frame">
+<form id="eob-subscribe" action="https://assets.mailerlite.com/jsonp/2493859/forms/192281504641975480/subscribe" method="post" target="eob-ml-frame">
       <input type="email" id="eob-email" name="fields[email]" placeholder="you@work.com" aria-label="Email address" required>
           <input type="hidden" name="ml-submit" value="1">
           <input type="hidden" name="anticsrf" value="true">
-      <button type="submit">Subscribe to The Brief</button>
+      <button type="submit">Email me the plan</button>
       <div class="eob-cta-msg" id="eob-sub-msg" role="status" aria-live="polite"></div>
     </form>
   </div>
@@ -543,20 +544,50 @@
   var subForm = root.querySelector("#eob-subscribe");
   var subMsg = root.querySelector("#eob-sub-msg");
   if (subForm) {
-    var frame = document.createElement("iframe");
-    frame.name = "eob-ml-frame";
-    frame.style.display = "none";
-    frame.setAttribute("aria-hidden", "true");
-    root.appendChild(frame);
-    subForm.addEventListener("submit", function(){
+    subForm.addEventListener("submit", function(event){
+      event.preventDefault();
+      if (subForm.getAttribute("data-eob-pending") === "1" || !subForm.reportValidity()) return;
       var btn = subForm.querySelector("button");
+      var idleText = "Email me the plan";
+      var action;
+      try { action = new URL(subForm.action); } catch(e){}
+      if (!action || action.protocol !== "https:" || action.hostname !== "assets.mailerlite.com" || !/^\/jsonp\/2493859\/forms\/\d+\/subscribe$/.test(action.pathname)){
+        if (subMsg) subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        return;
+      }
+      subForm.setAttribute("data-eob-pending","1");
       if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }
-      setTimeout(function(){
-        if (subMsg) subMsg.textContent = "You are in. Check your inbox for the next note.";
-        subForm.reset();
-        if (btn) { btn.disabled = false; btn.textContent = "Subscribe"; }
+      var requestGuid = "eob_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+      var controller = window.AbortController ? new AbortController() : null;
+      var settled = false;
+      var timeout;
+      function finish(ok){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+        subForm.removeAttribute("data-eob-pending");
+        if (ok){
+          if (subMsg) subMsg.textContent = "Request confirmed. Check your inbox for the First 90 Days Operating Plan.";
+          subForm.reset();
+        } else if (subMsg){
+          subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        }
+        if (btn) { btn.disabled = false; btn.textContent = idleText; }
         postHeight();
-      }, 900);
+      }
+      var params = new URLSearchParams(new FormData(subForm));
+      params.set("ajax","1");
+      params.set("guid",requestGuid);
+      timeout = setTimeout(function(){ if (controller) controller.abort(); finish(false); },10000);
+      fetch(action.href + (action.search ? "&" : "?") + params.toString(),{
+        method:"GET",mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
+        signal:controller ? controller.signal : undefined
+      }).then(function(response){
+        if (!response.ok) throw new Error("MailerLite request failed");
+        return response.json();
+      }).then(function(response){
+        finish(!!response && response.success === true);
+      }).catch(function(){ finish(false); });
     });
   }
 })();

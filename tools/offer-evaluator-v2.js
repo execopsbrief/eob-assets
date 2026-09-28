@@ -94,9 +94,20 @@
     "eob-oe-preferred":  { label:"Latest preferred price", min:0, max:100000, range:"$0 and $100,000" },
     "eob-oe-grantvalue": { label:"Stated RSU or grant value", min:0, max:100000000, range:"$0 and $100,000,000" }
   };
-  function validateInputs(){
+  function validateInputs(equityType){
     var problems = [];
+    var relevant = {
+      "eob-oe-base":true,"eob-oe-guaranteed":true,"eob-oe-bonus":true,"eob-oe-signon":true
+    };
+    if (equityType === "options"){
+      ["eob-oe-shares","eob-oe-fdshares","eob-oe-ownership","eob-oe-strike","eob-oe-409a","eob-oe-preferred"].forEach(function(id){ relevant[id]=true; });
+    } else if (equityType === "rsu"){
+      relevant["eob-oe-grantvalue"]=true;
+    } else if (equityType === "other"){
+      ["eob-oe-shares","eob-oe-fdshares","eob-oe-ownership","eob-oe-grantvalue"].forEach(function(id){ relevant[id]=true; });
+    }
     Object.keys(LIMITS).forEach(function(id){
+      if (!relevant[id]) return;
       var el = $(id);
       if (!el) return;
       var raw = String(el.value == null ? "" : el.value).trim();
@@ -115,6 +126,25 @@
         problems.push(rule.label + " must be between " + rule.range + "." + (rule.hint ? " " + rule.hint : ""));
       }
     });
+    if (equityType === "options" || equityType === "other"){
+      var sharesRaw = String($("eob-oe-shares").value || "").trim();
+      var fdRaw = String($("eob-oe-fdshares").value || "").trim();
+      var ownershipRaw = String($("eob-oe-ownership").value || "").trim();
+      var shares = sharesRaw ? parseNum(sharesRaw) : null;
+      var fdShares = fdRaw ? parseNum(fdRaw) : null;
+      var explicitOwnership = ownershipRaw ? parseNum(ownershipRaw) : null;
+      if (shares != null && fdShares != null && shares > 0 && fdShares > 0){
+        var derivedOwnership = shares / fdShares * 100;
+        if (shares > fdShares || derivedOwnership > 100){
+          problems.push("Grant shares cannot exceed fully diluted shares.");
+        } else if (explicitOwnership != null){
+          var tolerance = Math.max(0.01,derivedOwnership * 0.01);
+          if (Math.abs(explicitOwnership - derivedOwnership) > tolerance){
+            problems.push("The ownership percentage conflicts with the grant-share calculation. Correct one value or leave the percentage blank.");
+          }
+        }
+      }
+    }
     return problems;
   }
 
@@ -220,7 +250,7 @@
       $("eob-oe-result").className = $("eob-oe-result").className.replace(" eob-show","");
       return;
     }
-    var problems = validateInputs();
+    var problems = validateInputs(equity);
     if (problems.length){
       err.textContent = problems[0];
       $("eob-oe-result").className = $("eob-oe-result").className.replace(" eob-show","");
@@ -637,20 +667,50 @@
   var subForm = root.querySelector("#eob-subscribe");
   var subMsg = root.querySelector("#eob-sub-msg");
   if (subForm){
-    var frame = document.createElement("iframe");
-    frame.name = "eob-ml-frame";
-    frame.style.display = "none";
-    frame.setAttribute("aria-hidden","true");
-    root.appendChild(frame);
-    subForm.addEventListener("submit",function(){
+    subForm.addEventListener("submit",function(event){
+      event.preventDefault();
+      if (subForm.getAttribute("data-eob-pending") === "1" || !subForm.reportValidity()) return;
       var btn = subForm.querySelector("button");
+      var idleText = "Email me the one-pager";
+      var action;
+      try { action = new URL(subForm.action); } catch(e){}
+      if (!action || action.protocol !== "https:" || action.hostname !== "assets.mailerlite.com" || !/^\/jsonp\/2493859\/forms\/\d+\/subscribe$/.test(action.pathname)){
+        if (subMsg) subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        return;
+      }
+      subForm.setAttribute("data-eob-pending","1");
       if (btn){ btn.disabled = true; btn.textContent = "Sending..."; }
-      setTimeout(function(){
-        if (subMsg) subMsg.textContent = "You are in. Check your inbox for the next note.";
-        subForm.reset();
-        if (btn){ btn.disabled = false; btn.textContent = "Subscribe"; }
+      var requestGuid = "eob_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+      var controller = window.AbortController ? new AbortController() : null;
+      var settled = false;
+      var timeout;
+      function finish(ok){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+        subForm.removeAttribute("data-eob-pending");
+        if (ok){
+          if (subMsg) subMsg.textContent = "Request confirmed. Check your inbox for the offer negotiation one-pager.";
+          subForm.reset();
+        } else if (subMsg){
+          subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        }
+        if (btn){ btn.disabled = false; btn.textContent = idleText; }
         postHeight();
-      },900);
+      }
+      var params = new URLSearchParams(new FormData(subForm));
+      params.set("ajax","1");
+      params.set("guid",requestGuid);
+      timeout = setTimeout(function(){ if (controller) controller.abort(); finish(false); },10000);
+      fetch(action.href + (action.search ? "&" : "?") + params.toString(),{
+        method:"GET",mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
+        signal:controller ? controller.signal : undefined
+      }).then(function(response){
+        if (!response.ok) throw new Error("MailerLite request failed");
+        return response.json();
+      }).then(function(response){
+        finish(!!response && response.success === true);
+      }).catch(function(){ finish(false); });
     });
   }
 })();

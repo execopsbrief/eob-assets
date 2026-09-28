@@ -748,20 +748,50 @@
   var subForm = root.querySelector("#eob-subscribe");
   var subMsg = root.querySelector("#eob-sub-msg");
   if (subForm){
-    var frame = document.createElement("iframe");
-    frame.name = "eob-ml-comp-frame";
-    frame.style.display = "none";
-    frame.setAttribute("aria-hidden", "true");
-    root.appendChild(frame);
-    subForm.addEventListener("submit", function(){
+    subForm.addEventListener("submit", function(event){
+      event.preventDefault();
+      if (subForm.getAttribute("data-eob-pending") === "1" || !subForm.reportValidity()) return;
       var btn = subForm.querySelector("button");
+      var idleText = "Subscribe to The Brief";
+      var action;
+      try { action = new URL(subForm.action); } catch(e){}
+      if (!action || action.protocol !== "https:" || action.hostname !== "assets.mailerlite.com" || !/^\/jsonp\/2493859\/forms\/\d+\/subscribe$/.test(action.pathname)){
+        if (subMsg) subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        return;
+      }
+      subForm.setAttribute("data-eob-pending","1");
       if (btn){ btn.disabled = true; btn.textContent = "Sending..."; }
-      setTimeout(function(){
-        if (subMsg) subMsg.textContent = "You are in. Check your inbox for the next note.";
-        subForm.reset();
-        if (btn){ btn.disabled = false; btn.textContent = "Subscribe to The Brief"; }
+      var requestGuid = "eob_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+      var controller = window.AbortController ? new AbortController() : null;
+      var settled = false;
+      var timeout;
+      function finish(ok){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+        subForm.removeAttribute("data-eob-pending");
+        if (ok){
+          if (subMsg) subMsg.textContent = "Subscription confirmed. Check your inbox for the next Brief.";
+          subForm.reset();
+        } else if (subMsg){
+          subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        }
+        if (btn){ btn.disabled = false; btn.textContent = idleText; }
         postHeight();
-      }, 900);
+      }
+      var params = new URLSearchParams(new FormData(subForm));
+      params.set("ajax","1");
+      params.set("guid",requestGuid);
+      timeout = setTimeout(function(){ if (controller) controller.abort(); finish(false); },10000);
+      fetch(action.href + (action.search ? "&" : "?") + params.toString(),{
+        method:"GET",mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
+        signal:controller ? controller.signal : undefined
+      }).then(function(response){
+        if (!response.ok) throw new Error("MailerLite request failed");
+        return response.json();
+      }).then(function(response){
+        finish(!!response && response.success === true);
+      }).catch(function(){ finish(false); });
     });
   }
 })();

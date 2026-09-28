@@ -22,9 +22,8 @@
     --paper:#F3F0E9; --paper-deep:#EAE5DA; --ink:#1B1712; --navy:#1C2C3A;
     --oxblood:#7A2129; --oxblood-deep:#63191f; --oxblood-tint:#f0e0e0;
     --muted:#6B6255; --line:#D8D0BF; --white:#ffffff;
-    --radius:12px; --radius-sm:8px;
-    --shadow:0 1px 2px rgba(27,23,18,.05), 0 10px 28px rgba(27,23,18,.07);
-    --shadow-lift:0 2px 6px rgba(27,23,18,.08), 0 22px 44px rgba(27,23,18,.12);
+    --radius:3px; --radius-sm:2px;
+    --shadow:none; --shadow-lift:none;
     font-family:'Public Sans',system-ui,-apple-system,sans-serif;
     color:var(--navy); line-height:1.6; -webkit-font-smoothing:antialiased;
     max-width:960px; margin:0 auto; padding:0 4px; box-sizing:border-box;
@@ -702,21 +701,51 @@
   var subForm = root.querySelector("#eob-subscribe");
   var subMsg = root.querySelector("#eob-sub-msg");
   if (subForm) {
-    var frame = document.createElement("iframe");
-    frame.name = "eob-ml-frame";
-    frame.style.display = "none";
-    frame.setAttribute("aria-hidden", "true");
-    root.appendChild(frame);
-    subForm.addEventListener("submit", function(){
+    subForm.addEventListener("submit", function(event){
+      event.preventDefault();
+      if (subForm.getAttribute("data-eob-pending") === "1" || !subForm.reportValidity()) return;
       salaryMetric("newsletter_signup_attempt", {form_id:"192281528647025768",placement:"salary_guide"});
       var btn = subForm.querySelector("button");
+      var idleText = "Email me the guide";
+      var action;
+      try { action = new URL(subForm.action); } catch(e){}
+      if (!action || action.protocol !== "https:" || action.hostname !== "assets.mailerlite.com" || !/^\/jsonp\/2493859\/forms\/\d+\/subscribe$/.test(action.pathname)){
+        if (subMsg) subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        return;
+      }
+      subForm.setAttribute("data-eob-pending","1");
       if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }
-      setTimeout(function(){
-        if (subMsg) subMsg.textContent = "Request submitted. Check your inbox. Already received the guide? Look for \"Your Salary and Leveling Guide\" in your email.";
-        subForm.reset();
-        if (btn) { btn.disabled = false; btn.textContent = "Email me the guide"; }
+      var requestGuid = "eob_" + Date.now() + "_" + Math.random().toString(36).slice(2);
+      var controller = window.AbortController ? new AbortController() : null;
+      var settled = false;
+      var timeout;
+      function finish(ok){
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+        subForm.removeAttribute("data-eob-pending");
+        if (ok){
+          if (subMsg) subMsg.textContent = "Request confirmed. Check your inbox for the Salary and Leveling Guide.";
+          subForm.reset();
+        } else if (subMsg){
+          subMsg.textContent = "We couldn't confirm your subscription. Check your connection and try again.";
+        }
+        if (btn) { btn.disabled = false; btn.textContent = idleText; }
         postHeight();
-      }, 900);
+      }
+      var params = new URLSearchParams(new FormData(subForm));
+      params.set("ajax","1");
+      params.set("guid",requestGuid);
+      timeout = setTimeout(function(){ if (controller) controller.abort(); finish(false); },10000);
+      fetch(action.href + (action.search ? "&" : "?") + params.toString(),{
+        method:"GET",mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
+        signal:controller ? controller.signal : undefined
+      }).then(function(response){
+        if (!response.ok) throw new Error("MailerLite request failed");
+        return response.json();
+      }).then(function(response){
+        finish(!!response && response.success === true);
+      }).catch(function(){ finish(false); });
     });
   }
 })();
