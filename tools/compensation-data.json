@@ -81,12 +81,12 @@
    "measure": "Employer-reported occupation wages"
   },
   "premium": {
-   "p25": 125000,
+   "p25": 122500,
    "median": 143375,
-   "p75": 165000,
+   "p75": 163750,
    "medianPublishedLow": 130000,
    "medianPublishedHigh": 155000,
-   "sample": 161,
+   "sample": 159,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",

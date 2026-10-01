@@ -1,7 +1,7 @@
 {
   "_note": "Executive Assistant, Executive Operations, and Chief of Staff roles for The Exec Ops Brief job board, aggregated from recruiting agencies, direct job boards, and VC portfolio feeds. The board is aggregated, not vetted, screened, hand-picked or curated; llms.txt states this and this note must agree with it. PAY FLOOR (enforced in code since 2026-07-13): every role on this board carries a compensation figure PUBLISHED BY THE SOURCE whose midpoint -- (comp_low + comp_high) / 2, or the single figure where only one is published -- is at least $100,000. A role whose published midpoint falls below $100k is excluded, and a role whose source publishes no comp figure at all is excluded (there are no 'comp not listed' rows). No comp figure is ever estimated, inferred, or invented; comp honesty outranks board size. Where a posting publishes an HOURLY rate instead of a salary, comp_period='hr' and comp_low/comp_high hold the verbatim $/hr figures (annualized at 2080h ONLY to apply the floor, never for display). Most roles also carry a short summary excerpted VERBATIM from the posting (never paraphrased); summary is null rather than invented when the source lacks readable role-specific text. A benefits list (bonus, equity, 401(k), health coverage, PTO, etc) detected only where the posting states them. Apply links point to the original source listing.",
   "updated": "2026-09-30",
-  "count": 281,
+  "count": 279,
   "roles": [
     {
       "id": "bloom-1500",
@@ -2799,6 +2799,27 @@
       "source_type": "VC portfolio"
     },
     {
+      "id": "consider-a16z-ats-mn7batx2f1ge0jzj2sbp",
+      "title": "Chief of Staff to the CMO",
+      "org_type": "Databricks",
+      "category": "Chief of Staff",
+      "seniority": "Chief of Staff",
+      "comp_low": 221900,
+      "comp_high": 305150,
+      "location": "San Francisco, California",
+      "remote": "",
+      "date_posted": "2026-10-01",
+      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8788190002",
+      "source": "a16z Portfolio",
+      "summary": null,
+      "benefits": [
+        "Bonus",
+        "Equity"
+      ],
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
       "id": "consider-a16z-ats-mn70tfggmfp7kw9m9ewd",
       "title": "Chief of Staff to the CTO",
       "org_type": "Northwood Space",
@@ -2818,27 +2839,6 @@
         "Health coverage"
       ],
       "metro": "LA",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7batx2f1ge0jzj2sbp",
-      "title": "Chief of Staff to the CMO",
-      "org_type": "Databricks",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 221900,
-      "comp_high": 305150,
-      "location": "San Francisco, California",
-      "remote": "",
-      "date_posted": "2026-10-01",
-      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8788190002",
-      "source": "a16z Portfolio",
-      "summary": null,
-      "benefits": [
-        "Bonus",
-        "Equity"
-      ],
-      "metro": "SF Bay Area",
       "source_type": "VC portfolio"
     },
     {
@@ -3024,26 +3024,44 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-a16z-ats-mn7e1h109ca7hvxr3626",
-      "title": "Executive Assistant, People",
-      "org_type": "Figma",
+      "id": "consider-a16z-ats-mn7027ecy95kckw2abfm",
+      "title": "Sr. Executive Assistant",
+      "org_type": "Databricks",
       "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 127000,
-      "comp_high": 269000,
-      "location": "San Francisco, CA",
+      "seniority": "Senior Executive Assistant",
+      "comp_low": 155300,
+      "comp_high": 213500,
+      "location": "Mountain View, California; San Francisco, California",
       "remote": "",
-      "date_posted": "2026-04-15",
-      "apply_url": "https://boards.greenhouse.io/figma/jobs/5969046004?gh_jid=5969046004",
+      "date_posted": "2026-04-30",
+      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8523677002",
       "source": "a16z Portfolio",
-      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "summary": null,
       "benefits": [
         "Bonus",
         "Equity",
-        "Health coverage",
         "Paid time off",
-        "Parental leave",
-        "Wellness"
+        "Parental leave"
+      ],
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn7btvnasvztvkdqh9ry",
+      "title": "Manager, Executive Assistant",
+      "org_type": "Asana",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 190000,
+      "comp_high": 223000,
+      "location": "San Francisco",
+      "remote": "Onsite",
+      "date_posted": "2026-04-24",
+      "apply_url": "https://www.asana.com/jobs/apply/7818647?gh_jid=7818647",
+      "source": "a16z Portfolio",
+      "summary": "[Optional] Preferred Full Name (The name that you would like to be referred to as. Please input your legal name in the first and last name fields above.)",
+      "benefits": [
+        "Equity"
       ],
       "metro": "SF Bay Area",
       "source_type": "VC portfolio"
@@ -3060,6 +3078,31 @@
       "remote": "",
       "date_posted": "2026-07-15",
       "apply_url": "https://boards.greenhouse.io/figma/jobs/6115082004?gh_jid=6115082004",
+      "source": "a16z Portfolio",
+      "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
+      "benefits": [
+        "Bonus",
+        "Equity",
+        "Health coverage",
+        "Paid time off",
+        "Parental leave",
+        "Wellness"
+      ],
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn7e1h109ca7hvxr3626",
+      "title": "Executive Assistant, People",
+      "org_type": "Figma",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 127000,
+      "comp_high": 269000,
+      "location": "San Francisco, CA",
+      "remote": "",
+      "date_posted": "2026-04-15",
+      "apply_url": "https://boards.greenhouse.io/figma/jobs/5969046004?gh_jid=5969046004",
       "source": "a16z Portfolio",
       "summary": "Figma is growing our team of passionate creatives and builders on a mission to make design accessible to all. Figma’s platform helps teams bring ideas to life—whether you're brainstorming, creating a prototype, translating designs into code, or iterating with AI.",
       "benefits": [
@@ -3122,49 +3165,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-a16z-ats-mn7027ecy95kckw2abfm",
-      "title": "Sr. Executive Assistant",
-      "org_type": "Databricks",
-      "category": "Executive Assistant",
-      "seniority": "Senior Executive Assistant",
-      "comp_low": 155300,
-      "comp_high": 213500,
-      "location": "Mountain View, California; San Francisco, California",
-      "remote": "",
-      "date_posted": "2026-04-30",
-      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8523677002",
-      "source": "a16z Portfolio",
-      "summary": null,
-      "benefits": [
-        "Bonus",
-        "Equity",
-        "Paid time off",
-        "Parental leave"
-      ],
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7btvnasvztvkdqh9ry",
-      "title": "Manager, Executive Assistant",
-      "org_type": "Asana",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 190000,
-      "comp_high": 223000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "date_posted": "2026-04-24",
-      "apply_url": "https://www.asana.com/jobs/apply/7818647?gh_jid=7818647",
-      "source": "a16z Portfolio",
-      "summary": "[Optional] Preferred Full Name (The name that you would like to be referred to as. Please input your legal name in the first and last name fields above.)",
-      "benefits": [
-        "Equity"
-      ],
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "consider-a16z-ats-mn74ytgzkkw51tcz2jf5",
       "title": "Office Manager / Executive Assistant",
       "org_type": "Counsel Health",
@@ -3180,28 +3180,6 @@
       "summary": "Please Note: to ensure that candidates select the most relevant jobs for their skills, we have set up limits to the number of times candidates can apply. The following limits apply to all roles at Counsel:",
       "benefits": [
         "Equity"
-      ],
-      "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7a6hvank1ex30gf99r",
-      "title": "Partner 6, Executive Assistant, New York",
-      "org_type": "Andreessen Horowitz",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 149000,
-      "comp_high": 165000,
-      "location": "New York, New York, United States",
-      "remote": "Onsite",
-      "date_posted": "2026-08-20",
-      "apply_url": "https://a16z.com/about/jobs/?gh_jid=7814393003",
-      "source": "a16z Portfolio",
-      "summary": "The Executive Assistant will work closely with top-level Executives. This is an opportunity to work alongside individuals who are driven by excellence and a passion for technology.",
-      "benefits": [
-        "Bonus",
-        "401(k)",
-        "Health coverage"
       ],
       "metro": "NYC",
       "source_type": "VC portfolio"
@@ -3227,6 +3205,28 @@
       "source_type": "VC portfolio"
     },
     {
+      "id": "consider-a16z-ats-mn7a6hvank1ex30gf99r",
+      "title": "Partner 6, Executive Assistant, New York",
+      "org_type": "Andreessen Horowitz",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 149000,
+      "comp_high": 165000,
+      "location": "New York, New York, United States",
+      "remote": "Onsite",
+      "date_posted": "2026-08-20",
+      "apply_url": "https://a16z.com/about/jobs/?gh_jid=7814393003",
+      "source": "a16z Portfolio",
+      "summary": "The Executive Assistant will work closely with top-level Executives. This is an opportunity to work alongside individuals who are driven by excellence and a passion for technology.",
+      "benefits": [
+        "Bonus",
+        "401(k)",
+        "Health coverage"
+      ],
+      "metro": "NYC",
+      "source_type": "VC portfolio"
+    },
+    {
       "id": "consider-a16z-ats-mn78r2586snrdpe4ghg8",
       "title": "Executive Assistant to the CPO & CTO",
       "org_type": "Headway",
@@ -3234,7 +3234,7 @@
       "seniority": "Executive Assistant",
       "comp_low": 143200,
       "comp_high": 179000,
-      "location": "New York, NY",
+      "location": "New York, NY · New York, NY, United States",
       "remote": "",
       "date_posted": "2026-09-30",
       "apply_url": "https://jobs.ashbyhq.com/headway/b344b6bd-9c18-4a3e-be87-00b576d0246a/application",
@@ -3369,6 +3369,26 @@
       "source_type": "VC portfolio"
     },
     {
+      "id": "consider-a16z-ats-mn7fsph0pe02phtkatnj",
+      "title": "Business Operations Lead",
+      "org_type": "Ambience Healthcare",
+      "category": "Executive Operations",
+      "seniority": "Operations",
+      "comp_low": 163800,
+      "comp_high": 228000,
+      "location": "Remote - US · San Francisco, California, United States",
+      "remote": "Remote",
+      "date_posted": "2026-09-18",
+      "apply_url": "https://jobs.ashbyhq.com/ambiencehealthcare/64887e8d-5078-4afe-bfe4-7c7797a757bf/application",
+      "source": "a16z Portfolio",
+      "summary": "Are you outside of the range? We encourage you to still apply: we take an individualized approach to ensure that compensation accounts for all of the life factors that matter for each candidate.",
+      "benefits": [
+        "Equity"
+      ],
+      "metro": "Remote",
+      "source_type": "VC portfolio"
+    },
+    {
       "id": "consider-a16z-ats-mn73hg23tfns0hz3mx38",
       "title": "Business Operations Manager",
       "org_type": "Headway",
@@ -3385,26 +3405,6 @@
       "benefits": [
         "Equity",
         "Wellness"
-      ],
-      "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7fsph0pe02phtkatnj",
-      "title": "Business Operations Lead",
-      "org_type": "Ambience Healthcare",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 163800,
-      "comp_high": 228000,
-      "location": "Remote - US · San Francisco, California, United States",
-      "remote": "Remote",
-      "date_posted": "2026-09-18",
-      "apply_url": "https://jobs.ashbyhq.com/ambiencehealthcare/64887e8d-5078-4afe-bfe4-7c7797a757bf/application",
-      "source": "a16z Portfolio",
-      "summary": "Are you outside of the range? We encourage you to still apply: we take an individualized approach to ensure that compensation accounts for all of the life factors that matter for each candidate.",
-      "benefits": [
-        "Equity"
       ],
       "metro": "Remote",
       "source_type": "VC portfolio"
@@ -3832,8 +3832,8 @@
       "date_posted": "2026-09-29",
       "apply_url": "https://job-boards.greenhouse.io/mercury/jobs/6210798004",
       "source": "Sequoia Portfolio",
-      "summary": "As Mercury grows, so does the complexity of keeping our teams connected, our leaders focused, and the company operating effectively. Great executive support is an important part of making that happen and we think the way that support gets delivered is changing fast.",
       "comp_note": "US employees in New York City, Los Angeles, Seattle, or the San Francisco Bay Area : $141,800 - $177,200 USD; US employees outside of New York City, Los Angeles, Seattle, or the San Francisco Bay Area : $127,600 - $159,500 USD; Canadian employees (any location) : $134,000 - $167,500 USD",
+      "summary": "As Mercury grows, so does the complexity of keeping our teams connected, our leaders focused, and the company operating effectively. Great executive support is an important part of making that happen and we think the way that support gets delivered is changing fast.",
       "benefits": [
         "Equity"
       ],
@@ -5644,30 +5644,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "getro-246-89896454",
-      "title": "Executive Assistant, Marketing (Kirkland, Washington)",
-      "org_type": "Veeam Software",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 129800,
-      "comp_high": 241100,
-      "location": "Kirkland, WA, USA",
-      "remote": "",
-      "date_posted": "2026-08-14",
-      "apply_url": "https://careers.veeam.com/job/kirkland/executive-assistant-marketing-kirkland-washington/22681/99177911328",
-      "source": "Insight Partners Portfolio",
-      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
-      "benefits": [
-        "Equity",
-        "401(k)",
-        "Health coverage",
-        "Paid time off",
-        "Parental leave"
-      ],
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "getro-246-89881709",
       "title": "Executive Assistant, Marketing (Kirkland, Washington)",
       "org_type": "Veeam Software",
@@ -5680,8 +5656,8 @@
       "date_posted": "2026-08-14",
       "apply_url": "https://boards.greenhouse.io/veeamsoftware/jobs/4934023101",
       "source": "Insight Partners Portfolio",
-      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
       "comp_note": "Compensation Range (TTC / OTE) : $134,530 - $249,810 USD",
+      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
       "benefits": [
         "Equity",
         "401(k)",
@@ -5713,30 +5689,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "getro-246-79066113",
-      "title": "Executive Assistant",
-      "org_type": "Veeam Software",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 141700,
-      "comp_high": 263000,
-      "location": "San Jose, CA, USA",
-      "remote": "",
-      "date_posted": "2026-05-17",
-      "apply_url": "https://careers.veeam.com/job/san-jose/executive-assistant/22681/95145959360",
-      "source": "Insight Partners Portfolio",
-      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
-      "benefits": [
-        "Equity",
-        "401(k)",
-        "Health coverage",
-        "Paid time off",
-        "Parental leave"
-      ],
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "getro-246-79063965",
       "title": "Executive Assistant",
       "org_type": "Veeam Software",
@@ -5749,8 +5701,8 @@
       "date_posted": "2026-05-17",
       "apply_url": "https://boards.greenhouse.io/veeamsoftware/jobs/4860546101",
       "source": "Insight Partners Portfolio",
-      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
       "comp_note": "Compensation Range (TTC / OTE) : $146,760 - $272,520 USD",
+      "summary": "Are you an experienced Executive Assistant (EA) who excels at anticipating needs and thinking ahead? Do you value attention to detail and enjoy supporting a highly engaged team?",
       "benefits": [
         "Equity",
         "401(k)",
