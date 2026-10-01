@@ -1,32 +1,6 @@
-/* ==========================================================================
-   The Exec Ops Brief - site-wide behavior layer  (eob-site-scripts.js)
-   --------------------------------------------------------------------------
-   The EOB equivalent of Ambitious Harvest's ah-site-scripts.js.
-   Hosted in the execops-brief-assets GitHub repo, served via jsDelivr, and
-   loaded once from Squarespace  ->  Settings  ->  Advanced  ->  Code Injection
-   -> HEADER with:
-
-     <script defer src="https://cdn.jsdelivr.net/gh/execopsbrief/eob-assets@main/eob-site-scripts.js"></script>
-
-   After any edit: git commit + push, then purge the CDN so the change is live:
-     curl -s "https://purge.jsdelivr.net/gh/execopsbrief/eob-assets@main/eob-site-scripts.js"
-
-   Modules (all idempotent; 1-3 article-only, 4 shop-only):
-     1. Keep Reading   - related-article cards from the embedded manifest
-     2. FAQ polish     - consistent styling for the FAQ block
-     3. Callouts       - keyword-routed product / referral callout, mid-article
-     3b. Tool callouts - SEPARATE slot routing readers into the 4 free tools.
-                         Injects at a late heading so it can coexist with the
-                         module-3 box on the same article without displacing it.
-     4. Shop polish    - Design System v2 styling for the NATIVE store pages
-                         (list masthead + typography, oxblood cart button,
-                         uncropped gallery, collapses empty leftover sections)
-
-   IMPORTANT: the DOM selectors below target a standard Squarespace 7.1 blog
-   post. Smoke-test on the live site once and adjust CONTENT_SELECTORS if the
-   template differs. Nothing here mutates data; it only injects UI.
-   Voice rule: no em-dashes, no emojis in any injected copy.
-   ========================================================================== */
+/* The Exec Ops Brief site-wide behavior layer.
+   Idempotent article, shop, navigation, form and measurement modules.
+   DOM selectors target the Squarespace 7.1 blog structure. */
 (function () {
   'use strict';
 
@@ -120,16 +94,8 @@
       href:'/resources#notion-templates' }
   ];
 
-  /* Tool callouts (module 3b). SEPARATE SLOT from CALLOUTS above, so an article
-     can carry BOTH a product/affiliate callout and a tool callout without one
-     displacing the other. Rules:
-       - max ONE tool callout per article; first match in this array wins
-       - match on EXACT slugs only (no fuzzy keywords), so a new article can
-         never pick one up by accident
-       - rendered at a LATE anchor (see toolCallout) while the CALLOUTS box sits
-         after the 2nd H2, so the two boxes never land next to each other
-     Every claim here must be true of the tool as it actually ships in
-     execops-brief-assets/tools/. Voice: no em-dashes, no emojis, no hype. */
+  /* Independent tool-callout slot. Exact-slug matching; first match wins.
+   Uses a late anchor to avoid adjacent product/tool callouts. */
   var TOOL_CALLOUTS = [
     /* ---- Offer evaluator (/offer-evaluator) ---- */
     { match:['negotiate-chief-of-staff-offer','fractional-vs-full-time-chief-of-staff'],
@@ -144,10 +110,7 @@
       href:'/offer-evaluator' },
 
     /* ---- Salary and comp benchmarker (/salary-benchmarker) ---- */
-    /* Re-pointed 2026-07-31 from the benchmarker to the comp explorer. The
-       benchmarker answers what SURVEYS say people are paid; this article is about
-       reading what a POSTING says, which is the explorer's own population. The
-       explorer did not exist when these callouts were written. */
+    /* Posting-based comparisons route to the compensation explorer. */
     { match:['how-to-read-exec-ops-job-post'],
       title:'This post gives you a range. Here is what the rest of the market is posting.',
       body:'The comp explorer slices the live board by role family, metro and work arrangement, so you can put the range in front of you next to what comparable postings are advertising this week. Every figure carries its sample size, and slices too thin to publish say so.',
@@ -199,14 +162,7 @@
       cta:'Open the First 90 Days tool',
       href:'/first-90-days' },
 
-    /* ---- Roles board (/roles) ----
-     * Added 2026-07-30. The board is the site's largest asset and had no
-     * callout routing to it at all. These six slugs are verified against the
-     * live sitemap and are the ones that carried NO callout before, so first
-     * match precedence leaves every existing callout untouched. Copy states
-     * only what the tool enforces: a published-pay floor of $100,000 checked
-     * in code, a daily refresh, and the filters that exist. Never "vetted"
-     * or "curated", and no role count, which moves every day. */
+    /* Roles-board callouts use exact slugs and preserve other callout routes. */
     { match:['resume-linkedin-for-exec-ops'],
       title:'Once the resume is right, go where the roles actually are',
       body:'The roles board collects exec-ops openings from every source we track and refreshes daily. One rule is enforced in code: if the source firm did not publish a comp figure, the role is not there, and the midpoint of that figure is at least $100,000. You can see the compensation before you spend an evening on the application.',
@@ -244,10 +200,7 @@
     try {
       if (document.getElementById('eob-measure-fix')) return;
       var css = '[id^="eob-"] h1{max-width:48rem !important}'
-              // Body-flow h2s had the same inversion: /tools capped them at 457px
-              // against a 720px body measure, so they broke onto two lines. Section
-              // and CTA headings (.sec-h, .final, .nudge) are deliberately tight and
-              // centered, so they are left alone.
+              // Exclude tightly measured section and CTA headings.
               + '[id^="eob-"] .prose h2,[id^="eob-"] .band-head h2{max-width:48rem !important}';
       var st = document.createElement('style');
       st.id = 'eob-measure-fix';
@@ -927,19 +880,8 @@
     else { host.appendChild(box); }
   }
 
-  // ---- 3c. Content upgrades (free downloads) --------------------------------
-  // The ~18 free assets on /resources are checkboxes carrying a MailerLite form id.
-  // None of them has a URL, so none can be linked from an article, and until now no
-  // article offered the download that matches it: a reader on the salary guide had to
-  // notice the footer, open /resources, and find the right item among eighteen.
-  //
-  // Each entry pairs an article with the ONE download written for that exact question.
-  // The link carries ?pick=<form id>; the current picker ignores an unknown param and
-  // the rebuilt one pre-ticks that item, so this ships safely before that lands.
-  //
-  // Slot discipline: module 3 injects after the 2nd H2 and toolCallout at a LATE H2,
-  // so this takes an EARLY heading and skips any anchor either of them already owns.
-  // Idempotent via #eob-upgrade.
+  // Content upgrades preselect known picker form IDs via ?pick=.
+  // Use an early unoccupied heading; idempotent via #eob-upgrade.
   var DOWNLOAD_CALLOUTS = [
     { match:['chief-of-staff-salary-guide'], form:'192281528647025768',
       title:'The full salary and leveling guide, free',
@@ -1028,16 +970,8 @@
     host.appendChild(box);
   }
 
-  // ---- 3d. Tool and download attribution ------------------------------------
-  // The 2026-07-29 tools audit found ZERO attribution on any tool anywhere in the
-  // portfolio: no way to answer "which tool converts". GA4 is present on EOB pages
-  // but cannot see inside the tool iframes, so the honest thing to measure from here
-  // is INTENT: the click that leaves an article for a tool or a download.
-  //
-  // Deliberately NOT using UTM parameters on these internal links. An internal UTM
-  // starts a new GA4 session and overwrites the real traffic source, which destroys
-  // the very attribution this is trying to create, and it mints duplicate crawlable
-  // URLs. Events in, UTMs only for inbound links we do not control.
+  // Measure article-to-tool/download clicks as intent.
+  // Internal links avoid UTM parameters to preserve inbound attribution.
   var TOOL_PATHS = ['/roles','/salary-benchmarker','/salary-data','/offer-evaluator',
                     '/first-90-days','/readiness-quiz','/tools','/resources'];
   function trackClicks(){
@@ -1335,12 +1269,8 @@
     });
   }
 
-  // ---- 9. Picker bar reparent fix -------------------------------------------
-  // Squarespace's .fe-block wrapper carries an identity transform, which turns
-  // the send bar's position:fixed into "fixed to the block" (it rendered at the
-  // bottom of the page, invisible). Move the bar to <body> and carry its CSS
-  // unscoped with literal colors so it works from there. Idempotent: no-ops on
-  // pages without the bar, and a future paste that already reparents is fine.
+  // Move the fixed picker bar outside transformed Squarespace wrappers.
+  // Carry its CSS to body; idempotent on pages without the bar.
   function pickBarFix(){
     var bar = byId("eob-pick-bar");
     if (!bar) return;
@@ -1367,12 +1297,7 @@
       document.head.appendChild(st);
     }
 
-    /* The CSS above hides the bar until it carries .on, but nothing ever added
-       that class: the page's own picker script toggles "on" on the .eob-pick
-       LABELS, not on the bar. So from 2026-07-21 the bar sat below the fold and
-       "Send my downloads" was unclickable, and every asset request was lost with
-       no error anywhere. The class belongs to whoever wrote the rule, so it is
-       owned here now. Idempotent, and safe if the page later adds it too. */
+    /* Synchronize the bar .on class with picker selections. Idempotent. */
     if (!bar.dataset.eobBarSync){
       bar.dataset.eobBarSync = "1";
       var syncBar = function(){
@@ -1438,12 +1363,7 @@
     }
   }
 
-  // ---- 10c. "Curated" overclaim, site-wide ---------------------------------
-  // The same claim appears in shared newsletter/CTA copy on several pages. The
-  // board is an automated scrape plus a published-comp $100k-midpoint filter,
-  // so "curated" (which reads as human vetting) is replaced with what is
-  // actually true. Exact-string map, text nodes only, so nothing else on the
-  // page can be touched; a re-paste from corrected source makes it a no-op.
+  // Idempotent exact-string replacements on text nodes only.
   var COPY_FIXES = [
     ['Curated roles and operator playbooks', 'New roles with published pay and operator playbooks'],
     ['A curated digest of EA, exec-ops, and Chief of Staff roles',
@@ -1466,20 +1386,10 @@
     }
   }
 
-  // ---- 10d. /roles email trade (weekly new-roles alert) --------------------
-  // The board shows every role free on the page, so "subscribe for the roles"
-  // trades for something the visitor already has. This offers the one thing the
-  // page cannot: the weekly DELTA, delivered. Sender: Commercialization/Email/
-  // roles_digest.py (diffs roles.json against a snapshot, so a role is only
-  // announced once).
-  //
-  // DARK UNTIL WIRED: MailerLite's public API cannot create forms, so the
-  // "Roles Alert" form has to be made in the dashboard. Group already exists
-  // (193937631315231876). Drop the form id in below and this goes live on the
-  // next push. Empty id = module no-ops, nothing renders.
+  // Roles-alert opt-in; an empty form ID disables the module.
   var ROLES_ALERT_FORM_ID = '194356696889427252';
   function rolesOptIn(){
-    if (!ROLES_ALERT_FORM_ID) return;              // not wired yet
+    if (!ROLES_ALERT_FORM_ID) return;
     var board = byId('eob-jobboard');
     if (!board || byId('eob-roles-optin')) return;
     var head = board.querySelector('.eob-head');
