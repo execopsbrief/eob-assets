@@ -1286,7 +1286,7 @@
       headline.innerHTML = 'Become the operator who keeps decisions <span class="mark">moving</span>.';
     var lead = home.querySelector('.lead');
     if (lead && /impossible to replace/.test(lead.textContent))
-      lead.textContent = 'The Exec Ops Brief brings Executive Assistants, Chiefs of Staff, and executive operations professionals roles with published pay, practical tools, and playbooks for the work.';
+      lead.textContent = 'The Exec Ops Brief gives executive assistants, chiefs of staff, and operations professionals three things: roles with published pay, practical tools, and playbooks for the work.';
     home.querySelectorAll('p').forEach(function(p){
       if (/The paid work, templates and guides, comes later/.test(p.textContent))
         p.innerHTML = 'The Brief is free and it stays free. Alongside it there\'s a small <a href="/shop">paid library of templates and guides</a>, for anyone who\'d rather start from a finished artifact than build one from scratch.';

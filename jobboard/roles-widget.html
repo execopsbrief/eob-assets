@@ -416,13 +416,15 @@
   }
   function compHTML(r){
     if (!hasComp(r)) return '<div class="eob-comp eob-comp-none">Comp not listed</div>';
+    var note = r.comp_note ? '<p class="eob-summary">' + esc(r.comp_note) + '</p>' : "";
     if (isHourly(r)){
       var txt = (r.comp_low === r.comp_high)
         ? "$" + fmtHr(r.comp_low) + "/hr"
         : "$" + fmtHr(r.comp_low) + " - $" + fmtHr(r.comp_high) + "/hr";
-      return '<div class="eob-comp">' + txt + '</div>';
+      return '<div class="eob-comp">' + txt + '</div>' + note;
     }
-    return '<div class="eob-comp">' + fmtComp(r.comp_low, r.comp_high) + '</div>';
+    return '<div class="eob-comp">' + fmtComp(r.comp_low, r.comp_high) + '</div>'
+      + note;
   }
   // Sort key: use the posting date if present. Undated roles are still live,
   // but they cannot honestly be treated as newly posted, so they sort last.
