@@ -90,45 +90,14 @@
     {s:'how-to-grow-your-career-as-an-executive-assistant', t:'How to Grow Your Career as an Executive Assistant', p:'The Path In'}
   ];
 
-  /* Keyword-routed callouts (copy from Commercialization/Affiliate_Program_Plan.md).
-     Each: { match:[substrings tested against slug+title], title, body, cta, href }.
-     A callout stays DORMANT until its href is a real URL: any href still holding
-     the REPLACE_WITH token is skipped, so this is safe to ship before programs are
-     joined. First live match wins. To activate one: join the program, then paste
-     the real affiliate URL over the token. Nova is already live. */
+  /* Keyword-routed active callouts. First matching live destination wins. */
   var CALLOUTS = [
     { match:['chief-of-staff-certifications-compared','land-first-chief-of-staff-role-without-the-title','ea-to-chief-of-staff-path','certification','credential'],
       title:'If you want a structured way into the role, Nova is the course we point people to',
       body:'Most people learn the craft on the job, but a focused certification shortens the ramp and gives you language for interviews. Nova is the most established option, and Brief readers get $100 off.',
       cta:'See the Nova Chief of Staff course',
       href:'https://novachiefofstaff.mykajabi.com/a/2147831554/z9P6cao2' },
-    { match:['how-to-build-an-operating-cadence','single-source-of-truth-decision-logs','operating cadence','source of truth'],
-      title:'A cadence only holds if it lives somewhere the whole team can see',
-      body:'The operators who keep decisions from getting relitigated run their cadence and their source of truth in one shared system, not a scatter of docs.',
-      cta:'See the tool many operators run their cadence in',
-      href:'REPLACE_WITH_CLICKUP_AFFILIATE_URL' },
-    { match:['skills-to-get-hired-as-chief-of-staff','upskill'],
-      title:'Close the specific gap, not "learn everything"',
-      body:'The fastest way into an exec-ops seat is to fix the one or two gaps a hiring manager will probe, often finance fluency or structured project management. A targeted course is cheaper than waiting for the job to teach you.',
-      cta:'Browse courses for the exec-ops skill set',
-      href:'REPLACE_WITH_COURSERA_AFFILIATE_URL' },
-    { match:['how-to-write-an-executive-memo','managing-up-chief-of-staff','board-meeting-prep-chief-of-staff','executive memo'],
-      title:'In this role, your writing is the room’s read on your judgment',
-      body:'A memo that is tight and clean gets decisions made; one that is not gets questioned. A second set of eyes on tone and clarity is cheap insurance on documents executives actually read.',
-      cta:'See the writing tool for high-stakes documents',
-      href:'REPLACE_WITH_GRAMMARLY_AFFILIATE_URL' },
-    { match:['breaking-into-chief-of-staff-from-consulting-or-finance','cohort'],
-      title:'If you learn better with a cohort, that route exists too',
-      body:'Some people close the gap faster in a live cohort with peers and direct instructor feedback than they do alone. Maven hosts operator-taught courses on the exact skills this transition asks for.',
-      cta:'See cohort courses for operators',
-      href:'REPLACE_WITH_MAVEN_AFFILIATE_URL' },
-    { match:['what-does-a-chief-of-staff-do','the-trust-equation','what-is-a-force-multiplier'],
-      title:'The short shelf worth actually reading',
-      body:'A handful of books cover most of what the role asks of you, from earning trust to running priorities. Start with the ones operators keep coming back to.',
-      cta:'See the exec-ops reading list',
-      href:'REPLACE_WITH_AMAZON_AFFILIATE_URL' },
-    /* Free Notion template callouts (internal, always live). Kept BELOW the
-       affiliate entries so an affiliate placement wins once its URL goes live. */
+    /* Free template callouts. */
     { match:['single-source-of-truth-decision-logs','how-to-build-an-operating-cadence','run-effective-leadership-team-meeting'],
       title:'The decision log this playbook describes exists as a free Notion template',
       body:'A running record of what was decided, who owns it, why, and when to revisit. Ours ships with the full field schema and seeded examples, ready to duplicate into your workspace.',
@@ -270,38 +239,7 @@
       href:'/roles' }
   ];
 
-  // ---- 0. Heading measure correction (site-wide, runs before paint) ---------
-  // The owner reported text "cut off with forced paragraph breaks" across the
-  // whole site. Measured 2026-07-31 in a fixed 1440px frame: on EVERY page the
-  // h1 was capped NARROWER than the body copy beneath it.
-  //
-  //   /                    h1 534px vs body 640px   headline broke onto 4 lines
-  //   /about               h1 539px vs body 672px   3 lines
-  //   /resources           h1 571px vs body 672px   3 lines
-  //   /tools, /benchmarker h1 632px vs body 720px   3 lines
-  //   /roles               h1 698px vs body 736px   2 lines
-  //
-  // Cause: headings were measured in `ch`, body copy in `rem`. `ch` is the width
-  // of the "0" glyph in the element's OWN font, so on a narrow display serif at
-  // 53-66px it resolves to FEWER pixels than a rem cap does on 18px body text.
-  // Each value looked fine alone; they were never comparable by eye. The tell is
-  // a fractional computed max-width (533.856px) beside round body values (640px).
-  //
-  // 48rem = 768px sits at or above every body measure on the site (max 736px) and
-  // still well inside the 1080px .wrap, so one value fixes every page. Verified
-  // before shipping: 4 lines to 3 on home, 3 to 2 on about/resources/tools, 2 to 1
-  // on roles, no wrap overflow and no document overflow on any page.
-  //
-  // This is a PRESENTATION override and that is why it is acceptable here, unlike
-  // the honestCopy() scrubber, which rewrites a factual claim in the DOM while the
-  // served source keeps the old wording where crawlers still read it. A max-width
-  // has no equivalent: nothing consumes it but the renderer. The per-page sources
-  // still carry the ch values and should be corrected opportunistically; until
-  // then this wins, including on any page that gets re-pasted from an old file.
-  //
-  // Scoped to [id^="eob-"] so it can only ever touch our own injected blocks and
-  // never a native Squarespace heading. Injected at parse time rather than on
-  // DOMContentLoaded to minimise any flash of the narrow measure.
+  // Heading measure correction, scoped to injected EOB blocks before paint.
   (function headingMeasure(){
     try {
       if (document.getElementById('eob-measure-fix')) return;
@@ -1255,10 +1193,7 @@
     }
   }
 
-  // ---- 5. Link repair ------------------------------------------------------
-  // Two page slugs changed after the sources were written; pasted pages and
-  // the footer still carry the old hrefs. Rewrite them site-wide until every
-  // pasted page is refreshed from the corrected pages_html sources.
+  // Repair known legacy paths.
   var LINK_FIXES = {
     '/first-90-days-tool': '/first-90-days',
     '/guide-become-chief-of-staff': '/how-to-become-a-chief-of-staff-static',
@@ -1273,10 +1208,7 @@
     });
   }
 
-  // ---- 6. Home polish ------------------------------------------------------
-  // The pasted home page carries a static role count/cadence and two mobile
-  // overflow bugs. Self-heal here until the page is re-pasted from the
-  // corrected pages_html/home.html source.
+  // Guarded homepage layout and current-board updates.
   function homePolish(){
     var home = document.getElementById('eob-home');
     if (!home) return;
@@ -1329,12 +1261,7 @@
       .catch(function(){});
   }
 
-  // ---- 7. Form feedback self-heal -----------------------------------------
-  // The pasted pages carry their own .eob-ml-form binding script, but a paste
-  // or copy edit can break it (2026-07-08: an unescaped apostrophe in the
-  // success string killed the whole IIFE on /resources and no form gave any
-  // feedback). This module binds any form the page script missed. Idempotent:
-  // it respects the same data-eobBound flag the page scripts set.
+  // Bind unbound forms using the shared data-eobBound flag.
   function formFeedback(){
     // The provider-confirmed capture handler below owns all native page forms.
     // Mark them so legacy page fallbacks do not add another success timer.
@@ -1466,14 +1393,7 @@
     }
   }
 
-  // ---- 10. Roles page self-heal (H1 + honest board language) ----------------
-  // The live /roles paste predates the corrected pages_html/roles.html, so it
-  // still (a) has NO h1 at all, only an h2, and (b) calls the board "curated",
-  // which implies human vetting it does not do: it is an automated 7am scrape
-  // plus a published-comp $100k-midpoint rule filter. Same self-heal pattern as
-  // homePolish/fixLinks: hold the honest copy here until the page is re-pasted
-  // from source, then this quietly no-ops (every edit is guarded on the old
-  // string still being present). Idempotent.
+  // Guarded roles-page heading and board description updates.
   function rolesPolish(){
     var board = byId('eob-jobboard');
     if (!board) return;
@@ -1492,7 +1412,6 @@
       }
       var h1 = document.createElement('h1');
       h1.className = h2.className;
-      // Matches pages_html/roles.html, so a future paste is a no-op, not a flip.
       h1.textContent = 'High-paying Executive Assistant and exec ops jobs.';
       h2.parentNode.replaceChild(h1, h2);
     }
@@ -1604,12 +1523,7 @@
     try { formFeedback(); } catch(e){}
   }
 
-  // ---- 11. BreadcrumbList schema -------------------------------------------
-  // The header code-injection block already emits Organization + WebSite
-  // site-wide and Article + FAQPage on /library/{slug}. BreadcrumbList was the
-  // remaining gap (flagged in the 2026-07-23 review). Emitted here rather than
-  // in code injection, which is owner-only. Distinct id, so it cannot collide
-  // with the injected blocks.
+  // Add distinct BreadcrumbList schema alongside existing injected schemas.
   var CRUMB_NAMES = {
     'library': 'Library', 'roles': 'Roles', 'shop': 'Shop',
     'resources': 'Resources', 'the-brief': 'The Brief', 'about': 'About',
