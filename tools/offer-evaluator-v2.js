@@ -1,6 +1,63 @@
 (function(){
   "use strict";
-  var root = document.getElementById("eob-offer");
+
+  /* Accept plain USD-style numbers, optional dollar signs, valid thousands
+     grouping, and decimals. Signs are read before conversion so a negative
+     entry can never become a positive amount. */
+  function parseNum(v){
+    var raw = String(v == null ? "" : v).trim();
+    if (!raw) return null;
+
+    var negative = false;
+    if (raw.charAt(0) === "(" && raw.charAt(raw.length - 1) === ")"){
+      negative = true;
+      raw = raw.slice(1,-1).trim();
+      if (!raw || /[+-]/.test(raw)) return null;
+    }
+
+    var sign = "";
+    if (/^[+-]/.test(raw)){
+      sign = raw.charAt(0);
+      raw = raw.slice(1).trim();
+    }
+    if (raw.charAt(0) === "$"){
+      raw = raw.slice(1).trim();
+      if (/^[+-]/.test(raw)){
+        if (sign) return null;
+        sign = raw.charAt(0);
+        raw = raw.slice(1).trim();
+      }
+    }
+    if (sign === "-") negative = true;
+
+    if (!/^(?:(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?|\.\d+)$/.test(raw)) return null;
+    var n = Number(raw.replace(/,/g,""));
+    if (!Number.isFinite(n)) return null;
+    return negative ? -n : n;
+  }
+  function validationProblem(raw,rule){
+    var n = parseNum(raw);
+    if (n == null) return rule.label + " is not a number.";
+    if (n < 0 || Object.is(n,-0)) return rule.label + " cannot be negative.";
+    if (n < rule.min || n > rule.max){
+      return rule.label + " must be between " + rule.range + "." + (rule.hint ? " " + rule.hint : "");
+    }
+    return "";
+  }
+  function showValidationError(err,result,message){
+    err.textContent = message;
+    result.className = result.className.replace(" eob-show","");
+  }
+
+  if (typeof module !== "undefined" && module.exports){
+    module.exports = {
+      parseNum:parseNum,
+      validationProblem:validationProblem,
+      showValidationError:showValidationError
+    };
+  }
+
+  var root = typeof document !== "undefined" ? document.getElementById("eob-offer") : null;
   if (!root) return;
 
   var data = null;
@@ -40,15 +97,6 @@
     if (!(mo >= 1 && mo <= 12)) return null;
     var now = new Date();
     return (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - mo);
-  }
-  /* The minus sign is preserved deliberately. Stripping it used to turn -10
-     into 10 and evaluate an offer the user never typed. */
-  function parseNum(v){
-    var raw = String(v == null ? "" : v).trim();
-    var negative = raw.charAt(0) === "-";
-    var n = parseFloat(raw.replace(/[^0-9.]/g,""));
-    if (isNaN(n)) return null;
-    return negative ? -n : n;
   }
   function amount(id){
     var n = parseNum($(id).value);
@@ -113,18 +161,8 @@
       var raw = String(el.value == null ? "" : el.value).trim();
       if (raw === "") return;
       var rule = LIMITS[id];
-      var n = parseNum(raw);
-      if (n == null){
-        problems.push(rule.label + " is not a number.");
-        return;
-      }
-      if (n < 0){
-        problems.push(rule.label + " cannot be negative.");
-        return;
-      }
-      if (n < rule.min || n > rule.max){
-        problems.push(rule.label + " must be between " + rule.range + "." + (rule.hint ? " " + rule.hint : ""));
-      }
+      var problem = validationProblem(raw,rule);
+      if (problem) problems.push(problem);
     });
     if (equityType === "options" || equityType === "other"){
       var sharesRaw = String($("eob-oe-shares").value || "").trim();
@@ -244,18 +282,18 @@
     var stage = $("eob-oe-stage").value;
     var location = $("eob-oe-tier").value;
     var equity = $("eob-oe-equity").value;
-    var base = parseNum($("eob-oe-base").value);
-    if (base == null){
-      err.textContent = "Enter the annual base salary.";
-      $("eob-oe-result").className = $("eob-oe-result").className.replace(" eob-show","");
+    var result = $("eob-oe-result");
+    var baseRaw = String($("eob-oe-base").value == null ? "" : $("eob-oe-base").value).trim();
+    if (!baseRaw){
+      showValidationError(err,result,"Enter the annual base salary.");
       return;
     }
     var problems = validateInputs(equity);
     if (problems.length){
-      err.textContent = problems[0];
-      $("eob-oe-result").className = $("eob-oe-result").className.replace(" eob-show","");
+      showValidationError(err,result,problems[0]);
       return;
     }
+    var base = parseNum(baseRaw);
 
     var guaranteed = amount("eob-oe-guaranteed");
     var targetPct = amount("eob-oe-bonus");
