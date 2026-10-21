@@ -126,6 +126,14 @@
   #eob-first90 .eob-ref ol,#eob-first90 .eob-ref ul{margin:0;padding-left:1.15rem}
   #eob-first90 .eob-ref li{font-size:.94rem;color:var(--ink);margin-bottom:.4rem}
   #eob-first90 .eob-ref li:last-child{margin-bottom:0}
+  #eob-first90 .eob-plan-row{display:flex;align-items:flex-start;gap:.5rem}
+  #eob-first90 .eob-plan-row .eob-item{flex:1;min-width:0}
+  #eob-first90 .eob-na{flex:none;font:inherit;font-size:.75rem;min-height:44px;padding:.4rem .6rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--white);color:var(--muted);cursor:pointer}
+  #eob-first90 .eob-na[aria-pressed="true"]{border-color:var(--oxblood);color:var(--oxblood);background:var(--paper)}
+  #eob-first90 .eob-plan-row.is-na .eob-item{opacity:.65}
+  #eob-first90 .eob-plan-row.is-na .eob-item input + .eob-box{background:var(--paper);border-color:var(--line)}
+  #eob-first90 .eob-plan-row.is-na .eob-item input + .eob-box svg{opacity:0}
+  #eob-first90 .eob-plan-row.is-na .eob-item .eob-item-text{color:var(--muted);text-decoration:none}
   #eob-first90 .eob-note{font-size:.85rem;color:var(--muted);font-style:italic;margin-top:.6rem}
 
   /* Newsletter CTA */
@@ -187,7 +195,7 @@
   <div class="eob-head">
     <span class="eob-eyebrow">The Exec Ops Brief</span>
     <h2>Your First 90 Days plan.</h2>
-    <p>A working 30/60/90 plan for a new Chief of Staff. Check items off as you go, capture your own context in the fields, and print a clean copy for your week-one review with your principal. Your progress saves in this browser.</p>
+    <p>A working 30/60/90 plan for a new Chief of Staff, with 43 checklist options and five notes. The four first-build options count as one step. Check off the work you choose, mark items N/A when they don't apply, and print a copy for your review with your principal. Your progress saves in this browser.</p>
   </div>
 
   <!-- Live progress indicator -->
@@ -195,7 +203,7 @@
     <div class="eob-progress-top">
       <div>
         <div class="eob-progress-label">Plan progress</div>
-        <div class="eob-progress-count" id="eob-count"><b>0</b> of 0 complete</div>
+        <div class="eob-progress-count" id="eob-count" role="status" aria-live="polite"><b>0</b> of 0 complete</div>
       </div>
       <div class="eob-progress-actions">
         <button type="button" class="eob-btn" id="eob-reset">Reset plan</button>
@@ -310,7 +318,7 @@
     </div>
 
     <div class="eob-block">
-      <div class="eob-block-title">Choose your first build (don't attempt all)</div>
+      <div class="eob-block-title">Choose your first build (one choice completes this step)</div>
       <label class="eob-item"><input type="checkbox" data-k="p2f-1"><span class="eob-box"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="eob-item-text">Fix the leadership team meeting: agenda, pre-reads, decisions captured, follow-ups tracked.</span></label>
       <label class="eob-item"><input type="checkbox" data-k="p2f-2"><span class="eob-box"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="eob-item-text">Stand up a decision log or single source of truth.</span></label>
       <label class="eob-item"><input type="checkbox" data-k="p2f-3"><span class="eob-box"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="eob-item-text">Install a weekly priorities brief that flows up to your principal.</span></label>
@@ -455,6 +463,7 @@
   var state = loadState();
   if (!state.checks) state.checks = {};
   if (!state.fields) state.fields = {};
+  if (!state.na || typeof state.na !== "object") state.na = {};
 
   var checks = Array.prototype.slice.call(root.querySelectorAll('input[type="checkbox"][data-k]'));
   var fields = Array.prototype.slice.call(root.querySelectorAll('[data-fk]'));
@@ -462,24 +471,65 @@
   var countEl = root.querySelector("#eob-count");
   var fillEl  = root.querySelector("#eob-fill");
 
+  function isFirstBuild(c){ return /^p2f-[1-4]$/.test(c.getAttribute("data-k")); }
+  function isApplicable(c){ return !state.na[c.getAttribute("data-k")]; }
   function updateProgress(){
-    var total = checks.length;
-    var done = 0;
-    checks.forEach(function(c){ if (c.checked) done++; });
+    var total = 0, done = 0, skipped = 0;
+    var buildAvailable = false, buildDone = false;
+    checks.forEach(function(c){
+      if (!isApplicable(c)){ skipped++; return; }
+      if (isFirstBuild(c)){
+        buildAvailable = true;
+        if (c.checked) buildDone = true;
+      } else {
+        total++;
+        if (c.checked) done++;
+      }
+    });
+    if (buildAvailable){ total++; if (buildDone) done++; }
     var pct = total ? Math.round((done / total) * 100) : 0;
-    countEl.innerHTML = "<b>" + done + "</b> of " + total + " complete";
+    countEl.innerHTML = total
+      ? "<b>" + done + "</b> of " + total + " applicable steps complete" + (skipped ? ". " + skipped + (skipped === 1 ? " option" : " options") + " marked N/A." : "")
+      : "No applicable steps. All 43 options are marked N/A.";
     fillEl.style.width = pct + "%";
   }
 
-  // Restore checkbox state
+  // Keep v1 checks and notes intact. N/A is separate, so undoing it restores
+  // a previously checked item rather than deleting a saved achievement.
   checks.forEach(function(c){
     var k = c.getAttribute("data-k");
+    var label = c.closest("label");
+    var row = document.createElement("div");
+    row.className = "eob-plan-row";
+    label.parentNode.insertBefore(row, label);
+    row.appendChild(label);
+    var naButton = document.createElement("button");
+    naButton.type = "button";
+    naButton.className = "eob-na";
+    naButton.setAttribute("data-na", k);
+    naButton.setAttribute("aria-label", "Not applicable: " + label.querySelector(".eob-item-text").textContent.trim());
+    row.appendChild(naButton);
+    function renderApplicability(){
+      var skipped = !isApplicable(c);
+      c.disabled = skipped;
+      row.classList.toggle("is-na", skipped);
+      naButton.setAttribute("aria-pressed", skipped ? "true" : "false");
+      naButton.textContent = skipped ? "N/A (undo)" : "N/A";
+    }
     if (state.checks[k]) c.checked = true;
+    renderApplicability();
     c.addEventListener("change", function(){
       if (c.checked) state.checks[k] = 1; else delete state.checks[k];
       saveState(state);
       updateProgress();
     });
+    naButton.addEventListener("click", function(){
+      if (state.na[k]) delete state.na[k]; else state.na[k] = 1;
+      renderApplicability();
+      saveState(state);
+      updateProgress();
+    });
+    c.eobRenderApplicability = renderApplicability;
   });
 
   // Restore + persist fill-in fields
@@ -521,9 +571,9 @@
       resetBtn.textContent = "Reset plan";
       resetBtn.style.borderColor = "";
       resetBtn.style.color = "";
-      state = { checks:{}, fields:{} };
+      state = { checks:{}, fields:{}, na:{} };
       saveState(state);
-      checks.forEach(function(c){ c.checked = false; });
+      checks.forEach(function(c){ c.checked = false; c.eobRenderApplicability(); });
       fields.forEach(function(f){ f.value = ""; });
       updateProgress();
     });

@@ -267,7 +267,7 @@
   <div class="eob-head">
     <span class="eob-eyebrow">The Comp Explorer</span>
     <h2>Live comp explorer.</h2>
-    <p>Slice the pay actually published on our own roles board by role family, metro, source type and work arrangement. The board is rebuilt every morning, so these figures move with it. Every number here carries its sample size, and a slice too small to support a figure says so instead of showing one.</p>
+    <p>Explore eligible annual base pay from our latest published roles snapshot by role family, metro, source type and work arrangement. A daily refresh is scheduled, but figures update only after a validated publication. Each number carries its sample size and data date; small slices withhold unsupported statistics. Verified hourly pay is shown separately.</p>
   </div>
 
   <div class="eob-fresh" id="eob-fresh">
@@ -303,7 +303,7 @@
 
   <div class="eob-panel">
     <div class="eob-panel-head">
-      <span class="eob-rlabel">Published range midpoints, active postings</span>
+      <span class="eob-rlabel">Eligible annual base-pay midpoints, dated snapshot</span>
       <h3 id="eob-view-title">Role family</h3>
     </div>
     <div class="eob-panel-body" id="eob-output">
@@ -315,7 +315,7 @@
 
   <div class="eob-method">
     <h4>What is missing from this picture <span class="eob-badge">Read this part</span></h4>
-    <p>These gaps are in what employers publish, not in the collection. They are listed because a comp figure without its gaps is a number pretending to be an answer.</p>
+    <p>These figures reflect both what employers publish and what the retained evidence can verify. Roles with unknown pay basis or evidence that does not qualify stay outside the salary statistics. Read these limits with every comparison.</p>
     <ul class="eob-facts" id="eob-gaps-list"></ul>
   </div>
 
@@ -323,7 +323,7 @@
     <h4>How this is computed <span class="eob-badge">Same code as the report</span></h4>
     <div class="eob-derive" id="eob-derive">Method details load with the data file.</div>
     <p>Each figure is the median of the <strong>midpoint of the range each posting published</strong>. Where a posting publishes a single figure, that figure is its own midpoint. Nothing is estimated, inferred, or filled in. These are advertised ranges, not paid compensation, and the interval shown describes sampling noise inside this snapshot only. It says nothing about how well this board represents the wider market.</p>
-    <p>The statistics are produced by the same script that produces our Salary Transparency Report, imported as a module rather than copied, so the two cannot drift apart. The bootstrap uses a fixed seed, so the same snapshot always yields the same interval.</p>
+    <p>These statistics use the same calculation code as the Salary Transparency Report. The <a href="https://www.execopsbrief.com/salary-report" target="_blank" rel="noopener">July 31, 2026 report</a> is a historical edition with a different population and date. The bootstrap uses a fixed seed, so the same snapshot always yields the same interval.</p>
     <p>Related: <a href="/salary-benchmarker">the Salary Benchmarker</a> compares this board against outside survey and employer data. <a href="/roles">The roles board</a> is the underlying source, one row per posting, with a link to each original listing.</p>
     <div class="eob-caveat">
       <strong>Before you cite or negotiate.</strong> This is a premium opportunity market, not a national median. Every posting here clears a published midpoint of $100,000, so the low end of the real market is missing by construction. Postings concentrate in the Bay Area and New York. A median built on a small slice can move a long way when one posting is added or expires, which is what the sample size and the interval beside each figure are for.
@@ -404,11 +404,11 @@
       parts.push(f.sources_ok + " of " + f.sources_total + " sources answered");
     }
     parts.push(n_(data.board.roles_total) + " postings on the board");
-    parts.push(n_(data.board.salaried_n) + " salaried, " + n_(data.board.hourly_n) + " hourly");
+    parts.push(n_(data.board.salaried_n) + " eligible salaried, " + n_(data.board.hourly_n) + " verified hourly shown separately, " + n_(data.board.statistics_excluded_or_unknown_n) + " excluded from statistics");
     els.fresh.textContent = parts.join(" \u00b7 ");
 
     var sub = "Figures on this page were computed from the " + (data.snapshot_date || "current")
-      + " snapshot. The board refreshes every morning and these figures are rebuilt with it.";
+      + " snapshot. A daily refresh is scheduled; only a validated, published snapshot updates these figures. The date shown is the data date, not today's verification date.";
     if (boardFailed){
       sub = "Figures on this page were computed from the " + (data.snapshot_date || "current")
         + " snapshot. The live board could not be reached just now, so this page cannot confirm "
@@ -436,9 +436,9 @@
       + '<div class="eob-big">' + money(o.median) + '</div></div>'
       + '<div><div class="eob-slice-top">' + pill(o.confidence)
       + '<span class="eob-n">n = ' + postings(o.n) + '</span></div>'
-      + '<p>Every salaried posting on the board right now. ' + esc(ci)
+      + '<p>Eligible annual base-pay postings in this snapshot, not every posting on the board. ' + esc(ci)
       + '. Quartiles ' + money(o.p25) + ' to ' + money(o.p75)
-      + '. Hourly postings are excluded and reported separately below.</p></div>';
+      + '. Verified hourly postings are reported separately below. Unknown pay basis, total compensation, conflicting bands and unverified evidence are excluded from salary statistics, even when the role remains on the board.</p></div>';
   }
 
   /* ---------------------------------------------------------------- slices */
@@ -680,8 +680,8 @@
     var t = data.thresholds, fc = data.floor_check;
     els.derive.innerHTML = esc(
       "figure = median of published range midpoints  \u00b7  floor: every posting >= $"
-      + n_(fc.floor) + " annualized midpoint, re-asserted at build time on all "
-      + n_(fc.checked) + " postings, lowest = $" + n_(fc.lowest_annualized_midpoint)
+      + n_(fc.floor) + " annualized midpoint, re-asserted here on the "
+      + n_(fc.checked) + " statistics-eligible annual and verified hourly postings, lowest = $" + n_(fc.lowest_annualized_midpoint)
       + "  \u00b7  hourly annualized at " + n_(fc.hourly_annualized_at_hours)
       + "h for the floor test only  \u00b7  median published at n >= " + t.publish_median_min_n
       + ", quartiles and 95% interval at n >= " + t.publish_spread_min_n

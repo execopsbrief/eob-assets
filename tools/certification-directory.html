@@ -55,7 +55,7 @@
 <body>
 <div class="tool-head">
   <div class="tool-title">Certification and course directory</div>
-  <div class="asof">Every fact checked on the provider's own page <b id="asof"></b></div>
+  <div class="asof">Base provider review <b id="asof"></b>; later checks shown per row</div>
 </div>
 
 <div class="filters" id="filters">
@@ -169,6 +169,7 @@
           +'<span><b>Length:</b> '+esc(p.duration)+'</span>'
           +'<span><b>For:</b> '+esc(p.audience)+'</span>'
         +'</div>'
+        +(p.as_of ? '<div class="r-note">Provider page checked '+esc(p.as_of)+(p.status==='closed' ? '; past session, registration closed' : '')+'.</div>' : '')
         +(p.note ? '<div class="r-note">'+esc(p.note)+'</div>' : '')
       +'</div>';
     });

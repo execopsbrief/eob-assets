@@ -1,5 +1,5 @@
 {
- "_note": "Built 2026-08-18 from Certs_and_Courses_Research_2026-08-18.md; every fact verified on the provider's own page that day. Programs with url null were verified but the report recorded no stable program URL. Do not hand-edit prices without re-checking the provider page and updating as_of.",
+ "_note": "Built 2026-08-18 from Certs_and_Courses_Research_2026-08-18.md; every fact verified on the provider's own page that day. Programs with url null were verified but the report recorded no stable program URL. Do not hand-edit prices without re-checking the provider page and updating as_of. Scoped update 2026-10-21: only APC and Elite Assistant event rows rechecked on their linked primary provider pages. Other rows retain the base review date; this is not a directory-wide re-verification.",
  "as_of": "2026-08-18",
  "clusters": {
   "cos": "Chief of Staff",
@@ -284,19 +284,23 @@
    "note": ""
   },
   {
-   "id": "apc-2026",
-   "name": "Administrative Professionals Conference 2026",
+   "id": "apc-2027",
+   "name": "Administrative Professionals Conference 2027",
    "provider": "ASAP",
    "cluster": "ea",
-   "format": "In person, Nashville",
-   "duration": "3.5 days (Sep 13-16, 2026)",
-   "price_display": "$1,800-$2,400",
-   "price_min": 1800,
+   "format": "In person, Kissimmee, FL",
+   "duration": "Sep 12-15, 2027",
+   "price_display": "Early bird: $1,895-$2,195 event pass",
+   "price_min": 1895,
    "price_published": true,
    "gate": "none",
    "audience": "All admins",
    "url": "https://www.apcevent.com/pricing/",
-   "note": "Event, not a certification."
+   "note": "Event, not a certification. Early bird through Apr 30, 2027: $1,895 existing Premium, $2,095 Pro, $2,195 Free member. Standard event-pass rates $2,195-$2,495. Membership bundles and certification passes cost more. Gaylord Palms Resort & Convention Center.",
+   "as_of": "2026-10-21",
+   "event_start": "2027-09-12",
+   "event_end": "2027-09-15",
+   "status": "upcoming"
   },
   {
    "id": "ea-ignite",
@@ -330,18 +334,22 @@
   },
   {
    "id": "od-elite",
-   "name": "Elite Assistant Certification",
+   "name": "Elite Assistant Certification, 2026 session closed",
    "provider": "Office Dynamics",
    "cluster": "ea",
    "format": "In person, one day",
    "duration": "~8 hrs (Oct 20, 2026)",
-   "price_display": "$795 ($2,790 bundled)",
-   "price_min": 795,
-   "price_published": true,
+   "price_display": "2026 session closed",
+   "price_min": null,
+   "price_published": false,
    "gate": "none",
    "audience": "Conference attendees",
    "url": "https://officedynamicsconference.com/elite-assistant-certification/",
-   "note": ""
+   "note": "Provider marks the Oct 20, 2026 Las Vegas session closed. Its historical fee was $795 standalone or $2,790 with the conference. No future Elite Assistant session was verified on this page; check the provider for new dates.",
+   "as_of": "2026-10-21",
+   "event_start": "2026-10-20",
+   "event_end": "2026-10-20",
+   "status": "closed"
   },
   {
    "id": "mos",

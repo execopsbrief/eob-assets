@@ -97,12 +97,17 @@
     transition:transform .16s,box-shadow .16s;
   }
   #eob-jobboard .eob-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
-  #eob-jobboard .eob-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.6rem;min-width:0}
+  #eob-jobboard .eob-card-top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:.6rem 1rem;margin-bottom:.6rem;min-width:0}
+  #eob-jobboard .eob-card-heading{flex:1 1 16rem;min-width:0}
+  #eob-jobboard .eob-card-pay{flex:0 1 auto;min-width:0;max-width:100%}
+  #eob-jobboard .eob-pay-label{font-size:.76rem;color:var(--slate);margin:.25rem 0 0}
+  #eob-jobboard .eob-comp-note{font-size:.82rem;color:var(--slate);line-height:1.5;margin:0 0 .65rem;overflow-wrap:anywhere}
+  #eob-jobboard .eob-freshness{font-size:.85rem;color:var(--slate);margin:0 0 1rem}
   #eob-jobboard .eob-card-top>*{min-width:0}
   #eob-jobboard .eob-card h3{overflow-wrap:anywhere}
   #eob-jobboard .eob-card h3{font-size:1.18rem;line-height:1.24}
   #eob-jobboard .eob-org{color:var(--slate);font-size:.88rem;margin-top:.25rem}
-  #eob-jobboard .eob-comp{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--ox-deep,#5E181F);font-size:1.1rem;white-space:nowrap}
+  #eob-jobboard .eob-comp{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--ox-deep,#5E181F);font-size:1.1rem;white-space:normal;overflow-wrap:anywhere}
   #eob-jobboard .eob-comp-none{color:var(--slate-light);font-size:.92rem;font-style:italic}
   #eob-jobboard .eob-meta{display:flex;flex-wrap:wrap;gap:.45rem;margin:.7rem 0 .9rem}
   #eob-jobboard .eob-summary{
@@ -211,6 +216,7 @@
     #eob-jobboard .eob-cta{padding:1.6rem}
     #eob-jobboard .eob-cta form{flex-direction:column;min-width:0}
     #eob-jobboard .eob-card-top{flex-direction:column;gap:.5rem}
+    #eob-jobboard .eob-card-heading{flex:0 1 auto;width:100%}
     /* grid items default to min-width:auto, so let cards shrink to the column */
     #eob-jobboard .eob-card{min-width:0}
   }
@@ -218,8 +224,8 @@
 
   <div class="eob-head">
     <span class="eob-eyebrow">The Job Board</span>
-    <h2>High-paying exec ops roles, $100k midpoint or better.</h2>
-    <p>Every listing carries a comp figure the source firm published, and the midpoint of that figure is at least $100,000. If a firm didn't publish a number, the role isn't here. Nothing's estimated. Filter to what fits, then get the week's set delivered in The Brief.</p>
+    <h2>High-paying exec ops roles, $100k annualized midpoint or better.</h2>
+    <p>Every listing carries a comp figure the source firm published, and its annualized midpoint is at least $100,000. Hourly rates stay hourly; annualization uses 2,080 hours only for filtering and sorting. If a firm didn't publish a number, the role isn't here. Nothing's estimated. Filter to what fits, then get the week's set delivered in The Brief.</p>
   </div>
 
   <div class="eob-controls">
@@ -231,8 +237,8 @@
       <label for="eob-sort">Sort</label>
       <select id="eob-sort">
         <option value="newest">Newest first</option>
-        <option value="comp-desc">Highest comp</option>
-        <option value="comp-asc">Lowest comp</option>
+        <option value="comp-desc">Highest annualized midpoint</option>
+        <option value="comp-asc">Lowest annualized midpoint</option>
       </select>
     </div>
     <div class="eob-field">
@@ -272,9 +278,9 @@
       </select>
     </div>
     <div class="eob-field">
-      <label for="eob-comp">Minimum comp</label>
+      <label for="eob-comp">Minimum annualized midpoint</label>
       <select id="eob-comp">
-        <option value="0">Any comp</option>
+        <option value="0">Any midpoint</option>
         <option value="100000">$100k and up</option>
         <option value="150000">$150k and up</option>
         <option value="200000">$200k and up</option>
@@ -289,6 +295,7 @@
     </div>
   </div>
 
+  <p class="eob-freshness" id="eob-freshness" role="status">Checking snapshot date.</p>
   <div id="eob-results" aria-busy="true">
     <div class="eob-loading">Loading roles.</div>
   </div>
@@ -414,17 +421,39 @@
     var hi = annualHigh(r);
     return (lo + hi) / 2;
   }
+  function payBasisLabel(r){
+    var basis = (r.pay || {}).basis;
+    if (isHourly(r)) return "Published hourly rate";
+    return ({base:"Annual base pay", total_target:"Annual target compensation",
+      bonus_inclusive:"Annual pay including bonus", unknown:"Annual published pay; basis not specified"})[basis]
+      || "Annual published pay; basis not specified";
+  }
+  function cleanCompNote(r){
+    var raw = typeof r.comp_note === "string" ? r.comp_note.trim() : "";
+    if (!raw) return "";
+    // Serialized source salary objects aren't prose. The verified range and
+    // typed pay basis already appear above; don't invent a new interpretation.
+    if (/[{}\[\]]/.test(raw)) return "";
+    return raw;
+  }
   function compHTML(r){
-    if (!hasComp(r)) return '<div class="eob-comp eob-comp-none">Comp not listed</div>';
-    var note = r.comp_note ? '<p class="eob-summary">' + esc(r.comp_note) + '</p>' : "";
-    if (isHourly(r)){
-      var txt = (r.comp_low === r.comp_high)
-        ? "$" + fmtHr(r.comp_low) + "/hr"
-        : "$" + fmtHr(r.comp_low) + " - $" + fmtHr(r.comp_high) + "/hr";
-      return '<div class="eob-comp">' + txt + '</div>' + note;
-    }
-    return '<div class="eob-comp">' + fmtComp(r.comp_low, r.comp_high) + '</div>'
-      + note;
+    if (!hasComp(r)) return '<div class="eob-card-pay eob-comp-none">Comp not listed</div>';
+    var txt = isHourly(r) ? ((r.comp_low === r.comp_high)
+      ? "$" + fmtHr(r.comp_low) + "/hr"
+      : "$" + fmtHr(r.comp_low) + " - $" + fmtHr(r.comp_high) + "/hr")
+      : fmtComp(r.comp_low, r.comp_high);
+    return '<div class="eob-card-pay"><div class="eob-comp">' + txt + '</div>'
+      + '<p class="eob-pay-label">' + esc(payBasisLabel(r)) + '</p></div>';
+  }
+  function freshnessLabel(data, now){
+    var day = data && data.updated;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(day || "")) return "Snapshot date unavailable. Check the source posting before applying.";
+    var parsed = Date.parse(day + "T00:00:00Z");
+    if (!isFinite(parsed) || new Date(parsed).toISOString().slice(0,10) !== day) return "Snapshot date unavailable. Check the source posting before applying.";
+    var age = Math.floor((now.getTime() - parsed) / 86400000);
+    return "Last successful full refresh: " + day + ". "
+      + (age >= 2 ? "This snapshot is older than two days. " : "")
+      + "A refresh is scheduled daily at 7am Pacific; failed checks retain the prior snapshot. Posting availability can change.";
   }
   // Sort key: use the posting date if present. Undated roles are still live,
   // but they cannot honestly be treated as newly posted, so they sort last.
@@ -523,12 +552,13 @@
       : "";
     return '<div class="eob-card" data-result-index="' + resultIndex + '">' +
       '<div class="eob-card-top">' +
-        '<div>' +
+        '<div class="eob-card-heading">' +
           '<h3>' + esc(r.title) + '</h3>' +
           '<div class="eob-org">' + esc(orgLabel) + (track ? " &middot; " + esc(track) : "") + '</div>' +
         '</div>' +
         compHTML(r) +
       '</div>' +
+      (cleanCompNote(r) ? '<p class="eob-comp-note">' + esc(cleanCompNote(r)) + '</p>' : '') +
       '<div class="eob-meta">' +
         '<span class="eob-pill eob-pill-cat">' + esc(r.category) + '</span>' +
         (r.remote ? '<span class="eob-pill eob-pill-remote">' + esc(r.remote) + '</span>' : "") +
@@ -582,7 +612,7 @@
       els.results.innerHTML =
         '<div class="eob-empty">' +
           '<h3>No roles match those filters.</h3>' +
-          '<p>Try widening the comp range or clearing the search. The board syncs with the source agencies every morning, and The Brief sends six roles plus one operator insight each week.</p>' +
+          '<p>Try widening the comp range or clearing the search. The board retains its last successful refresh, and The Brief sends six roles plus one operator insight each week.</p>' +
         '</div>';
       els.results.appendChild(newsletterBox);
       els.results.setAttribute("aria-busy", "false");
@@ -790,6 +820,7 @@
         return res.json();
       })
       .then(function(data){
+        root.querySelector("#eob-freshness").textContent = freshnessLabel(data, new Date());
         ALL = (data && Array.isArray(data.roles)) ? data.roles :
               (Array.isArray(data) ? data : []);
         VISIBLE_COUNT = PAGE_SIZE;
