@@ -81,19 +81,19 @@
    "measure": "Employer-reported occupation wages"
   },
   "premium": {
-   "p25": 131250,
-   "median": 157500,
-   "p75": 175000,
-   "medianPublishedLow": 140000,
+   "p25": 125125,
+   "median": 151250,
+   "p75": 173750,
+   "medianPublishedLow": 135000,
    "medianPublishedHigh": 170000,
-   "sample": 66,
+   "sample": 78,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
    "selection": "Only postings with a published pay midpoint of at least $100,000",
-   "asOf": "2026-10-25",
+   "asOf": "2026-10-26",
    "hourlyExcluded": 5,
-   "statisticsExcludedOrUnknown": 55
+   "statisticsExcludedOrUnknown": 54
   },
   "geography": {
    "sf": {
@@ -164,16 +164,16 @@
    "sample": null
   },
   "premium": {
-   "p25": 165000,
-   "median": 185000,
+   "p25": 164375,
+   "median": 183283,
    "p75": 225000,
    "medianPublishedLow": 160000,
-   "medianPublishedHigh": 207504,
-   "sample": 33,
+   "medianPublishedHigh": 203752,
+   "sample": 32,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-10-25",
+   "asOf": "2026-10-26",
    "statisticsExcludedOrUnknown": 8
   },
   "bonusContext": {
@@ -201,7 +201,7 @@
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-10-25",
+   "asOf": "2026-10-26",
    "statisticsExcludedOrUnknown": 6
   },
   "blsProxies": [
@@ -230,13 +230,13 @@
  },
  "_statisticsSnapshot": {
   "schemaVersion": 1,
-  "snapshotId": "395fe65f9ade53538c9b477e96ecf2e5e23767e5bbdd448fc0742b67ad730028",
+  "snapshotId": "96a8421106ac580b0256e74ee537c964fdaabcb3386d42ca3244417d4b98ff31",
   "cohort": {
-   "roles_total": 198,
-   "annual_eligible_n": 121,
+   "roles_total": 208,
+   "annual_eligible_n": 132,
    "verified_hourly_n": 5,
-   "excluded_or_unknown_n": 72,
-   "explicitly_ineligible_n": 72,
+   "excluded_or_unknown_n": 71,
+   "explicitly_ineligible_n": 71,
    "unknown_evidence_n": 0,
    "overlapping_eligibility_n": 0,
    "duplicate_records_suppressed_n": 0,
