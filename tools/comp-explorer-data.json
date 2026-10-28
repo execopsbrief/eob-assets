@@ -578,6 +578,7 @@
       "dropped_age": null,
       "published_no_pay": 29,
       "published_no_pay_pct_of_in_scope": null,
+      "quality_checked_no_pay_pct": null,
       "published_pay_below_floor": 34,
       "note": "Pay-disclosure percentages are available only when the intake stage counts reconcile. The denominator is the quality-checked cohort entering the pay-floor gate, before age filtering. Quarantined postings are excluded from that cohort; they cannot be classified as employer pay omissions. Legacy logs leave some reductions unallocated, so no percentage is shown."
     }
