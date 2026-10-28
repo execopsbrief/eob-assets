@@ -497,11 +497,16 @@
     "dropped_below_floor": 34,
     "dropped_expired": 0,
     "board": 202,
-    "in_scope": 505,
-    "publishing_comp": 476,
-    "publishing_comp_pct": 94.3,
-    "not_publishing_pct": 5.7,
-    "below_floor_pct_of_publishers": 7.1
+    "canonical_duplicates": null,
+    "quality_quarantined": null,
+    "dropped_age": null,
+    "unallocated_reduction": 240,
+    "reconciled": false,
+    "in_scope": null,
+    "publishing_comp": null,
+    "publishing_comp_pct": null,
+    "not_publishing_pct": null,
+    "below_floor_pct_of_publishers": null
   },
   "headline_gaps": {
     "cos_vs_ea": {
@@ -564,11 +569,17 @@
     "hiring_org_withheld": 116,
     "board_metro_field_disagrees_with_report_classifier": 13,
     "undisclosed_pay": {
-      "in_scope": 505,
+      "in_scope": null,
+      "reconciled": false,
+      "discovery_postings": 505,
+      "unallocated_reduction": 240,
+      "canonical_duplicates": null,
+      "quality_quarantined": null,
+      "dropped_age": null,
       "published_no_pay": 29,
-      "published_no_pay_pct_of_in_scope": 5.7,
+      "published_no_pay_pct_of_in_scope": null,
       "published_pay_below_floor": 34,
-      "note": "Share of in-scope postings the last refresh found that publish no pay figure at all. Those postings are not on the board and are not in any figure on this page. This is the single largest gap in the picture and it is a gap in what employers publish, not in the data collection."
+      "note": "Pay-disclosure percentages are available only when the intake stage counts reconcile. The denominator is the quality-checked cohort entering the pay-floor gate, before age filtering. Quarantined postings are excluded from that cohort; they cannot be classified as employer pay omissions. Legacy logs leave some reductions unallocated, so no percentage is shown."
     }
   }
 }

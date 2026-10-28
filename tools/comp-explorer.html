@@ -624,9 +624,23 @@
 
     if (u.published_no_pay_pct_of_in_scope != null){
       items.push([u.published_no_pay_pct_of_in_scope + "%",
-        "of the " + n_(u.in_scope) + " in-scope postings the last refresh found publish no pay figure at all ("
+        "of the " + n_(u.in_scope) + " quality-checked postings entering the pay-floor gate had no published pay recorded ("
         + n_(u.published_no_pay) + " postings). None of them are on the board and none are in any figure here. "
-        + "This is the single largest hole in the picture."]);
+        + "This percentage excludes quality-quarantined postings and precedes age filtering."]);
+    }
+    if (u.published_no_pay_pct_of_in_scope == null && u.discovery_postings != null){
+      items.push(["Rate unavailable",
+        "The refresh recorded " + n_(u.discovery_postings) + " discovery postings and "
+        + n_(u.published_no_pay) + " no-pay exclusions at a later gate. "
+        + "Its legacy intake log leaves " + n_(u.unallocated_reduction)
+        + " reductions unallocated across intermediate gates. These counts don't establish "
+        + "an employer pay-disclosure percentage. No rate is shown."]);
+    }
+    if (u.reconciled){
+      items.push([n_(u.quality_quarantined) + " quarantined",
+        "Excluded at quality review before the pay-floor gate. "
+        + n_(u.canonical_duplicates) + " canonical duplicates were merged before that review; "
+        + n_(u.dropped_age) + " postings were removed by the later age cap."]);
     }
     if (u.published_pay_below_floor != null){
       items.push([n_(u.published_pay_below_floor) + " postings",

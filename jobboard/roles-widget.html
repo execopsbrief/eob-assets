@@ -451,9 +451,9 @@
     var parsed = Date.parse(day + "T00:00:00Z");
     if (!isFinite(parsed) || new Date(parsed).toISOString().slice(0,10) !== day) return "Snapshot date unavailable. Check the source posting before applying.";
     var age = Math.floor((now.getTime() - parsed) / 86400000);
-    return "Last successful full refresh: " + day + ". "
+    return "Last published refresh: " + day + ". "
       + (age >= 2 ? "This snapshot is older than two days. " : "")
-      + "A refresh is scheduled daily at 7am Pacific; failed checks retain the prior snapshot. Posting availability can change.";
+      + "A refresh is scheduled daily at 7am Pacific. Unavailable sources may be excluded; broad failures retain the prior snapshot. Check the Comp Explorer for snapshot coverage. Posting availability can change.";
   }
   // Sort key: use the posting date if present. Undated roles are still live,
   // but they cannot honestly be treated as newly posted, so they sort last.
