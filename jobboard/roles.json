@@ -2,9 +2,9 @@
   "_note": "Executive Assistant, Executive Operations, and Chief of Staff roles for The Exec Ops Brief job board, aggregated from recruiting agencies, direct job boards, and VC portfolio feeds. The board is aggregated, not vetted, screened, hand-picked or curated; llms.txt states this and this note must agree with it. PAY FLOOR (enforced in code since 2026-07-13): every role on this board carries a compensation figure PUBLISHED BY THE SOURCE whose midpoint -- (comp_low + comp_high) / 2, or the single figure where only one is published -- is at least $100,000. A role whose published midpoint falls below $100k is excluded, and a role whose source publishes no comp figure at all is excluded (there are no 'comp not listed' rows). No comp figure is ever estimated, inferred, or invented; comp honesty outranks board size. Where a posting publishes an HOURLY rate instead of a salary, comp_period='hr' and comp_low/comp_high hold the verbatim $/hr figures (annualized at 2080h ONLY to apply the floor, never for display). Most roles also carry a short summary excerpted VERBATIM from the posting (never paraphrased); summary is null rather than invented when the source lacks readable role-specific text. A benefits list (bonus, equity, 401(k), health coverage, PTO, etc) detected only where the posting states them. Apply links point to the original source listing.",
   "updated": "2026-10-29",
   "schema_version": 1,
-  "snapshot_id": "ac459e5e190cc8e14a30dcfed0eb66b0f6651adbe8a60ddfc02dd37c2949af27",
-  "quality_quarantined_count": 301,
-  "count": 221,
+  "snapshot_id": "b3d50f9fc461eec8a64318f7290e59fc244c8ef1d288f033c0fbf40a03063833",
+  "quality_quarantined_count": 250,
+  "count": 199,
   "roles": [
     {
       "id": "bloom-1517",
@@ -19,7 +19,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1517",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-06",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1517",
+      "date_posted": "2026-10-06",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 180000,
@@ -80,7 +83,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1528",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-22",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1528",
+      "date_posted": "2026-10-22",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 180000,
@@ -136,7 +142,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1526",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-15",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1526",
+      "date_posted": "2026-10-15",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 180000,
@@ -197,7 +206,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1525",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-15",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1525",
+      "date_posted": "2026-10-15",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 180000,
@@ -253,7 +265,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1521",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-13",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1521",
+      "date_posted": "2026-10-13",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 170000,
@@ -309,7 +324,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1520",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1520",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 140000,
@@ -370,7 +388,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1519",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1519",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 140000,
@@ -431,7 +452,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1515",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1515",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 170000,
@@ -488,7 +512,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1424",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-09-28",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1424",
+      "date_posted": "2026-09-28",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 200000,
         "high": 220000,
@@ -548,7 +575,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1483",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-09-18",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1483",
+      "date_posted": "2026-09-18",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 100000,
@@ -609,7 +639,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1507",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-09-15",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1507",
+      "date_posted": "2026-09-15",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Office attendance required 4 days per week; one rotating work-from-home day.",
       "pay": {
         "low": 150000,
@@ -669,7 +702,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1498",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-08-28",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1498",
+      "date_posted": "2026-08-28",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 180000,
@@ -729,7 +765,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1481",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-07-27",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1481",
+      "date_posted": "2026-07-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -786,7 +825,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1480",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-07-24",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1480",
+      "date_posted": "2026-07-24",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -847,7 +889,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1468",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-07-01",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1468",
+      "date_posted": "2026-07-01",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 150000,
@@ -904,7 +949,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1466",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-06-24",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1466",
+      "date_posted": "2026-06-24",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 140000,
@@ -965,7 +1013,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1394",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-05-21",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1394",
+      "date_posted": "2026-05-21",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 200000,
@@ -1009,66 +1060,6 @@
       "source_type": "Recruiter"
     },
     {
-      "id": "bloom-1304",
-      "title": "Executive Assistant to Partners at Well-known Venture Firm",
-      "org_type": "",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 130000,
-      "comp_high": 150000,
-      "location": "New York",
-      "remote": "Remote",
-      "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1304",
-      "source": "Bloom Talent",
-      "source_org_label": "",
-      "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1304",
-      "pay": {
-        "low": 130000,
-        "high": 150000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 130000,
-            "high": 150000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "They are primarily in-office based in New York Monday through Thursday, with Friday’s work from home. 130-150K DOE + carry, amazing health benefits, bonus, 401k with matching, flexible PTO, lunch stipend, annual team trips, and gym in the office!",
-      "benefits": [
-        "401(k)",
-        "Health coverage",
-        "Paid time off"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": false,
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track",
-        "employer_status": "withheld"
-      },
-      "summary": "Coordinate and arrange meetings with key internal and external stakeholders. Discern the importance of various meetings, and effectively allocate time to align with the Partner's goals.",
-      "metro": "NYC",
-      "source_type": "Recruiter"
-    },
-    {
       "id": "bloom-1529",
       "title": "Office Manager & Executive Assistant to Founder at Fast-growing AI Fintech Startup",
       "org_type": "",
@@ -1081,7 +1072,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1529",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1529",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -1141,7 +1135,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1510",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-09-22",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1510",
+      "date_posted": "2026-09-22",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 150000,
@@ -1203,7 +1200,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1497",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-08-27",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1497",
+      "date_posted": "2026-08-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 2 onsite days per week.",
       "pay": {
         "low": 140000,
@@ -1265,7 +1265,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1495",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-08-27",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1495",
+      "date_posted": "2026-08-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 4 onsite days per week.",
       "pay": {
         "low": 120000,
@@ -1322,7 +1325,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1493",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-08-18",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1493",
+      "date_posted": "2026-08-18",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 100000,
@@ -1380,7 +1386,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1469",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-19",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1469",
+      "date_posted": "2026-10-19",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -1437,7 +1446,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1347",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-08-11",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1347",
+      "date_posted": "2026-08-11",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 190000,
@@ -1493,7 +1505,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1473",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-07-17",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1473",
+      "date_posted": "2026-07-17",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -1550,7 +1565,10 @@
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1518",
       "source": "Bloom Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-10-06",
       "canonical_job_id": "url:https://recruiterflow.com/bloomtalent/jobs/1518",
+      "date_posted": "2026-10-06",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 150000,
@@ -1608,6 +1626,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-22",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/188051",
+      "date_posted": "2026-10-22",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 125000,
@@ -1665,6 +1685,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/187142",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 110000,
         "high": 130000,
@@ -1722,6 +1744,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/186901",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 95000,
         "high": 115000,
@@ -1779,6 +1803,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/187045",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 130000,
@@ -1835,6 +1861,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/186971",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 135000,
@@ -1893,6 +1921,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/187167",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 110000,
         "high": 130000,
@@ -1950,6 +1980,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-09-30",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/187400",
+      "date_posted": "2026-09-30",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 120000,
@@ -2006,6 +2038,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-09-22",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/182237",
+      "date_posted": "2026-09-22",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 225000,
         "high": 300000,
@@ -2062,6 +2096,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-09-21",
       "canonical_job_id": "url:https://www.careergroupcompanies.com/job-posting/187100",
+      "date_posted": "2026-09-21",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 4 onsite days per week.",
       "pay": {
         "low": 140000,
@@ -2119,6 +2155,8 @@
       "source_org_label": "AI Startup",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS04d2VtZjMycHQ1eGQ5aXlm",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 135000,
         "high": 200000,
@@ -2179,6 +2217,8 @@
       "source_org_label": "Health Tech Startup",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1veWRsdnM1eG5xa3dvZXFs",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 170000,
@@ -2238,6 +2278,8 @@
       "source_org_label": "Technology Company",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1tMWgxOTZxOWwxNG1yOGF6",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 160000,
         "high": 200000,
@@ -2298,6 +2340,8 @@
       "source_org_label": "Fintech Startup",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS03NzNwZ3JucXhmN2d6OWRt",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 180000,
         "high": 250000,
@@ -2355,6 +2399,8 @@
       "source_org_label": "AI Startup",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1hdjRsMzJudzdicXFkaDZ3",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 200000,
@@ -2412,6 +2458,8 @@
       "source_org_label": "AI Company",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1xMGVvdnF5YWJocGdna2l5",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
         "high": 185000,
@@ -2471,6 +2519,8 @@
       "source_org_label": "AI Startup",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1nMjFnamNidjBveGVkdnpt",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 170000,
@@ -2531,6 +2581,8 @@
       "source_org_label": "Law Firm",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS13M3FxeWc2MjYxdmlnaGk0",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 140000,
@@ -2590,6 +2642,8 @@
       "source_org_label": "Venture Capital Firm",
       "source_reported_date": "2026-10-24",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS00cDZyMWxpbmljejJrZWZ5",
+      "date_posted": "2026-10-24",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 170000,
@@ -2647,6 +2701,8 @@
       "source_org_label": "AI Startup",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS05dGFra2RjZm5iN3FsM2Yw",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 170000,
@@ -2707,6 +2763,8 @@
       "source_org_label": "Investment Firm",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS14Mnd6b2x3aGhzdTVpZXRi",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 165000,
@@ -2766,6 +2824,8 @@
       "source_org_label": "Investment Firm",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1vbmxod2lyeXd6eXhxeDQ5",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 4 onsite days per week.",
       "pay": {
         "low": 165000,
@@ -2824,7 +2884,10 @@
       "apply_url": "https://auxtalent.com/jobs/chief-of-staff-for-series-b-ai-startup/",
       "source": "Aux Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-05-08",
       "canonical_job_id": "url:https://auxtalent.com/jobs/chief-of-staff-for-series-b-ai-startup",
+      "date_posted": "2026-05-08",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 140000,
@@ -2881,7 +2944,10 @@
       "apply_url": "https://auxtalent.com/jobs/executive-assistant-office-manager/",
       "source": "Aux Talent",
       "source_org_label": "",
+      "source_reported_date": "2026-05-08",
       "canonical_job_id": "url:https://auxtalent.com/jobs/executive-assistant-office-manager",
+      "date_posted": "2026-05-08",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 100000,
@@ -3118,7 +3184,10 @@
       "apply_url": "https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/8e83cc22-9693-4fa9-9049-65fe796ade8d",
       "source": "C-Suite Assistants",
       "source_org_label": "",
+      "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/8e83cc22-9693-4fa9-9049-65fe796ade8d",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 125000,
@@ -3179,7 +3248,10 @@
       "apply_url": "https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/b6cee47f-d906-4f84-bc65-fd992de082f3",
       "source": "C-Suite Assistants",
       "source_org_label": "",
+      "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/b6cee47f-d906-4f84-bc65-fd992de082f3",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 135000,
         "high": 140000,
@@ -3240,7 +3312,10 @@
       "apply_url": "https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/3a073f75-e004-4387-b61b-f3c88f22c8e0",
       "source": "C-Suite Assistants",
       "source_org_label": "",
+      "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/3a073f75-e004-4387-b61b-f3c88f22c8e0",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 140000,
@@ -3302,7 +3377,10 @@
       "apply_url": "https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/6a36c1eb-6a42-4c0d-97a5-637cdb0aca37",
       "source": "C-Suite Assistants",
       "source_org_label": "",
+      "source_reported_date": "2026-10-06",
       "canonical_job_id": "url:https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/6a36c1eb-6a42-4c0d-97a5-637cdb0aca37",
+      "date_posted": "2026-10-06",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 130000,
@@ -3364,7 +3442,10 @@
       "apply_url": "https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/b0d8fba8-e27c-441b-b72a-c6080098ab67",
       "source": "C-Suite Assistants",
       "source_org_label": "",
+      "source_reported_date": "2026-09-30",
       "canonical_job_id": "url:https://careers.topechelon.com/portals/4384ddd4-53cf-4f9f-be2f-180d5e77ccf9/jobs/b0d8fba8-e27c-441b-b72a-c6080098ab67",
+      "date_posted": "2026-09-30",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 110000,
         "high": 140000,
@@ -3422,6 +3503,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-25",
       "canonical_job_id": "url:https://clientapps.jobadder.com/58431/the-hire-standard/445504/executive-assistant",
+      "date_posted": "2026-10-25",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
         "high": 150000,
@@ -3479,6 +3562,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-25",
       "canonical_job_id": "url:https://clientapps.jobadder.com/58431/the-hire-standard/445502/executive-business-partner-to-vp-applied-research",
+      "date_posted": "2026-10-25",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 160000,
         "high": 200000,
@@ -3536,6 +3621,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://clientapps.jobadder.com/58431/the-hire-standard/444528/executive-assistant-to-founder",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
         "high": 170000,
@@ -3593,6 +3680,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://clientapps.jobadder.com/58431/the-hire-standard/444154/executive-assistant-to-ceo",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 200000,
@@ -3655,6 +3744,8 @@
       "source_org_label": "",
       "source_reported_date": "2026-10-06",
       "canonical_job_id": "url:https://clientapps.jobadder.com/58431/the-hire-standard/444022/executive-assistant-to-the-chief-product-officer",
+      "date_posted": "2026-10-06",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 200000,
         "high": 250000,
@@ -3699,66 +3790,6 @@
       "source_type": "Recruiter"
     },
     {
-      "id": "cosn-deputy-chief-of-staff-firestorm-0pj",
-      "title": "Deputy Chief of Staff",
-      "org_type": "",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 100000,
-      "comp_high": 140000,
-      "location": "",
-      "remote": "",
-      "apply_url": "https://www.chiefofstaff.network/jobs/deputy-chief-of-staff-firestorm-0pj",
-      "source": "Chief of Staff Network",
-      "source_org_label": "Firestorm",
-      "source_reported_date": "2026-09-29",
-      "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/deputy-chief-of-staff-firestorm-0pj",
-      "pay": {
-        "low": 100000,
-        "high": 140000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 100000,
-            "high": 140000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "## Compensation US Salary Range: $100,000 - $140,000 USD",
-      "benefits": [
-        "Health coverage",
-        "401(k)",
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree",
-        "employer_status": "withheld"
-      },
-      "summary": "You will report to the Chief of Staff and work directly with the CEO.",
-      "source_type": "Network"
-    },
-    {
       "id": "cosn-director-strategy-and-chief-of-staff-wealth-solutions-assetm",
       "title": "Director, Strategy and Chief of Staff - Wealth Solutions",
       "org_type": "",
@@ -3773,6 +3804,8 @@
       "source_org_label": "AssetMark",
       "source_reported_date": "2026-10-28",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/director-strategy-and-chief-of-staff-wealth-solutions-assetmark-dkl",
+      "date_posted": "2026-10-28",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 220000,
@@ -3832,6 +3865,8 @@
       "source_org_label": "Zūm",
       "source_reported_date": "2026-10-28",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-zm-iyx",
+      "date_posted": "2026-10-28",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 210000,
@@ -3892,6 +3927,8 @@
       "source_org_label": "National Trust for Historic Preservation",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-to-the-president-ceo-national-trust-for-historic-preservation-avv",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 185000,
         "high": 200000,
@@ -3951,6 +3988,8 @@
       "source_org_label": "TripleLift",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-triplelift-pe9",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 200000,
@@ -4011,6 +4050,8 @@
       "source_org_label": "Jabroni Capital",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/platform-chief-of-staff-jabroni-capital-jabroni-capital-0h2",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 120000,
@@ -4067,6 +4108,8 @@
       "source_org_label": "The OpenAI Foundation",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-civil-society-philanthropy-the-openai-foundation-uvu",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 244000,
@@ -4124,6 +4167,8 @@
       "source_org_label": "Concentrix",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/sr-project-manager-chief-of-staff-concentrix-usv",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 92250,
         "high": 137000,
@@ -4185,6 +4230,8 @@
       "source_org_label": "Lawrence Livermore National Laboratory",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-strategic-threat-analysis-and-response-active-security-clearance-required-lawrence-livermore-national-laboratory-eid",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 338580,
         "high": 431568,
@@ -4243,6 +4290,8 @@
       "source_org_label": "Novartis",
       "source_reported_date": "2026-10-26",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-to-workforce-strategy-head-us-novartis-3nt",
+      "date_posted": "2026-10-26",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 152600,
         "high": 283400,
@@ -4302,6 +4351,8 @@
       "source_org_label": "Optum",
       "source_reported_date": "2026-10-25",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/senior-director-chief-of-staff-ei-technology-optum-qf5",
+      "date_posted": "2026-10-25",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 159300,
         "high": 273200,
@@ -4361,6 +4412,8 @@
       "source_org_label": "Ceribell │ AI-Powered Point-of-Care EEG",
       "source_reported_date": "2026-10-24",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-ceo-ceribell-aipowered-pointofcare-eeg-hnf",
+      "date_posted": "2026-10-24",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 275000,
         "high": 293000,
@@ -4420,6 +4473,8 @@
       "source_org_label": "The City University of New York",
       "source_reported_date": "2026-10-24",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/executive-chief-of-staff-professional-school-assistant-administrator-the-city-university-of-new-york-163",
+      "date_posted": "2026-10-24",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 160000,
         "high": 180000,
@@ -4479,6 +4534,8 @@
       "source_org_label": "Bright Machines",
       "source_reported_date": "2026-10-24",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-bright-machines-yxk",
+      "date_posted": "2026-10-24",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 180000,
         "high": 240000,
@@ -4535,6 +4592,8 @@
       "source_org_label": "Nitra",
       "source_reported_date": "2026-10-23",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-product-crossborder-operations-nitra-cvp",
+      "date_posted": "2026-10-23",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 188677,
         "high": 207544,
@@ -4593,6 +4652,8 @@
       "source_org_label": "Zeno Power",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-zeno-power-p9s",
+      "date_posted": "2026-10-21",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 165000,
         "high": 200000,
@@ -4655,6 +4716,8 @@
       "source_org_label": "Vetcove",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-vetcove-vbb",
+      "date_posted": "2026-10-21",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 180000,
         "high": 270000,
@@ -4718,6 +4781,8 @@
       "source_org_label": "Autodesk",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/director-chief-of-staff-autodesk-frk",
+      "date_posted": "2026-10-21",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 145000,
         "high": 260150,
@@ -4774,6 +4839,8 @@
       "source_org_label": "Pindrop",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-pindrop-cmh",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 230000,
         "high": 230000,
@@ -4835,6 +4902,8 @@
       "source_org_label": "Google",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/strategy-and-operations-principal-lead-gtech-users-and-products-chief-of-staff-team-google-huy",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 186000,
         "high": 269000,
@@ -4891,6 +4960,8 @@
       "source_org_label": "Qualitate",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-qualitate-ndl",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
         "high": 180000,
@@ -4947,6 +5018,8 @@
       "source_org_label": "Evidence Action",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-to-the-ceo-evidence-action-n6y",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 125000,
         "high": 165000,
@@ -5005,6 +5078,8 @@
       "source_org_label": "Google",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/strategy-and-operations-principal-lead-gbo-chief-of-staff-team-google-zv5",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 186000,
         "high": 269000,
@@ -5061,6 +5136,8 @@
       "source_org_label": "Wiz",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-office-of-the-chief-security-sales-officer-wiz-g7d",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 249600,
         "high": 255840,
@@ -5120,6 +5197,8 @@
       "source_org_label": "Coinbase",
       "source_reported_date": "2026-10-19",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-coinbase-07i",
+      "date_posted": "2026-10-19",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 212330,
         "high": 212330,
@@ -5182,6 +5261,8 @@
       "source_org_label": "Ellevation Education",
       "source_reported_date": "2026-10-19",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-ellevation-education-uwx",
+      "date_posted": "2026-10-19",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 110000,
         "high": 130000,
@@ -5238,6 +5319,8 @@
       "source_org_label": "Phusion Projects",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/deputy-chief-of-staff-phusion-projects-0np",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 125000,
         "high": 165000,
@@ -5299,6 +5382,8 @@
       "source_org_label": "CoreWeave",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-to-the-cfo-coreweave-tah",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 165000,
         "high": 242000,
@@ -5364,6 +5449,8 @@
       "source_org_label": "Re:Build Manufacturing",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-digital-product-rebuild-manufacturing-kui",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 161532,
         "high": 242298,
@@ -5423,6 +5510,8 @@
       "source_org_label": "Shionogi Inc. (U.S.)",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-shionogi-inc-us-of9",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 285000,
         "high": 300000,
@@ -5479,6 +5568,8 @@
       "source_org_label": "PragerU",
       "source_reported_date": "2026-10-09",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-development-strategic-initiatives-prageru-tnr",
+      "date_posted": "2026-10-09",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 150000,
@@ -5537,6 +5628,8 @@
       "source_org_label": "Caterpillar Inc.",
       "source_reported_date": "2026-10-09",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-enterprise-strategy-caterpillar-inc-ldo",
+      "date_posted": "2026-10-09",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 147760,
@@ -5599,6 +5692,8 @@
       "source_org_label": "Pendo.io",
       "source_reported_date": "2026-10-09",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-ceo-pendoio-yry",
+      "date_posted": "2026-10-09",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 203000,
@@ -5659,6 +5754,8 @@
       "source_org_label": "Rowan Digital Infrastructure",
       "source_reported_date": "2026-10-07",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-rowan-digital-infrastructure-9ow",
+      "date_posted": "2026-10-07",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 210000,
         "high": 255000,
@@ -5719,6 +5816,8 @@
       "source_org_label": "DualEntry",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-office-of-the-ceo-dualentry-zcl",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 120000,
@@ -5779,6 +5878,8 @@
       "source_org_label": "Stelvio Inc.",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-stelvio-inc-znz",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
         "high": 180000,
@@ -5832,6 +5933,68 @@
       "source_type": "Network"
     },
     {
+      "id": "cosn-deputy-chief-of-staff-firestorm-0pj",
+      "title": "Deputy Chief of Staff",
+      "org_type": "",
+      "category": "Chief of Staff",
+      "seniority": "Chief of Staff",
+      "comp_low": 100000,
+      "comp_high": 140000,
+      "location": "",
+      "remote": "",
+      "apply_url": "https://www.chiefofstaff.network/jobs/deputy-chief-of-staff-firestorm-0pj",
+      "source": "Chief of Staff Network",
+      "source_org_label": "Firestorm",
+      "source_reported_date": "2026-09-29",
+      "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/deputy-chief-of-staff-firestorm-0pj",
+      "date_posted": "2026-09-29",
+      "posted_date_kind": "source_reported_index",
+      "pay": {
+        "low": 100000,
+        "high": 140000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 100000,
+            "high": 140000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "## Compensation US Salary Range: $100,000 - $140,000 USD",
+      "benefits": [
+        "Health coverage",
+        "401(k)",
+        "Equity"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-14",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-10-29",
+        "statistics_eligible": true,
+        "scope_track": "Chief of Staff",
+        "scope_reason": "chief-of-staff title and role duties agree",
+        "employer_status": "withheld"
+      },
+      "summary": "You will report to the Chief of Staff and work directly with the CEO.",
+      "source_type": "Network"
+    },
+    {
       "id": "cosn-chief-of-staff-blue-orange-digital-8in",
       "title": "Chief of Staff",
       "org_type": "",
@@ -5846,6 +6009,8 @@
       "source_org_label": "Blue Orange Digital",
       "source_reported_date": "2026-09-16",
       "canonical_job_id": "url:https://www.chiefofstaff.network/jobs/chief-of-staff-blue-orange-digital-8in",
+      "date_posted": "2026-09-16",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 160000,
         "high": 220000,
@@ -5892,6 +6057,66 @@
       "source_type": "Network"
     },
     {
+      "id": "beacon-135454",
+      "title": "Executive Assistant",
+      "org_type": "",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 45.0,
+      "comp_high": 55.0,
+      "location": "Denver, Colorado",
+      "remote": "",
+      "apply_url": "https://bhsg.com/jobs/job/1479950_1793294379-executive-assistant-denver-colorado/",
+      "source": "Beacon Hill",
+      "source_org_label": "Beacon Hill Staffing Group",
+      "source_reported_date": "2026-10-29",
+      "canonical_job_id": "url:https://bhsg.com/jobs/job/1479950_1793294379-executive-assistant-denver-colorado",
+      "date_posted": "2026-10-29",
+      "posted_date_kind": "source_reported_index",
+      "pay": {
+        "low": 45.0,
+        "high": 55.0,
+        "currency": "USD",
+        "period": "hour",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 45.0,
+            "high": 55.0,
+            "currency": "USD",
+            "period": "hour",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Compensation : $45/hr-$55/hr, commensurate with experience",
+      "comp_period": "hr",
+      "benefits": [],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-14",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-10-29",
+        "statistics_eligible": false,
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track",
+        "employer_status": "withheld"
+      },
+      "summary": "Manage a complex and frequently changing executive calendar, including scheduling, prioritization, and coordination.",
+      "metro": "Other",
+      "source_type": "Recruiter"
+    },
+    {
       "id": "beacon-135089",
       "title": "Executive Assistant",
       "org_type": "",
@@ -5906,6 +6131,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-26",
       "canonical_job_id": "url:https://bhsg.com/jobs/job/a1478747ag_1793033036-executive-assistant-boston-massachusetts",
+      "date_posted": "2026-10-26",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 50.0,
         "high": 50.0,
@@ -5964,6 +6191,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-26",
       "canonical_job_id": "url:https://bhsg.com/jobs/job/1479327_1793023094-executive-assistant-office-manager-boston-massachusetts",
+      "date_posted": "2026-10-26",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3-4 onsite days per week.",
       "pay": {
         "low": 50.0,
@@ -6023,6 +6252,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "beacon:a1478920ny-temp",
+      "date_posted": "2026-10-21",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 55.0,
         "high": 55.0,
@@ -6081,6 +6312,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-20",
       "canonical_job_id": "url:https://bhsg.com/jobs/job/ref-ap1477857bos_1792526303-senior-executive-assistant-waltham-massachusetts",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 130000,
         "high": 160000,
@@ -6140,6 +6373,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-19",
       "canonical_job_id": "url:https://bhsg.com/jobs/job/1476444_1792446180-contract-executive-assistant-minneapolis-minnesota",
+      "date_posted": "2026-10-19",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 45.0,
         "high": 53.0,
@@ -6184,64 +6419,6 @@
       "source_type": "Recruiter"
     },
     {
-      "id": "beacon-134693",
-      "title": "Executive Assistant",
-      "org_type": "",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 50.0,
-      "comp_high": 50.0,
-      "location": "Cambridge, Massachusetts",
-      "remote": "Onsite",
-      "apply_url": "https://bhsg.com/jobs/job/a000000an_1792421705-executive-assistant-cambridge-massachusetts/",
-      "source": "Beacon Hill",
-      "source_org_label": "Beacon Hill Staffing Group",
-      "source_reported_date": "2026-10-19",
-      "canonical_job_id": "url:https://bhsg.com/jobs/job/a000000an_1792421705-executive-assistant-cambridge-massachusetts",
-      "pay": {
-        "low": 50.0,
-        "high": 50.0,
-        "currency": "USD",
-        "period": "hour",
-        "basis": "base",
-        "bound": "exact",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 50.0,
-            "high": 50.0,
-            "currency": "USD",
-            "period": "hour",
-            "basis": "base",
-            "bound": "exact",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "This temporary Executive Assistant opportunity offers $50/hour, working Monday through Friday, 9:00 AM – 5:00 PM, in Cambridge at a biopharmaceutical company focused on developing innovative therapies for serious diseases.",
-      "comp_period": "hr",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": false,
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track",
-        "employer_status": "withheld"
-      },
-      "summary": "Support C-suite and senior-level executives",
-      "metro": "Other",
-      "source_type": "Recruiter"
-    },
-    {
       "id": "beacon-134391",
       "title": "Executive Assistant/Office Manager",
       "org_type": "",
@@ -6256,6 +6433,8 @@
       "source_org_label": "Beacon Hill Staffing Group",
       "source_reported_date": "2026-10-13",
       "canonical_job_id": "beacon:a1477899ny-temp",
+      "date_posted": "2026-10-13",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 100000,
         "high": 110000,
@@ -6317,7 +6496,7 @@
         "Health coverage"
       ],
       "source_org_label": "",
-      "source_reported_date": "2026-10-25",
+      "source_reported_date": "2026-10-27",
       "canonical_job_id": "url:https://www.thelasallenetwork.com/jobs/executive-assistant-to-the-ceo-163151",
       "date_posted": "2026-10-25",
       "posted_date_kind": "source_reported_posting",
@@ -6433,7 +6612,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42551",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-10-28",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42551",
+      "date_posted": "2026-10-28",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 225000,
         "high": 250000,
@@ -6489,7 +6671,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42544",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-10-16",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42544",
+      "date_posted": "2026-10-16",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
         "high": 125000,
@@ -6545,7 +6730,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42370",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-10-14",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42370",
+      "date_posted": "2026-10-14",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 175000,
         "high": 220000,
@@ -6601,7 +6789,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42536",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-10-09",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42536",
+      "date_posted": "2026-10-09",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 115000,
         "high": 130000,
@@ -6657,7 +6848,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42515",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-09-17",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42515",
+      "date_posted": "2026-09-17",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 90000,
         "high": 120000,
@@ -6713,7 +6907,10 @@
       "apply_url": "https://www.glocap.com/jobs/senior-executive-assistant-JOB-42504",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-09-08",
       "canonical_job_id": "url:https://www.glocap.com/jobs/senior-executive-assistant-JOB-42504",
+      "date_posted": "2026-09-08",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 130000,
         "high": 175000,
@@ -6769,7 +6966,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-JOB-42470",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-08-10",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-JOB-42470",
+      "date_posted": "2026-08-10",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 90000,
         "high": 130000,
@@ -6825,7 +7025,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-to-the-founder-ceo-works-alongside-an-additional-ea-too-JOB-42438",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-07-13",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-to-the-founder-ceo-works-alongside-an-additional-ea-too-JOB-42438",
+      "date_posted": "2026-07-13",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
         "high": 180000,
@@ -6881,7 +7084,10 @@
       "apply_url": "https://www.glocap.com/jobs/executive-assistant-to-human-resources-JOB-42200",
       "source": "Glocap",
       "source_org_label": "",
+      "source_reported_date": "2026-04-15",
       "canonical_job_id": "url:https://www.glocap.com/jobs/executive-assistant-to-human-resources-JOB-42200",
+      "date_posted": "2026-04-15",
+      "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 90000,
         "high": 110000,
@@ -6937,7 +7143,10 @@
       "apply_url": "https://blackbookassociates.com/mandates/senior-executive-assistant-to-ceo-19",
       "source": "Blackbook Associates",
       "source_org_label": "",
+      "source_reported_date": "2026-09-09",
       "canonical_job_id": "url:https://blackbookassociates.com/mandates/senior-executive-assistant-to-ceo-19",
+      "date_posted": "2026-09-09",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 140000,
@@ -7004,7 +7213,10 @@
       "apply_url": "https://blackbookassociates.com/mandates/chief-of-staff-18",
       "source": "Blackbook Associates",
       "source_org_label": "",
+      "source_reported_date": "2026-08-21",
       "canonical_job_id": "url:https://blackbookassociates.com/mandates/chief-of-staff-18",
+      "date_posted": "2026-08-21",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
         "low": 200000,
@@ -7059,6 +7271,65 @@
       "source_type": "Recruiter"
     },
     {
+      "id": "blackbook-chief-of-staff-12",
+      "title": "Chief of Staff",
+      "org_type": "",
+      "category": "Chief of Staff",
+      "seniority": "Chief of Staff",
+      "comp_low": 250000,
+      "comp_high": 250000,
+      "location": "New York, US",
+      "remote": "",
+      "apply_url": "https://blackbookassociates.com/mandates/chief-of-staff-12",
+      "source": "Blackbook Associates",
+      "source_org_label": "",
+      "source_reported_date": "2026-05-27",
+      "canonical_job_id": "url:https://blackbookassociates.com/mandates/chief-of-staff-12",
+      "date_posted": "2026-05-27",
+      "posted_date_kind": "source_reported_index",
+      "pay": {
+        "low": 250000,
+        "high": 250000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "exact",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 250000,
+            "high": 250000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "exact",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "**Salary:** $250,000",
+      "benefits": [],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-14",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-10-29",
+        "statistics_eligible": true,
+        "scope_track": "Chief of Staff",
+        "scope_reason": "chief-of-staff title and role duties agree",
+        "employer_status": "withheld"
+      },
+      "summary": "The Chief of Staff will act as the founder's principal extension across the firm's investment and operational activities.",
+      "metro": "Other",
+      "source_type": "Recruiter"
+    },
+    {
       "id": "consider-a16z-ats-mn73xpkq01vx0bate5hr",
       "title": "Chief of Staff",
       "org_type": "Happyrobot Inc.",
@@ -7073,6 +7344,8 @@
       "source_org_label": "HappyRobot",
       "source_reported_date": "2026-10-01",
       "canonical_job_id": "ashby:happyrobot.ai:49c03702-d9a6-4d8d-97ff-94c0071fe984",
+      "date_posted": "2026-10-01",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-01T20:50:33.115+00:00",
       "pay": {
         "low": 200000,
@@ -7196,6 +7469,8 @@
       "source_org_label": "Headway",
       "source_reported_date": "2026-10-16",
       "canonical_job_id": "ashby:headway:2b9c3482-4474-4f99-990c-35b2c8912af4",
+      "date_posted": "2026-10-16",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-16T16:01:46.158+00:00",
       "pay": {
         "low": 180000,
@@ -7261,6 +7536,8 @@
       "source_org_label": "Zus Health",
       "source_reported_date": "2026-10-12",
       "canonical_job_id": "ashby:zus-health:c1adc18a-3d71-47a9-9405-aedb5bac93ea",
+      "date_posted": "2026-10-12",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-12T21:44:32.767+00:00",
       "pay": {
         "low": 120000,
@@ -7309,76 +7586,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-a16z-ats-mn7bkt4h2b4z6j836h5k",
-      "title": "Executive Assistant, Chief People Officer",
-      "org_type": "Figma",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 153000,
-      "comp_high": 269000,
-      "location": "San Francisco, CA",
-      "remote": "",
-      "apply_url": "https://boards.greenhouse.io/figma/jobs/6132356004?gh_jid=6132356004",
-      "source": "a16z Portfolio",
-      "sources": [
-        "Sequoia Portfolio",
-        "a16z Portfolio"
-      ],
-      "source_org_label": "Figma",
-      "source_reported_date": "2026-08-03",
-      "canonical_job_id": "greenhouse:figma:6132356004",
-      "date_posted": "2026-08-03",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-08-03T13:37:18-04:00",
-      "source_updated_at": "2026-10-27T13:40:12-04:00",
-      "pay": {
-        "low": 153000,
-        "high": 269000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 153000,
-            "high": 269000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Annual Base Salary Range: $153,000 - $269,000 USD",
-      "benefits": [
-        "Equity",
-        "Health coverage",
-        "Paid time off",
-        "Parental leave",
-        "Wellness"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Support your Executives with calendar, travel, meetings, agendas, preparation, tasks, notes, emails",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "consider-a16z-ats-mn70tfggmfp7kw9m9ewd",
       "title": "Chief of Staff to the CTO",
       "org_type": "Northwood Space",
@@ -7393,6 +7600,8 @@
       "source_org_label": "Northwood Space",
       "source_reported_date": "2026-09-02",
       "canonical_job_id": "ashby:northwoodspace:88f836f9-ad73-46da-8953-bb894139e8f9",
+      "date_posted": "2026-09-02",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-02T06:27:07.848+00:00",
       "pay": {
         "low": 100000,
@@ -7518,7 +7727,6 @@
       "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8788190002",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -7588,6 +7796,8 @@
       "source_org_label": "Replit",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "ashby:replit:a8aa0921-38e1-4015-bb95-a08b090e218e",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-27T18:45:21.036+00:00",
       "pay": {
         "low": 200000,
@@ -7652,6 +7862,8 @@
       "source_org_label": "Kalshi",
       "source_reported_date": "2026-06-26",
       "canonical_job_id": "ashby:kalshi:bd412c3c-b8a4-4d2e-a11a-489a9608729c",
+      "date_posted": "2026-06-26",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-06-26T20:35:01.419+00:00",
       "pay": {
         "low": 90000,
@@ -7714,6 +7926,8 @@
       "source_org_label": "Sesame",
       "source_reported_date": "2026-08-19",
       "canonical_job_id": "ashby:sesame:f32edef4-4767-4b5a-bfc7-1824e3f9b1f6",
+      "date_posted": "2026-08-19",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-08-19T17:39:58.371+00:00",
       "pay": {
         "low": 160000,
@@ -7775,6 +7989,8 @@
       "source_org_label": "Decagon",
       "source_reported_date": "2026-07-22",
       "canonical_job_id": "ashby:decagon:8a05ee9e-d732-4306-a628-43b79c5e36d3",
+      "date_posted": "2026-07-22",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-07-22T21:52:13.277+00:00",
       "pay": {
         "low": 120000,
@@ -7837,6 +8053,8 @@
       "source_org_label": "XDOF",
       "source_reported_date": "2026-09-08",
       "canonical_job_id": "ashby:xdof:d565027e-297d-46c4-9bec-61e9c00dbdb6",
+      "date_posted": "2026-09-08",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-08T07:53:19.936+00:00",
       "pay": {
         "low": 140000,
@@ -7899,6 +8117,8 @@
       "source_org_label": "Kalshi",
       "source_reported_date": "2026-07-13",
       "canonical_job_id": "ashby:kalshi:20f6c227-687f-47ea-a7fd-95e93aebacc3",
+      "date_posted": "2026-07-13",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-07-13T14:26:21.157+00:00",
       "pay": {
         "low": 90000,
@@ -7957,6 +8177,8 @@
       "source_org_label": "Skydio",
       "source_reported_date": "2026-08-31",
       "canonical_job_id": "ashby:skydio:f67f7a58-52b3-43ff-bbaa-a7bc8332380d",
+      "date_posted": "2026-08-31",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-08-31T20:24:53.028+00:00",
       "pay": {
         "low": 144000,
@@ -8014,13 +8236,14 @@
       "source": "a16z Portfolio",
       "sources": [
         "Bessemer Portfolio",
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
       "source_org_label": "Saronic",
       "source_reported_date": "2026-05-05",
       "canonical_job_id": "ashby:saronic:f5224c9c-bd7b-4805-9c14-a0c41492cf56",
+      "date_posted": "2026-05-05",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-05-05T22:43:30.376+00:00",
       "pay": {
         "low": 77000,
@@ -8084,7 +8307,6 @@
       "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5244257007?gh_jid=5244257007",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -8153,6 +8375,8 @@
       "source_org_label": "Thyme Care",
       "source_reported_date": "2026-10-15",
       "canonical_job_id": "ashby:thyme-care:f67e47e3-cf37-4a27-95b9-ca77b954f05d",
+      "date_posted": "2026-10-15",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-15T16:35:40.323+00:00",
       "pay": {
         "low": 119000,
@@ -8354,7 +8578,6 @@
       "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8487325002",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -8422,7 +8645,6 @@
       "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8523677002",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -8492,6 +8714,8 @@
       "source_org_label": "Headway",
       "source_reported_date": "2026-09-30",
       "canonical_job_id": "ashby:headway:b344b6bd-9c18-4a3e-be87-00b576d0246a",
+      "date_posted": "2026-09-30",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-30T18:44:42.186+00:00",
       "pay": {
         "low": 143200,
@@ -8555,6 +8779,8 @@
       "source_org_label": "Gimlet Labs",
       "source_reported_date": "2026-09-03",
       "canonical_job_id": "ashby:gimlet:03c2bde9-b2cf-4dc7-976a-c965eec45f9e",
+      "date_posted": "2026-09-03",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-03T15:09:26.641+00:00",
       "pay": {
         "low": 140000,
@@ -8611,7 +8837,6 @@
       "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5244254007?gh_jid=5244254007",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -8684,6 +8909,8 @@
       "source_org_label": "Thinking Machines Lab",
       "source_reported_date": "2026-09-30",
       "canonical_job_id": "ashby:thinkingmachines:3449b35c-78e1-4bf7-9b52-31ee9e764dca",
+      "date_posted": "2026-09-30",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-30T00:23:07.974+00:00",
       "pay": {
         "low": 200000,
@@ -8746,6 +8973,8 @@
       "source_org_label": "World Labs",
       "source_reported_date": "2026-09-18",
       "canonical_job_id": "ashby:worldlabs:28be7eae-7b7d-448e-8131-3e87d4e139fc",
+      "date_posted": "2026-09-18",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-18T05:28:24.437+00:00",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
@@ -8854,10 +9083,6 @@
         "scope_reason": "Director/VP duties establish executive operations leadership"
       },
       "summary": "Own HTO Support Operations & Organizational Rhythm – Build and run the operating cadence for HTO: staff meetings, pillar-level reviews, scorecard cycles, and cross-functional coordination.",
-      "sources": [
-        "General Catalyst Portfolio",
-        "a16z Portfolio"
-      ],
       "metro": "Other",
       "source_type": "VC portfolio"
     },
@@ -8876,6 +9101,8 @@
       "source_org_label": "OpenAI",
       "source_reported_date": "2026-10-01",
       "canonical_job_id": "ashby:openai:9911c8fc-4cff-4d6b-9a11-07114ef0f6bf",
+      "date_posted": "2026-10-01",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-01T19:32:21.112+00:00",
       "pay": {
         "low": 234000,
@@ -8934,6 +9161,8 @@
       "source_org_label": "Headway",
       "source_reported_date": "2026-09-24",
       "canonical_job_id": "ashby:headway:5cc1aa22-7d33-4b81-8bea-11cffed8298c",
+      "date_posted": "2026-09-24",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-24T22:06:26.965+00:00",
       "pay": {
         "low": 105400,
@@ -8978,67 +9207,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-a16z-ats-mn7fsph0pe02phtkatnj",
-      "title": "Business Operations Lead",
-      "org_type": "Ambience Healthcare",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 163800,
-      "comp_high": 228000,
-      "location": "Remote - US",
-      "remote": "Remote",
-      "apply_url": "https://jobs.ashbyhq.com/ambiencehealthcare/64887e8d-5078-4afe-bfe4-7c7797a757bf/application",
-      "source": "a16z Portfolio",
-      "source_org_label": "Ambience Healthcare",
-      "source_reported_date": "2026-09-18",
-      "canonical_job_id": "ashby:ambiencehealthcare:64887e8d-5078-4afe-bfe4-7c7797a757bf",
-      "last_published_at": "2026-09-18T18:08:30.513+00:00",
-      "pay": {
-        "low": 163800,
-        "high": 228000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 163800,
-            "high": 228000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 163800, \"maxValue\": 228000}",
-      "benefits": [
-        "Health coverage",
-        "401(k)"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Remote",
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": ", you will own cross-functional projects that fall between existing team boundaries, build source-of-truth insights, drive execution from scope through handoff, and stand up the processes and new verticals that allow the company to scale.",
-      "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "consider-a16z-ats-mn73hg23tfns0hz3mx38",
       "title": "Business Operations Manager",
       "org_type": "Headway",
@@ -9053,6 +9221,8 @@
       "source_org_label": "Headway",
       "source_reported_date": "2026-09-22",
       "canonical_job_id": "ashby:headway:9bda178e-cee6-4d26-8c41-bf207858ec21",
+      "date_posted": "2026-09-22",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-22T17:22:49.640+00:00",
       "pay": {
         "low": 121600,
@@ -9100,6 +9270,69 @@
         "scope_reason": "existing title classification and role duties agree"
       },
       "summary": "Collaborate cross-functionally to build, execute, monitor, and implement scalable products and processes that enable us to deliver on core business challenges.",
+      "metro": "Remote",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn7fsph0pe02phtkatnj",
+      "title": "Business Operations Lead",
+      "org_type": "Ambience Healthcare",
+      "category": "Executive Operations",
+      "seniority": "Operations",
+      "comp_low": 163800,
+      "comp_high": 228000,
+      "location": "Remote - US",
+      "remote": "Remote",
+      "apply_url": "https://jobs.ashbyhq.com/ambiencehealthcare/64887e8d-5078-4afe-bfe4-7c7797a757bf/application",
+      "source": "a16z Portfolio",
+      "source_org_label": "Ambience Healthcare",
+      "source_reported_date": "2026-09-18",
+      "canonical_job_id": "ashby:ambiencehealthcare:64887e8d-5078-4afe-bfe4-7c7797a757bf",
+      "date_posted": "2026-09-18",
+      "posted_date_kind": "api_last_published",
+      "last_published_at": "2026-09-18T18:08:30.513+00:00",
+      "pay": {
+        "low": 163800,
+        "high": 228000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 163800,
+            "high": 228000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 163800, \"maxValue\": 228000}",
+      "benefits": [
+        "Health coverage",
+        "401(k)"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-14",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-10-29",
+        "statistics_eligible": true,
+        "structured_work_mode": "Remote",
+        "scope_track": "Executive Operations",
+        "scope_reason": "existing title classification and role duties agree"
+      },
+      "summary": ", you will own cross-functional projects that fall between existing team boundaries, build source-of-truth insights, drive execution from scope through handoff, and stand up the processes and new verticals that allow the company to scale.",
       "metro": "Remote",
       "source_type": "VC portfolio"
     },
@@ -9162,10 +9395,6 @@
         "scope_reason": "Director/VP duties establish executive operations leadership"
       },
       "summary": "Lead various strategic initiatives and projects as directed by leadership and the Head of Division Operations, ensuring they align with the overall business strategy and objectives",
-      "sources": [
-        "General Catalyst Portfolio",
-        "a16z Portfolio"
-      ],
       "metro": "Other",
       "source_type": "VC portfolio"
     },
@@ -9184,6 +9413,8 @@
       "source_org_label": "Crux",
       "source_reported_date": "2026-08-05",
       "canonical_job_id": "ashby:cruxclimate:c4ae9c2d-5a45-49dd-803f-c54104798ed5",
+      "date_posted": "2026-08-05",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-08-05T20:31:22.704+00:00",
       "pay": {
         "low": 150000,
@@ -9310,6 +9541,8 @@
       "source_org_label": "OpenAI",
       "source_reported_date": "2026-10-27",
       "canonical_job_id": "ashby:openai:7b70517d-8c96-4c4a-8e4a-37859cf68747",
+      "date_posted": "2026-10-27",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-27T22:16:55.392+00:00",
       "pay": {
         "low": 333000,
@@ -9366,7 +9599,6 @@
       "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5242718007?gh_jid=5242718007",
       "source": "a16z Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "a16z Portfolio"
       ],
@@ -9436,6 +9668,8 @@
       "source_org_label": "Zūm",
       "source_reported_date": "2026-10-26",
       "canonical_job_id": "url:https://jobs.lever.co/ridezum/68973fc1-385a-4ba4-ad14-6e1c352ce8fb",
+      "date_posted": "2026-10-26",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 210000,
@@ -9497,6 +9731,8 @@
       "source_org_label": "Notion",
       "source_reported_date": "2026-09-01",
       "canonical_job_id": "ashby:notion:c5c69246-74db-4960-a0e0-7945be6c30ae",
+      "date_posted": "2026-09-01",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-01T22:32:45.668+00:00",
       "pay": {
         "low": 230000,
@@ -9617,7 +9853,6 @@
       "apply_url": "https://job-boards.greenhouse.io/verkada/jobs/5268529007",
       "source": "Sequoia Portfolio",
       "sources": [
-        "General Catalyst Portfolio",
         "Lightspeed Portfolio",
         "Sequoia Portfolio"
       ],
@@ -9690,6 +9925,8 @@
       "source_org_label": "Crosby",
       "source_reported_date": "2026-09-24",
       "canonical_job_id": "ashby:crosby:fda65cbc-8238-4c01-ba64-1aaab706fa26",
+      "date_posted": "2026-09-24",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-24T21:24:24.832+00:00",
       "pay": {
         "low": 140000,
@@ -9755,6 +9992,8 @@
       "source_org_label": "Sierra",
       "source_reported_date": "2026-09-01",
       "canonical_job_id": "ashby:sierra:e963514d-8b85-4747-9620-cf9a66ce9b4c",
+      "date_posted": "2026-09-01",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-01T20:18:24.867+00:00",
       "pay": {
         "low": 130000,
@@ -9804,6 +10043,72 @@
       "source_type": "VC portfolio"
     },
     {
+      "id": "consider-sequoia-6132356004",
+      "title": "Executive Assistant, Chief People Officer",
+      "org_type": "Figma",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 153000,
+      "comp_high": 269000,
+      "location": "San Francisco, CA",
+      "remote": "",
+      "apply_url": "https://boards.greenhouse.io/figma/jobs/6132356004?gh_jid=6132356004",
+      "source": "Sequoia Portfolio",
+      "source_org_label": "Figma",
+      "source_reported_date": "2026-08-03",
+      "canonical_job_id": "greenhouse:figma:6132356004",
+      "date_posted": "2026-08-03",
+      "posted_date_kind": "api_first_published",
+      "original_posted_at": "2026-08-03T13:37:18-04:00",
+      "source_updated_at": "2026-10-27T13:40:12-04:00",
+      "pay": {
+        "low": 153000,
+        "high": 269000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 153000,
+            "high": 269000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Annual Base Salary Range: $153,000 - $269,000 USD",
+      "benefits": [
+        "Equity",
+        "Health coverage",
+        "Paid time off",
+        "Parental leave",
+        "Wellness"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-14",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-10-29",
+        "statistics_eligible": true,
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Support your Executives with calendar, travel, meetings, agendas, preparation, tasks, notes, emails",
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
       "id": "consider-sequoia-9db24007-a432-4eda-a453-",
       "title": "Executive Business Partner",
       "org_type": "Strava",
@@ -9818,6 +10123,8 @@
       "source_org_label": "Strava",
       "source_reported_date": "2026-08-06",
       "canonical_job_id": "ashby:strava:9db24007-a432-4eda-a453-5e93a34aa9ce",
+      "date_posted": "2026-08-06",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-08-06T17:56:10.571+00:00",
       "pay": {
         "low": 140000,
@@ -9876,6 +10183,8 @@
       "source_org_label": "Zūm",
       "source_reported_date": "2026-10-05",
       "canonical_job_id": "url:https://jobs.lever.co/ridezum/b72d5493-60c0-4066-97fb-ade2f2da5418",
+      "date_posted": "2026-10-05",
+      "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
         "low": 111000,
@@ -10139,6 +10448,8 @@
       "source_org_label": "Archy",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "ashby:archy:5fe4ab8b-2039-4654-b465-3589bcf3a527",
+      "date_posted": "2026-10-23",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-23T15:56:36.462+00:00",
       "pay": {
         "low": 120000,
@@ -10201,6 +10512,8 @@
       "source_org_label": "Fieldguide",
       "source_reported_date": "2026-10-13",
       "canonical_job_id": "ashby:fieldguide:8e7c9c77-2719-48c2-bd54-b649c659de1a",
+      "date_posted": "2026-10-13",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-13T21:01:29.669+00:00",
       "pay": {
         "low": 120000,
@@ -10259,6 +10572,8 @@
       "source_org_label": "Legora",
       "source_reported_date": "2026-08-04",
       "canonical_job_id": "ashby:legora:f701ea2d-8e8c-413d-a8bc-da1602454fb0",
+      "date_posted": "2026-10-22",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-22T16:40:41.124+00:00",
       "pay": {
         "low": 155000,
@@ -10316,13 +10631,11 @@
       "remote": "Hybrid",
       "apply_url": "https://jobs.ashbyhq.com/render/1fffd796-b589-4cc1-9664-ed1d2c3d9938?utm_source=jobs.bvp.com",
       "source": "Bessemer Portfolio",
-      "sources": [
-        "Bessemer Portfolio",
-        "General Catalyst Portfolio"
-      ],
       "source_org_label": "Render",
       "source_reported_date": "2026-07-27",
       "canonical_job_id": "ashby:render:1fffd796-b589-4cc1-9664-ed1d2c3d9938",
+      "date_posted": "2026-10-22",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-22T18:25:55.022+00:00",
       "pay": {
         "low": 170000,
@@ -10511,6 +10824,8 @@
       "source_org_label": "DualEntry",
       "source_reported_date": "2026-01-31",
       "canonical_job_id": "ashby:dualentry:3bce47c8-3f3a-4148-a448-c408516beb32",
+      "date_posted": "2026-01-31",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-01-31T17:46:55.695+00:00",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
@@ -10559,66 +10874,6 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-lightspeed-52e2ff7b-1cff-42ba-9604-",
-      "title": "Chief of Staff",
-      "org_type": "Profound",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 150000,
-      "comp_high": 200000,
-      "location": "New York, New York",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/Profound/52e2ff7b-1cff-42ba-9604-448eeb58d3d4?utm_source=jobs.lsvp.com",
-      "source": "Lightspeed Portfolio",
-      "source_org_label": "Profound",
-      "source_reported_date": "2025-08-19",
-      "canonical_job_id": "ashby:profound:52e2ff7b-1cff-42ba-9604-448eeb58d3d4",
-      "last_published_at": "2025-08-19T17:43:27.071+00:00",
-      "pay": {
-        "low": 150000,
-        "high": 200000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 150000,
-            "high": 200000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "For this role, the expected base salary range is $150,000 to $200,000.",
-      "benefits": [
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Partner with the CEO and leadership team to prioritize, execute, and track progress on the highest-impact strategic initiatives across the company",
-      "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
       "id": "consider-lightspeed-50bc51cd-4ec3-4d32-822e-",
       "title": "Executive Assistant",
       "org_type": "Helion",
@@ -10633,6 +10888,8 @@
       "source_org_label": "Helion",
       "source_reported_date": "2026-10-28",
       "canonical_job_id": "ashby:helion:50bc51cd-4ec3-4d32-822e-5c7621840eda",
+      "date_posted": "2026-10-28",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-28T16:18:37.061+00:00",
       "pay": {
         "low": 136000,
@@ -10697,6 +10954,8 @@
       "source_org_label": "Rothy's",
       "source_reported_date": "2026-06-02",
       "canonical_job_id": "ashby:rothys:a95fa347-715e-40d5-925c-22016f1e7504",
+      "date_posted": "2026-09-28",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-28T16:16:37.400+00:00",
       "pay": {
         "low": 120000,
@@ -10758,6 +11017,8 @@
       "source_org_label": "DualEntry",
       "source_reported_date": "2026-04-01",
       "canonical_job_id": "ashby:dualentry:6e87b0df-768a-42e0-98bf-889cce85bcd3",
+      "date_posted": "2026-08-20",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-08-20T23:06:40.572+00:00",
       "pay": {
         "low": 150000,
@@ -11005,13 +11266,11 @@
       "remote": "Onsite",
       "apply_url": "https://jobs.ashbyhq.com/cartesia/d81cb0a1-5955-45ee-8afd-f5e3e80b72d9?utm_source=jobs.lsvp.com",
       "source": "Lightspeed Portfolio",
-      "sources": [
-        "General Catalyst Portfolio",
-        "Lightspeed Portfolio"
-      ],
       "source_org_label": "Cartesia",
       "source_reported_date": "2026-09-04",
       "canonical_job_id": "ashby:cartesia:d81cb0a1-5955-45ee-8afd-f5e3e80b72d9",
+      "date_posted": "2026-09-04",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-04T21:11:28.052+00:00",
       "pay": {
         "low": 160000,
@@ -11073,6 +11332,8 @@
       "source_org_label": "Plug",
       "source_reported_date": "2026-10-10",
       "canonical_job_id": "ashby:plugmotors:e2d87612-ae79-4dab-a4db-a21302c50115",
+      "date_posted": "2026-10-15",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-15T21:17:16.244+00:00",
       "work_mode_note": "Onsite 5 days per week.",
       "pay": {
@@ -11147,6 +11408,8 @@
       "source_org_label": "Plug",
       "source_reported_date": "2026-09-25",
       "canonical_job_id": "ashby:plugmotors:b888abe8-dba7-49a3-9c49-ecbc2906ecef",
+      "date_posted": "2026-10-23",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-23T21:21:42.608+00:00",
       "pay": {
         "low": 145000,
@@ -11258,7 +11521,7 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "getro-222-97559958",
+      "id": "consider-lightspeed-f1ae5c48-c492-41e5-a2ab-",
       "title": "Head of Operations and Strategy",
       "org_type": "Nirvana Insurance",
       "category": "Director / VP of Operations",
@@ -11267,16 +11530,13 @@
       "comp_high": 370000,
       "location": "Remote",
       "remote": "Remote",
-      "apply_url": "https://jobs.ashbyhq.com/nirvana/f1ae5c48-c492-41e5-a2ab-0629d44f1cf7",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1792503145,
-      "sources": [
-        "General Catalyst Portfolio",
-        "Lightspeed Portfolio"
-      ],
+      "apply_url": "https://jobs.ashbyhq.com/nirvana/f1ae5c48-c492-41e5-a2ab-0629d44f1cf7?utm_source=jobs.lsvp.com",
+      "source": "Lightspeed Portfolio",
       "source_org_label": "Nirvana Insurance",
-      "source_reported_date": "2026-10-20",
+      "source_reported_date": "2026-10-19",
       "canonical_job_id": "ashby:nirvana:f1ae5c48-c492-41e5-a2ab-0629d44f1cf7",
+      "date_posted": "2026-10-19",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-19T18:02:48.606+00:00",
       "pay": {
         "low": 280000,
@@ -11325,1314 +11585,6 @@
       },
       "summary": "You will shape priorities across programs, design the operating cadences that keep leadership aligned, and drive cross-functional initiatives that don't fit neatly into any one team.",
       "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-98092395",
-      "title": "Chief of Staff",
-      "org_type": "Deploy",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 90000,
-      "comp_high": 160000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.lever.co/hive/2a9865a6-7673-46ee-807c-113b1eac78f3",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1793098466,
-      "source_org_label": "Hive",
-      "source_reported_date": "2026-10-27",
-      "canonical_job_id": "url:https://jobs.lever.co/hive/2a9865a6-7673-46ee-807c-113b1eac78f3",
-      "pay": {
-        "low": 90000,
-        "high": 160000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 90000,
-            "high": 160000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "The current expected base salary for this position ranges from $90,000 - $160,000.",
-      "benefits": [
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Manage executive team members’ schedules and execute on high-priority tasks and projects",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-96811392",
-      "title": "Chief of Staff, Digital & Product",
-      "org_type": "Re:Build Manufacturing",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 161532,
-      "comp_high": 242298,
-      "location": "United States - Remote",
-      "remote": "Remote",
-      "apply_url": "https://boards.greenhouse.io/rebuildmanufacturing/jobs/4742926005",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1791896452,
-      "source_org_label": "Re:Build Manufacturing",
-      "source_reported_date": "2026-10-13",
-      "canonical_job_id": "greenhouse:rebuildmanufacturing:4742926005",
-      "date_posted": "2026-10-12",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-10-12T12:49:09-04:00",
-      "source_updated_at": "2026-10-29T07:09:04-04:00",
-      "pay": {
-        "low": 161532,
-        "high": 242298,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 161532,
-            "high": 242298,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Compensation Range: The base salary range for this position is $161,532-$242,298 per year.",
-      "benefits": [
-        "Health coverage",
-        "Paid time off"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Remote",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Take ownership of high-priority initiatives requiring senior-level attention and drive them from definition through execution.",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-96327738",
-      "title": "Chief of Staff, Product",
-      "org_type": "Mercor",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 180000,
-      "comp_high": 230000,
-      "location": "Mercor HQ, 181 Fremont Street",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/mercor/51bd1cb4-b48c-4bef-978a-1ec34cc4ac54",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1791466017,
-      "source_org_label": "Mercor",
-      "source_reported_date": "2026-10-08",
-      "canonical_job_id": "ashby:mercor:51bd1cb4-b48c-4bef-978a-1ec34cc4ac54",
-      "last_published_at": "2026-10-07T17:38:59.539+00:00",
-      "pay": {
-        "low": 180000,
-        "high": 230000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 180000,
-            "high": 230000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 180000, \"maxValue\": 230000}",
-      "benefits": [
-        "Bonus",
-        "Equity",
-        "Wellness",
-        "Health coverage"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Run the operating rhythm: Establish and drive planning and review cadences across the product org, and prep leadership meetings end-to-end — agendas, pre-reads, the framing data, and follow-through on decisions.",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-93498817",
-      "title": "Chief of Staff, Delivery Operations",
-      "org_type": "Mercor",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 180000,
-      "comp_high": 230000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/mercor/e6ce3017-7ed8-48b7-883f-216997348fae",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1789651638,
-      "source_org_label": "Mercor",
-      "source_reported_date": "2026-09-17",
-      "canonical_job_id": "ashby:mercor:e6ce3017-7ed8-48b7-883f-216997348fae",
-      "last_published_at": "2026-09-16T15:29:08.784+00:00",
-      "pay": {
-        "low": 180000,
-        "high": 230000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 180000,
-            "high": 230000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 180000, \"maxValue\": 230000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Strategic partnership: Act as a thought partner to the VP, helping set priorities, structure decisions, and prepare for key meetings, reviews, and offsites",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-72204622",
-      "title": "Chief of Staff",
-      "org_type": "Sapien",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 125000,
-      "comp_high": 200000,
-      "location": "Sapien HQ — NYC",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/sapien/6233af5e-9bf1-4727-820a-382d9bd3fe1a",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1774535444,
-      "source_org_label": "Sapien",
-      "source_reported_date": "2026-03-26",
-      "canonical_job_id": "ashby:sapien:6233af5e-9bf1-4727-820a-382d9bd3fe1a",
-      "last_published_at": "2026-03-25T20:23:47.321+00:00",
-      "pay": {
-        "low": 125000,
-        "high": 200000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 125000,
-            "high": 200000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 125000, \"maxValue\": 200000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Lead preparation for board meetings, investor updates, and key internal reviews",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-97293423",
-      "title": "Executive Assistant",
-      "org_type": "Ping Identity",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 105000,
-      "comp_high": 125000,
-      "location": "USA - Remote",
-      "remote": "Remote",
-      "apply_url": "https://boards.greenhouse.io/pingidentity/jobs/8886406002",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1792236019,
-      "source_org_label": "Ping Identity",
-      "source_reported_date": "2026-10-17",
-      "canonical_job_id": "greenhouse:pingidentity:8886406002",
-      "date_posted": "2026-10-16",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-10-16T11:50:19-04:00",
-      "source_updated_at": "2026-10-16T14:04:46-04:00",
-      "pay": {
-        "low": 105000,
-        "high": 125000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 105000,
-            "high": 125000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary Range: $105,000 - $125,000",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Remote",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Manage complex calendars, schedule meetings, coordinate travel arrangements, and handle logistics for internal and external events.",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-96688118",
-      "title": "Executive Assistant / Office Manager",
-      "org_type": "Fragment",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 150000,
-      "comp_high": 200000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/fragmentai/991ca306-c7cf-4a90-b78d-2a5d0eee4dcf",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1791805141,
-      "source_org_label": "Fragment Data Technologies",
-      "source_reported_date": "2026-10-12",
-      "canonical_job_id": "ashby:fragmentai:991ca306-c7cf-4a90-b78d-2a5d0eee4dcf",
-      "last_published_at": "2026-10-12T02:14:53.149+00:00",
-      "work_mode_note": "Onsite 5 days per week.",
-      "pay": {
-        "low": 150000,
-        "high": 200000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 150000,
-            "high": 200000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 150000, \"maxValue\": 200000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Your job is to protect it and multiply it, so our founders and leadership team can efficiently prioritize the allocation of energy – to customers, product, and hiring exceptional people.",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-94351726",
-      "title": "Senior Executive Assistant",
-      "org_type": "Judi Health",
-      "category": "Executive Assistant",
-      "seniority": "Senior Executive Assistant",
-      "comp_low": 98400,
-      "comp_high": 123000,
-      "location": "New York, New York, United States",
-      "remote": "Hybrid",
-      "apply_url": "https://boards.greenhouse.io/judihealth/jobs/5430590008",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1790157980,
-      "source_org_label": "Judi Health",
-      "source_reported_date": "2026-09-23",
-      "canonical_job_id": "greenhouse:judihealth:5430590008",
-      "date_posted": "2026-09-23",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-09-23T01:44:41-04:00",
-      "source_updated_at": "2026-10-14T13:37:47-04:00",
-      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
-      "pay": {
-        "low": 98400,
-        "high": 123000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 98400,
-            "high": 123000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "New York, NY Salary Range $98,400 - $123,000 USD",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "The Senior Executive Assistant provides high-quality administrative and communications support to key members of the Executive Leadership Team (ELT) and Senior Leadership Team (SLT).",
-      "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-89874438",
-      "title": "Executive Assistant, People",
-      "org_type": "Superhuman",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 152000,
-      "comp_high": 163000,
-      "location": "Hub - San Francisco",
-      "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/Superhuman%20Platform%20Inc/4fe968a1-6cdb-4af6-99a7-3ddcb820f899",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1786680779,
-      "sources": [
-        "General Catalyst Portfolio"
-      ],
-      "source_org_label": "Coda",
-      "source_reported_date": "2026-08-13",
-      "canonical_job_id": "ashby:superhuman%20platform%20inc:4fe968a1-6cdb-4af6-99a7-3ddcb820f899",
-      "last_published_at": "2026-08-11T14:57:42.132+00:00",
-      "pay": {
-        "low": 152000,
-        "high": 163000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 152000,
-            "high": 163000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 152000, \"maxValue\": 163000}",
-      "benefits": [
-        "Health coverage",
-        "401(k)",
-        "Parental leave",
-        "Paid time off",
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Hybrid",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "We’re looking for an Executive Assistant to support senior leaders in our People Org across the company and help move some of our most cross-functional, high-impact initiatives forward.",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-81940076",
-      "title": "Executive Assistant",
-      "org_type": "Aurelius Systems",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 90000,
-      "comp_high": 120000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/aureliussystems/54977858-393b-46ad-a7fa-93053854ad80",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1780839945,
-      "source_org_label": "Aurelius Systems",
-      "source_reported_date": "2026-06-07",
-      "canonical_job_id": "ashby:aureliussystems:54977858-393b-46ad-a7fa-93053854ad80",
-      "last_published_at": "2026-09-29T22:35:44.844+00:00",
-      "pay": {
-        "low": 90000,
-        "high": 120000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 90000,
-            "high": 120000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 90000, \"maxValue\": 120000}",
-      "benefits": [
-        "Equity",
-        "Health coverage",
-        "Paid time off"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Executive and team scheduling, calendaring, and meeting coordination, including support for the CEO and CTO",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-67951777",
-      "title": "Executive Assistant",
-      "org_type": "Serval",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 100000,
-      "comp_high": 190000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/Serval/3be03cde-81a5-4547-aa55-3b153cf7b51a",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1771354767,
-      "source_org_label": "Serval",
-      "source_reported_date": "2026-02-17",
-      "canonical_job_id": "ashby:serval:3be03cde-81a5-4547-aa55-3b153cf7b51a",
-      "last_published_at": "2026-06-26T00:01:59.918+00:00",
-      "pay": {
-        "low": 100000,
-        "high": 190000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 100000,
-            "high": 190000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 100000, \"maxValue\": 190000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "You will own scheduling complexity, coordinate logistics, streamline communication, and systematically remove operational friction so leadership can stay focused on the highest-impact priorities.",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-98092394",
-      "title": "Business Operations Manager",
-      "org_type": "Deploy",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 90000,
-      "comp_high": 150000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.lever.co/hive/93c73b0b-a965-411a-916e-422c2f02287d",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1793098466,
-      "source_org_label": "Hive",
-      "source_reported_date": "2026-10-27",
-      "canonical_job_id": "url:https://jobs.lever.co/hive/93c73b0b-a965-411a-916e-422c2f02287d",
-      "pay": {
-        "low": 90000,
-        "high": 150000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 90000,
-            "high": 150000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "The current expected base salary for this position ranges from $90,000 - $150,000.",
-      "benefits": [
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": "Manage our bus ops activities by setting achievable short-term and long-term goals",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-96615740",
-      "title": "Director, Business Operations",
-      "org_type": "Equip Health",
-      "category": "Director / VP of Operations",
-      "seniority": "Operations Leadership",
-      "comp_low": 140000,
-      "comp_high": 175000,
-      "location": "Remote, United States",
-      "remote": "Remote",
-      "apply_url": "https://jobs.ashbyhq.com/equip/379a71b4-7e08-4c7d-8e25-3ff4867d9447",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1791640677,
-      "source_org_label": "Equip",
-      "source_reported_date": "2026-10-10",
-      "canonical_job_id": "ashby:equip:379a71b4-7e08-4c7d-8e25-3ff4867d9447",
-      "last_published_at": "2026-10-09T23:08:38.280+00:00",
-      "pay": {
-        "low": 140000,
-        "high": 175000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 140000,
-            "high": 175000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Compensation: - Earning Potential Range: $140,000 to $175,000 + 20% Annual Performance-Based Bonus Potential",
-      "benefits": [
-        "Health coverage",
-        "401(k)"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": false,
-        "structured_work_mode": "Remote",
-        "scope_track": "Operations Leadership",
-        "scope_reason": "Director/VP duties establish executive operations leadership"
-      },
-      "summary": "Partner with cross-functional leadership to build, pilot, and implement standardized processes, project plans, and change management strategies across Care Delivery and Care Experience.",
-      "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-95372485",
-      "title": "Senior Business Operations Manager",
-      "org_type": "Vannevar",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 185000,
-      "comp_high": 230000,
-      "location": "Remote",
-      "remote": "Remote",
-      "apply_url": "https://boards.greenhouse.io/vannevarlabs/jobs/5244368007",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1790850818,
-      "source_org_label": "Vannevar Labs",
-      "source_reported_date": "2026-10-01",
-      "canonical_job_id": "greenhouse:vannevarlabs:5244368007",
-      "date_posted": "2026-09-30",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-09-30T12:04:25-04:00",
-      "source_updated_at": "2026-10-01T15:15:43-04:00",
-      "pay": {
-        "low": 185000,
-        "high": 230000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 185000,
-            "high": 230000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "The salary range for this position is $185,000 - $230,000 + equity.",
-      "benefits": [
-        "Equity",
-        "Health coverage",
-        "Paid time off",
-        "401(k)",
-        "Parental leave"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Remote",
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": "Special projects — Some of the most interesting work you’ll do here won’t fit into a neat category.",
-      "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-94722996",
-      "title": "Senior Director Business Operations",
-      "org_type": "Polymarket",
-      "category": "Director / VP of Operations",
-      "seniority": "Operations Leadership",
-      "comp_low": 350000,
-      "comp_high": 450000,
-      "location": "New York",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/polymarket/5b7ef50c-da9f-4bce-9a48-644b4670e90f",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1790337706,
-      "source_org_label": "Polymarket",
-      "source_reported_date": "2026-09-25",
-      "canonical_job_id": "ashby:polymarket:5b7ef50c-da9f-4bce-9a48-644b4670e90f",
-      "last_published_at": "2026-09-24T23:39:03.669+00:00",
-      "pay": {
-        "low": 350000,
-        "high": 450000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 350000,
-            "high": 450000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "- Competitive salary & equity Base salary range: $350,000 to $450,000, plus equity and benefits.",
-      "benefits": [
-        "Equity",
-        "Paid time off",
-        "Health coverage",
-        "401(k)"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Operations Leadership",
-        "scope_reason": "Director/VP duties establish executive operations leadership"
-      },
-      "summary": "Prepare briefing documents, decision memos, and exec and board materials that give leadership what they need to make high-stakes calls quickly",
-      "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-92192145",
-      "title": "Business Operations Lead",
-      "org_type": "Serval",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 200000,
-      "comp_high": 265000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/Serval/bd57bb71-99f2-412f-92fa-b27ad205af7b",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1788521059,
-      "source_org_label": "Serval",
-      "source_reported_date": "2026-09-04",
-      "canonical_job_id": "ashby:serval:bd57bb71-99f2-412f-92fa-b27ad205af7b",
-      "last_published_at": "2026-09-03T15:38:46.007+00:00",
-      "pay": {
-        "low": 200000,
-        "high": 265000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 200000,
-            "high": 265000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 200000, \"maxValue\": 265000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": "Build the forecast and the operating cadence (weekly pipeline, monthly business review, quarterly plan)",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-91933671",
-      "title": "Business Operations Lead, Docs",
-      "org_type": "Superhuman",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 186000,
-      "comp_high": 255000,
-      "location": "Hub - San Francisco",
-      "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/Superhuman%20Platform%20Inc/d9460892-37ea-492b-b210-98ae8eea24af",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1788352045,
-      "sources": [
-        "General Catalyst Portfolio"
-      ],
-      "source_org_label": "Grammarly",
-      "source_reported_date": "2026-09-02",
-      "canonical_job_id": "ashby:superhuman%20platform%20inc:d9460892-37ea-492b-b210-98ae8eea24af",
-      "last_published_at": "2026-09-03T17:53:30.682+00:00",
-      "pay": {
-        "low": 186000,
-        "high": 255000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 186000,
-            "high": 255000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 186000, \"maxValue\": 255000}",
-      "benefits": [
-        "Health coverage",
-        "401(k)",
-        "Parental leave",
-        "Paid time off",
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Hybrid",
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": "Partner with your BU’s EPDM leadership team — anchored by the Product leader as the point of the spear — to turn strategy into clear priorities, decisions, and execution plans.",
-      "metro": "Other",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-42678735",
-      "title": "Business Operations Manager",
-      "org_type": "Modal",
-      "category": "Executive Operations",
-      "seniority": "Operations",
-      "comp_low": 140000,
-      "comp_high": 190000,
-      "location": "New York",
-      "remote": "",
-      "apply_url": "https://jobs.ashbyhq.com/modal/225b43d8-ef14-4082-b16e-005c74b42957",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1732195398,
-      "source_org_label": "Modal Labs",
-      "source_reported_date": "2024-11-21",
-      "canonical_job_id": "ashby:modal:225b43d8-ef14-4082-b16e-005c74b42957",
-      "last_published_at": "2026-01-29T00:10:46.563+00:00",
-      "pay": {
-        "low": 140000,
-        "high": 190000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 140000,
-            "high": 190000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 140000, \"maxValue\": 190000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "scope_track": "Executive Operations",
-        "scope_reason": "existing title classification and role duties agree"
-      },
-      "summary": "We’re looking for business operations managers to join the team.",
-      "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-86231755",
-      "title": "Head of Operations Planning",
-      "org_type": "Mercor",
-      "category": "Director / VP of Operations",
-      "seniority": "Operations Leadership",
-      "comp_low": 200000,
-      "comp_high": 250000,
-      "location": "San Francisco",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/mercor/8723bb7f-c0af-43cd-8c5a-a06eeb89bdde",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1784029460,
-      "source_org_label": "Mercor",
-      "source_reported_date": "2026-07-14",
-      "canonical_job_id": "ashby:mercor:8723bb7f-c0af-43cd-8c5a-a06eeb89bdde",
-      "last_published_at": "2026-07-13T19:51:57.225+00:00",
-      "pay": {
-        "low": 200000,
-        "high": 250000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 200000,
-            "high": 250000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Compensation - Base cash comp from $200K-$250k",
-      "benefits": [
-        "401(k)"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": false,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Operations Leadership",
-        "scope_reason": "Director/VP duties establish executive operations leadership"
-      },
-      "summary": "Systems and reporting infrastructure: Decide what gets tracked, how, and where. Build the dashboards, account playbooks, and planning tools that make account status visible without a meeting.",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-63920558",
-      "title": "Director, Strategy & Operations, Consumer",
-      "org_type": "Ethos Life",
-      "category": "Director / VP of Operations",
-      "seniority": "Operations Leadership",
-      "comp_low": 169000,
-      "comp_high": 298000,
-      "location": "Remote US",
-      "remote": "Remote",
-      "apply_url": "https://boards.greenhouse.io/ethoslife/jobs/8328817002",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1766227917,
-      "source_org_label": "Ethos Life",
-      "source_reported_date": "2025-12-20",
-      "canonical_job_id": "greenhouse:ethoslife:8328817002",
-      "date_posted": "2025-12-19",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2025-12-19T20:17:56-05:00",
-      "source_updated_at": "2026-09-18T13:10:31-04:00",
-      "pay": {
-        "low": 169000,
-        "high": 298000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 169000,
-            "high": 298000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "The US national base salary range for this full-time position is $169,000 - $298,000.",
-      "benefits": [
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Remote",
-        "scope_track": "Operations Leadership",
-        "scope_reason": "Director/VP duties establish executive operations leadership"
-      },
-      "summary": "Your job is to drive cross-functional initiatives spanning marketing, product, and sales to establish and scale revenue growth initiatives with full accountability for results.",
-      "metro": "Remote",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "getro-222-91494455",
-      "title": "Director of Operations",
-      "org_type": "Campus",
-      "category": "Director / VP of Operations",
-      "seniority": "Operations Leadership",
-      "comp_low": 170000,
-      "comp_high": 190000,
-      "location": "Campus NYC",
-      "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/Campus/956f9e5b-9229-49c0-96b4-4aa473a5f76d",
-      "source": "General Catalyst Portfolio",
-      "source_indexed_at": 1787927398,
-      "source_org_label": "Campus",
-      "source_reported_date": "2026-08-28",
-      "canonical_job_id": "ashby:campus:956f9e5b-9229-49c0-96b4-4aa473a5f76d",
-      "last_published_at": "2026-08-27T16:07:04.726+00:00",
-      "pay": {
-        "low": 170000,
-        "high": 190000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 170000,
-            "high": 190000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "- A compensation package that includes a base salary $170,000 - $190,000 + equity grant",
-      "benefits": [
-        "Equity",
-        "Health coverage",
-        "401(k)"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-14",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-10-29",
-        "statistics_eligible": true,
-        "structured_work_mode": "Hybrid",
-        "scope_track": "Operations Leadership",
-        "scope_reason": "Director/VP duties establish executive operations leadership"
-      },
-      "summary": "Reporting to the COO, you'll work closely with Financial Aid leaders and cross-functional partners to optimize day-to-day operations, solve bottlenecks, and design scalable processes that improve both the student and staff experience.",
-      "metro": "Other",
       "source_type": "VC portfolio"
     },
     {
@@ -12851,6 +11803,8 @@
       "source_org_label": "Heron Data",
       "source_reported_date": "2025-12-17",
       "canonical_job_id": "ashby:herondata:ee2e9119-aac9-4341-b3aa-07b6db636de9",
+      "date_posted": "2026-09-29",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-29T21:16:25.103+00:00",
       "pay": {
         "low": 150000,
@@ -12914,6 +11868,8 @@
       "source_org_label": "Docker",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "ashby:docker:6aa3ae03-ad79-4f3d-a930-1588be0ddec7",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-20T20:29:06.810+00:00",
       "pay": {
         "low": 113400,
@@ -12975,6 +11931,8 @@
       "source_org_label": "Docker",
       "source_reported_date": "2026-10-21",
       "canonical_job_id": "ashby:docker:ae36c575-cf76-46d5-b9be-3226333debb4",
+      "date_posted": "2026-10-20",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-20T20:48:20.729+00:00",
       "pay": {
         "low": 113400,
@@ -13169,6 +12127,8 @@
       "source_org_label": "Alma",
       "source_reported_date": "2026-10-01",
       "canonical_job_id": "ashby:deaa6ad2-d184-436b-b69e-17f761da1d94:3daaa470-0c6b-4c57-a793-d9abe54dbf11",
+      "date_posted": "2026-09-29",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-09-29T14:37:38.771+00:00",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
@@ -13299,6 +12259,8 @@
       "source_org_label": "Alma",
       "source_reported_date": "2026-10-17",
       "canonical_job_id": "ashby:deaa6ad2-d184-436b-b69e-17f761da1d94:6c2effd8-9dfa-4198-b8b1-c5c4608298b7",
+      "date_posted": "2026-10-16",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-16T21:45:38.176+00:00",
       "pay": {
         "low": 200000,
@@ -13362,6 +12324,8 @@
       "source_org_label": "Trunk Tools",
       "source_reported_date": "2026-10-14",
       "canonical_job_id": "ashby:trunk%20tools:a1670028-bc66-48f2-9cfc-778bff7ecc73",
+      "date_posted": "2026-10-13",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-13T19:39:47.008+00:00",
       "pay": {
         "low": 160000,
@@ -13425,6 +12389,8 @@
       "source_org_label": "Alma",
       "source_reported_date": "2026-10-14",
       "canonical_job_id": "ashby:deaa6ad2-d184-436b-b69e-17f761da1d94:336af452-7b72-4d78-b468-cc22c2704073",
+      "date_posted": "2026-10-13",
+      "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-13T21:03:49.672+00:00",
       "work_mode_note": "Hybrid schedule with 2 onsite days per week.",
       "pay": {
