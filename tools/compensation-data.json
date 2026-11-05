@@ -81,19 +81,19 @@
    "measure": "Employer-reported occupation wages"
   },
   "premium": {
-   "p25": 130000,
-   "median": 152500,
-   "p75": 167500,
-   "medianPublishedLow": 135000,
+   "p25": 135000,
+   "median": 156000,
+   "p75": 169375,
+   "medianPublishedLow": 138000,
    "medianPublishedHigh": 170000,
-   "sample": 69,
+   "sample": 62,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
    "selection": "Only postings with a published pay midpoint of at least $100,000",
-   "asOf": "2026-11-04",
+   "asOf": "2026-11-05",
    "hourlyExcluded": 3,
-   "statisticsExcludedOrUnknown": 48
+   "statisticsExcludedOrUnknown": 50
   },
   "geography": {
    "sf": {
@@ -166,15 +166,15 @@
   "premium": {
    "p25": 130000,
    "median": 172500,
-   "p75": 220000,
+   "p75": 235000,
    "medianPublishedLow": 145000,
    "medianPublishedHigh": 200000,
-   "sample": 26,
+   "sample": 20,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-11-04",
-   "statisticsExcludedOrUnknown": 37
+   "asOf": "2026-11-05",
+   "statisticsExcludedOrUnknown": 36
   },
   "bonusContext": {
    "prevalence": 0.57,
@@ -192,17 +192,17 @@
  },
  "executiveOperations": {
   "premium": {
-   "p25": 155000,
-   "median": 190000,
-   "p75": 232500,
-   "medianPublishedLow": 160000,
-   "medianPublishedHigh": 220000,
-   "sample": 21,
+   "p25": 151250,
+   "median": 172500,
+   "p75": 229375,
+   "medianPublishedLow": 156500,
+   "medianPublishedHigh": 188500,
+   "sample": 14,
    "source": "Exec Ops Brief active roles",
    "sourceUrl": "https://execopsbrief.github.io/eob-assets/jobboard/roles.json",
    "measure": "Posted salary midpoint",
-   "asOf": "2026-11-04",
-   "statisticsExcludedOrUnknown": 10
+   "asOf": "2026-11-05",
+   "statisticsExcludedOrUnknown": 11
   },
   "blsProxies": [
    {
@@ -230,10 +230,10 @@
  },
  "_statisticsSnapshot": {
   "schemaVersion": 1,
-  "snapshotId": "776ef0433593a904adb57c490e1e19242a233e953f1240219bf1cb78355fc759",
+  "snapshotId": "804126f7552aaad22bd69917e74f97490fa29f9afcc643f2b72b00c3650ed6d6",
   "cohort": {
-   "roles_total": 224,
-   "annual_eligible_n": 123,
+   "roles_total": 201,
+   "annual_eligible_n": 100,
    "verified_hourly_n": 3,
    "excluded_or_unknown_n": 98,
    "explicitly_ineligible_n": 98,
