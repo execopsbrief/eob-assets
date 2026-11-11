@@ -239,6 +239,12 @@
       };
     }
     var ops = data.executiveOperations.premium;
+    if (ops.status === "insufficient_sample" || ![ops.p25,ops.median,ops.p75].every(function(v){ return typeof v === "number" && Number.isFinite(v); })){
+      return {kind:"unavailable",label:"Executive Operations salary comparison unavailable",
+        source:ops.source,sourceUrl:ops.sourceUrl,
+        detail:"n=" + ops.sample + "; minimum " + (ops.minSample || 10) + "; snapshot " + (ops.asOf || "date not recorded"),
+        note:"Too few eligible annual base-pay postings. Figures are withheld, not zero. Cash totals below use your offer inputs only; no market rating is assigned."};
+    }
     return {
       kind:"band",
       low:ops.p25,
@@ -306,7 +312,12 @@
 
     var benchmark = benchmarkFor(role,stage,location);
     var baseStyle,baseLabel,baseText,baseLine;
-    if (benchmark.kind === "band"){
+    if (benchmark.kind === "unavailable"){
+      baseStyle = "wait";
+      baseLabel = "Benchmark unavailable";
+      baseLine = benchmark.label;
+      baseText = "No below/within/above-market comparison is available for this snapshot.";
+    } else if (benchmark.kind === "band"){
       baseLine = benchmark.label + ": " + money(benchmark.low) + " to " + money(benchmark.high) + "; midpoint/median " + money(benchmark.median) + ".";
       if (base < benchmark.low){
         baseStyle = "below";
@@ -673,7 +684,7 @@
     });
   }
 
-  fetch("compensation-data.json",{cache:"no-store"})
+  fetch("compensation-data-v2.json",{cache:"no-store"})
     .then(function(response){
       if (!response.ok) throw new Error("Data request failed");
       return response.json();

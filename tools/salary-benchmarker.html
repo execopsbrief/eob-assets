@@ -350,7 +350,7 @@
   };
 
   function money(v){
-    return "$" + Math.round(v).toLocaleString("en-US");
+    return typeof v === "number" && Number.isFinite(v) ? "$" + Math.round(v).toLocaleString("en-US") : "Unavailable";
   }
   function esc(v){
     return String(v == null ? "" : v)
@@ -377,6 +377,14 @@
   function sourceCard(title,stat,body,citation,badge){
     return '<div class="eob-source-card"><h4>' + esc(title) + (badge ? confidence(badge) : "") + '</h4>'
       + '<div class="eob-stat">' + esc(stat) + '</div><p>' + esc(body) + '</p>' + citation + '</div>';
+  }
+
+  function premiumAvailable(p){
+    return p && p.status !== "insufficient_sample" && [p.p25,p.median,p.p75].every(function(v){ return typeof v === "number" && Number.isFinite(v); });
+  }
+  function premiumUnavailable(p){
+    return sourceCard("Posted-pay snapshot","Unavailable",
+      "Too few eligible annual base-pay postings to show a salary comparison (n=" + p.sample + "; minimum " + (p.minSample || 10) + "). Figures are withheld, not zero.",premiumCite(p),"Insufficient sample");
   }
 
   function renderEA(){
@@ -414,7 +422,7 @@
         + sourceCard("Broad employer market",money(ea.bls.medianAnnualized),"Annualized occupation median; employer-reported and not startup-specific.",cite(ea.bls.source,ea.bls.sourceUrl,ea.bls.measure),"Broad baseline")
         + sourceCard("Projected starting pay",money(ea.robertHalfStarting.ea.low) + " - " + money(ea.robertHalfStarting.ea.high),"National EA low, midpoint " + money(ea.robertHalfStarting.ea.mid) + ", and high starting pay.",cite(ea.robertHalfStarting.source,ea.robertHalfStarting.sourceUrl,ea.robertHalfStarting.measure),"Starting pay")
         + sourceCard("Independent incumbent survey",money(ea.titleMeans.ea.meanBase),"EA mean base. The all-admin national median is " + money(ea.independentNational.allAdminMedian) + ".",cite(ea.independentNational.source,ea.independentNational.sourceUrl,"n=" + ea.independentNational.sample + " overall; EA title n not disclosed"),"Contextual mean")
-        + sourceCard("Posted-pay snapshot",money(ea.premium.median),"Posted midpoint P25 " + money(ea.premium.p25) + "; P75 " + money(ea.premium.p75) + ".",premiumCite(ea.premium),"Moderate confidence")
+        + (premiumAvailable(ea.premium) ? sourceCard("Posted-pay snapshot",money(ea.premium.median),"Posted midpoint P25 " + money(ea.premium.p25) + "; P75 " + money(ea.premium.p75) + ".",premiumCite(ea.premium),"Moderate confidence") : premiumUnavailable(ea.premium))
         + '</div>';
     } else if (titleKey === "eapa"){
       html += rangeBlock(
@@ -427,7 +435,7 @@
       );
       html += '<div class="eob-source-grid">'
         + sourceCard("Standard EA incumbent band",money(ea.cSuiteNational.median),"Standard EA median; P25 " + money(ea.cSuiteNational.p25) + " and P75 " + money(ea.cSuiteNational.p75) + ".",cite(ea.cSuiteNational.source,ea.cSuiteNational.sourceUrl,"n≈" + ea.cSuiteNational.sample),"Comparison")
-        + sourceCard("EA posted-pay snapshot",money(ea.premium.median),"Eligible annual base-pay EA postings, not an EA/PA-only cell.",premiumCite(ea.premium),"Context only")
+        + (premiumAvailable(ea.premium) ? sourceCard("EA posted-pay snapshot",money(ea.premium.median),"Eligible annual base-pay EA postings, not an EA/PA-only cell.",premiumCite(ea.premium),"Context only") : premiumUnavailable(ea.premium))
         + '</div>';
     } else {
       var t = ea.titleMeans[titleKey];
@@ -443,7 +451,7 @@
         html += sourceCard("Senior EA starting pay",money(ea.robertHalfStarting.senior_ea.low) + " - " + money(ea.robertHalfStarting.senior_ea.high),"Projected national starting range; midpoint " + money(ea.robertHalfStarting.senior_ea.mid) + ".",cite(ea.robertHalfStarting.source,ea.robertHalfStarting.sourceUrl,ea.robertHalfStarting.measure),"Starting pay");
       }
       html += sourceCard("Standard EA incumbent band",money(ea.cSuiteNational.median),"P25 " + money(ea.cSuiteNational.p25) + "; P75 " + money(ea.cSuiteNational.p75) + ".",cite(ea.cSuiteNational.source,ea.cSuiteNational.sourceUrl,"n≈" + ea.cSuiteNational.sample),"Role context")
-        + sourceCard("EA posted-pay snapshot",money(ea.premium.median),"Eligible annual base-pay EA postings; seniority is not complete enough for a title-specific cut.",premiumCite(ea.premium),"Context only")
+        + (premiumAvailable(ea.premium) ? sourceCard("EA posted-pay snapshot",money(ea.premium.median),"Eligible annual base-pay EA postings; seniority is not complete enough for a title-specific cut.",premiumCite(ea.premium),"Context only") : premiumUnavailable(ea.premium))
         + '</div>';
       if (marketKey !== "national"){
         html += '<div class="eob-notice">No defensible ' + esc(t.label) + ' by city cell is available. The tool is showing national title context and has not applied a location multiplier.</div>';
@@ -475,7 +483,7 @@
       + cite(cos.stageSource.source,cos.stageSource.sourceUrl,"n=" + cos.stageSource.sample + " overall; stage cell n not published") + '</div>'
       + '<div class="eob-source-grid">'
       + sourceCard("Overall incumbent cross-check",money(cos.networkCrosscheck.median),"Overall median; published mean " + money(cos.networkCrosscheck.mean) + ".",cite(cos.networkCrosscheck.source,cos.networkCrosscheck.sourceUrl,"public sample size not disclosed"),"Context only")
-      + sourceCard("Posted-pay snapshot",money(cos.premium.median),"Posted midpoint P25 " + money(cos.premium.p25) + "; P75 " + money(cos.premium.p75) + ".",premiumCite(cos.premium),"Moderate confidence")
+      + (premiumAvailable(cos.premium) ? sourceCard("Posted-pay snapshot",money(cos.premium.median),"Posted midpoint P25 " + money(cos.premium.p25) + "; P75 " + money(cos.premium.p75) + ".",premiumCite(cos.premium),"Moderate confidence") : premiumUnavailable(cos.premium))
       + sourceCard("CoS versus BizOps","About 15% ±5%","Pave finds a same-level CoS salary premium over BizOps. This is a relationship, not a stage-specific salary band.",cite(data.executiveOperations.paveContext.source,data.executiveOperations.paveContext.sourceUrl,data.executiveOperations.paveContext.coverage),"Employer records")
       + sourceCard("Bonus and equity incidence",pctOf(cos.bonusContext.prevalence) + " / " + pctOf(cos.equityContext.prevalence),"In a small, seniority-weighted CoS survey based mainly outside the US, " + pctOf(cos.bonusContext.prevalence) + " received a bonus and " + pctOf(cos.equityContext.prevalence) + " held equity. Incidence is not an amount, and neither is guaranteed in any single offer.",cite(cos.bonusContext.source,cos.bonusContext.sourceUrl,"n=" + cos.bonusContext.sample),"Context only")
       + '</div>';
@@ -487,14 +495,14 @@
     els.summary.textContent = "Executive Operations / BizOps";
     var proxyText = ops.blsProxies.map(function(p){ return p.label + ": " + money(p.medianAnnualized); }).join(" · ");
     els.output.innerHTML =
-      rangeBlock(
+      (premiumAvailable(ops.premium) ? rangeBlock(
         "Posted-pay snapshot",
         ops.premium.p25,ops.premium.median,ops.premium.p75,
         ["P25","Median","P75"],
         "Eligible annual base-pay midpoints from the dated posting snapshot. Title ambiguity and the $100k midpoint floor mean this is not a national occupation median.",
         premiumCite(ops.premium),
         "Moderate confidence"
-      )
+      ) : premiumUnavailable(ops.premium))
       + '<div class="eob-source-grid">'
       + sourceCard("Broad occupation proxies","$102k - $114k",proxyText + ". These occupations are context, not direct equivalents.",cite("BLS May 2025 OEWS",bls.sourceUrl,"employer-reported wages"),"Proxy only")
       + sourceCard("CoS versus BizOps relationship","About 15% ±5%",ops.paveContext.label + ". Do not convert this into a universal role multiplier.",cite(ops.paveContext.source,ops.paveContext.sourceUrl,ops.paveContext.coverage),"Employer records")
@@ -689,7 +697,7 @@
   els.stage.addEventListener("change",render);
   els.market.addEventListener("change",render);
 
-  fetch("compensation-data.json",{cache:"no-store"})
+  fetch("compensation-data-v2.json",{cache:"no-store"})
     .then(function(response){
       if (!response.ok) throw new Error("Data request failed");
       return response.json();
