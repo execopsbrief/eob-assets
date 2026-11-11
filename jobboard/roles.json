@@ -2,9 +2,9 @@
   "_note": "Executive Assistant, Executive Operations, and Chief of Staff roles for The Exec Ops Brief job board, aggregated from recruiting agencies, direct job boards, and VC portfolio feeds. The board is aggregated, not vetted, screened, hand-picked or curated; llms.txt states this and this note must agree with it. PAY FLOOR (enforced in code since 2026-07-13): every role on this board carries a compensation figure PUBLISHED BY THE SOURCE whose midpoint -- (comp_low + comp_high) / 2, or the single figure where only one is published -- is at least $100,000. A role whose published midpoint falls below $100k is excluded, and a role whose source publishes no comp figure at all is excluded (there are no 'comp not listed' rows). No comp figure is ever estimated, inferred, or invented; comp honesty outranks board size. Where a posting publishes an HOURLY rate instead of a salary, comp_period='hr' and comp_low/comp_high hold the verbatim $/hr figures (annualized at 2080h ONLY to apply the floor, never for display). Most roles also carry a short summary excerpted VERBATIM from the posting (never paraphrased); summary is null rather than invented when the source lacks readable role-specific text. A benefits list (bonus, equity, 401(k), health coverage, PTO, etc) detected only where the posting states them. Apply links point to the original source listing.",
   "updated": "2026-11-10",
   "schema_version": 1,
-  "snapshot_id": "ff1c66dca745d07161947f97bbc29fb74981170d951e1fb135ee78a8af0f3666",
+  "snapshot_id": "518c4eaa9e7f6737fc3f203eb56ac3046d4b2c193aef5ecd3cab8e9ff5a0917b",
   "quality_quarantined_count": 309,
-  "count": 235,
+  "count": 236,
   "roles": [
     {
       "id": "bloom-1533",
@@ -54,7 +54,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -113,7 +113,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -173,7 +173,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -233,7 +233,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -291,7 +291,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -355,7 +355,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -414,7 +414,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -473,7 +473,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -537,7 +537,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -601,7 +601,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -661,7 +661,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -683,7 +683,7 @@
       "seniority": "Executive Assistant",
       "comp_low": 200000,
       "comp_high": 220000,
-      "location": "San Francisco, California, CA, United States",
+      "location": "San Francisco, CA, California, United States",
       "remote": "",
       "apply_url": "https://recruiterflow.com/bloomtalent/jobs/1424",
       "source": "Bloom Talent",
@@ -723,7 +723,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -786,7 +786,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -848,7 +848,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -907,7 +907,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -971,7 +971,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1029,7 +1029,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1092,7 +1092,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1150,7 +1150,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1213,7 +1213,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1278,7 +1278,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1338,7 +1338,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1399,7 +1399,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1458,7 +1458,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1516,7 +1516,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1575,7 +1575,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1638,7 +1638,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1699,7 +1699,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1762,7 +1762,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1824,7 +1824,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1884,7 +1884,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1943,7 +1943,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -1971,9 +1971,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS16amxrY3IyMnJzNXY3bmtj",
       "source": "Burke & Co",
       "source_org_label": "Investment Firm",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS16amxrY3IyMnJzNXY3bmtj",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
@@ -2004,7 +2004,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2032,9 +2032,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1veWRsdnM1eG5xa3dvZXFs",
       "source": "Burke & Co",
       "source_org_label": "Health Tech Startup",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1veWRsdnM1eG5xa3dvZXFs",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
@@ -2065,7 +2065,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2093,9 +2093,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS04d2VtZjMycHQ1eGQ5aXlm",
       "source": "Burke & Co",
       "source_org_label": "AI Startup",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS04d2VtZjMycHQ1eGQ5aXlm",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 135000,
@@ -2127,7 +2127,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2139,67 +2139,6 @@
         "scope_reason": "executive-support duties establish the role track"
       },
       "summary": "Own an exceptionally complex calendar, ensuring the CEO's time aligns with the company's highest priorities.",
-      "metro": "SF Bay Area",
-      "source_type": "Recruiter"
-    },
-    {
-      "id": "burke-E2eG81Nmdq",
-      "title": "Senior Executive Assistant to Founder - Investment Firm - San Francisco (Onsite)",
-      "org_type": "",
-      "category": "Executive Assistant",
-      "seniority": "Senior Executive Assistant",
-      "comp_low": 200000,
-      "comp_high": 300000,
-      "location": "San Francisco, CA (Onsite)",
-      "remote": "",
-      "apply_url": "https://app.loxo.co/job/MTcwNS1qb285eDJiaXE2eG81Nmdq",
-      "source": "Burke & Co",
-      "source_org_label": "Investment Firm",
-      "source_reported_date": "2026-11-09",
-      "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1qb285eDJiaXE2eG81Nmdq",
-      "date_posted": "2026-11-09",
-      "posted_date_kind": "source_reported_index",
-      "pay": {
-        "low": 200000,
-        "high": 300000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 200000,
-            "high": 300000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "COMPENSATION: $200k-300k+ base salary + bonus + benefits (exact compensation will vary based on skills, experience, and expertise)",
-      "benefits": [
-        "Bonus"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": true,
-        "employer_status": "withheld",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Own an exceptionally complex and fluid executive calendar, navigating constant changes, competing priorities, and last-minute requests with confidence and sound judgment.",
       "metro": "SF Bay Area",
       "source_type": "Recruiter"
     },
@@ -2247,7 +2186,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2260,6 +2199,67 @@
       },
       "summary": "Own a highly dynamic calendar, travel schedule, and day-to-day logistics, ensuring the CEO is prepared and positioned for what’s ahead Operate several steps ahead of the CEO, anticipating needs, identifying potential issues, and proactively solving problems before they arise Build and implement",
       "metro": "NYC",
+      "source_type": "Recruiter"
+    },
+    {
+      "id": "burke-E2eG81Nmdq",
+      "title": "Senior Executive Assistant to Founder - Investment Firm - San Francisco (Onsite)",
+      "org_type": "",
+      "category": "Executive Assistant",
+      "seniority": "Senior Executive Assistant",
+      "comp_low": 200000,
+      "comp_high": 300000,
+      "location": "San Francisco, CA (Onsite)",
+      "remote": "",
+      "apply_url": "https://app.loxo.co/job/MTcwNS1qb285eDJiaXE2eG81Nmdq",
+      "source": "Burke & Co",
+      "source_org_label": "Investment Firm",
+      "source_reported_date": "2026-11-08",
+      "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1qb285eDJiaXE2eG81Nmdq",
+      "date_posted": "2026-11-08",
+      "posted_date_kind": "source_reported_index",
+      "pay": {
+        "low": 200000,
+        "high": 300000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 200000,
+            "high": 300000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "COMPENSATION: $200k-300k+ base salary + bonus + benefits (exact compensation will vary based on skills, experience, and expertise)",
+      "benefits": [
+        "Bonus"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": true,
+        "employer_status": "withheld",
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Own an exceptionally complex and fluid executive calendar, navigating constant changes, competing priorities, and last-minute requests with confidence and sound judgment.",
+      "metro": "SF Bay Area",
       "source_type": "Recruiter"
     },
     {
@@ -2306,7 +2306,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2334,9 +2334,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1xMGVvdnF5YWJocGdna2l5",
       "source": "Burke & Co",
       "source_org_label": "AI Company",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1xMGVvdnF5YWJocGdna2l5",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 140000,
@@ -2367,7 +2367,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2395,9 +2395,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1sZHZrY2s2eWR4ZjU3MXZ2",
       "source": "Burke & Co",
       "source_org_label": "Global Tech Company",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1sZHZrY2s2eWR4ZjU3MXZ2",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 170000,
@@ -2429,7 +2429,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2457,9 +2457,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1nMjFnamNidjBveGVkdnpt",
       "source": "Burke & Co",
       "source_org_label": "AI Startup",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1nMjFnamNidjBveGVkdnpt",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
@@ -2491,7 +2491,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2519,9 +2519,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS13M3FxeWc2MjYxdmlnaGk0",
       "source": "Burke & Co",
       "source_org_label": "Law Firm",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS13M3FxeWc2MjYxdmlnaGk0",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 120000,
@@ -2552,7 +2552,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2580,9 +2580,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1udDg4NWpqZmJpeDJhcHA1",
       "source": "Burke & Co",
       "source_org_label": "Private Equity",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1udDg4NWpqZmJpeDJhcHA1",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 130000,
@@ -2613,7 +2613,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2675,7 +2675,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2736,7 +2736,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2764,9 +2764,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS05dGFra2RjZm5iN3FsM2Yw",
       "source": "Burke & Co",
       "source_org_label": "AI Startup",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS05dGFra2RjZm5iN3FsM2Yw",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 150000,
@@ -2798,7 +2798,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2859,7 +2859,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2887,9 +2887,9 @@
       "apply_url": "https://app.loxo.co/job/MTcwNS1vbmxod2lyeXd6eXhxeDQ5",
       "source": "Burke & Co",
       "source_org_label": "Investment Firm",
-      "source_reported_date": "2026-11-09",
+      "source_reported_date": "2026-11-08",
       "canonical_job_id": "url:https://app.loxo.co/job/MTcwNS1vbmxod2lyeXd6eXhxeDQ5",
-      "date_posted": "2026-11-09",
+      "date_posted": "2026-11-08",
       "posted_date_kind": "source_reported_index",
       "work_mode_note": "Hybrid schedule with 4 onsite days per week.",
       "pay": {
@@ -2921,7 +2921,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -2981,7 +2981,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3041,7 +3041,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3101,7 +3101,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3163,7 +3163,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3222,7 +3222,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3281,7 +3281,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3345,7 +3345,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3409,7 +3409,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3473,7 +3473,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3538,7 +3538,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3598,7 +3598,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3657,7 +3657,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3718,7 +3718,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3781,7 +3781,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3843,7 +3843,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3902,7 +3902,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -3961,7 +3961,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4024,7 +4024,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4085,7 +4085,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4147,7 +4147,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4211,7 +4211,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4270,7 +4270,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4329,7 +4329,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4390,7 +4390,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4448,7 +4448,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4511,7 +4511,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4570,7 +4570,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4632,7 +4632,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4695,7 +4695,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4754,7 +4754,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4816,7 +4816,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4875,7 +4875,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4933,7 +4933,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -4991,7 +4991,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5051,7 +5051,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5109,7 +5109,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5174,7 +5174,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5235,7 +5235,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5297,7 +5297,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5356,7 +5356,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5421,7 +5421,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5481,7 +5481,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5545,7 +5545,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5606,7 +5606,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5668,7 +5668,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5730,7 +5730,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5791,7 +5791,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5851,7 +5851,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5914,7 +5914,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -5973,7 +5973,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6039,7 +6039,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6101,7 +6101,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6166,7 +6166,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6231,7 +6231,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6297,7 +6297,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6357,7 +6357,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6416,7 +6416,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6476,7 +6476,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6537,7 +6537,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6596,7 +6596,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6658,7 +6658,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6679,7 +6679,7 @@
       "category": "Chief of Staff",
       "seniority": "Chief of Staff",
       "comp_low": 212330,
-      "comp_high": 212330,
+      "comp_high": 249800,
       "location": "Austin, TX",
       "remote": "Remote",
       "apply_url": "https://www.chiefofstaff.network/jobs/chief-of-staff-coinbase-07i",
@@ -6691,21 +6691,21 @@
       "posted_date_kind": "source_reported_index",
       "pay": {
         "low": 212330,
-        "high": 212330,
+        "high": 249800,
         "currency": "USD",
         "period": "year",
         "basis": "total_target",
-        "bound": "exact",
+        "bound": "range",
         "phase": "current",
         "geography": "",
         "bands": [
           {
             "low": 212330,
-            "high": 212330,
+            "high": 249800,
             "currency": "USD",
             "period": "year",
             "basis": "total_target",
-            "bound": "exact",
+            "bound": "range",
             "phase": "current",
             "geography": ""
           }
@@ -6721,7 +6721,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6780,7 +6780,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6843,7 +6843,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6911,7 +6911,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -6973,7 +6973,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7036,7 +7036,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7095,7 +7095,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7155,7 +7155,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7218,7 +7218,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7282,7 +7282,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7342,7 +7342,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7402,7 +7402,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7462,7 +7462,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7523,7 +7523,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7582,7 +7582,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7640,7 +7640,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7698,7 +7698,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7756,7 +7756,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7814,7 +7814,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7872,7 +7872,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7930,7 +7930,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -7988,7 +7988,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8046,7 +8046,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8104,7 +8104,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8169,7 +8169,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8233,7 +8233,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8301,7 +8301,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8313,6 +8313,66 @@
       },
       "summary": "Communications & Content: Own communications from the Production leadership team, all-hands content, email updates, and departmental rollouts.",
       "metro": "Other",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn70tfggmfp7kw9m9ewd",
+      "title": "Chief of Staff to the CTO",
+      "org_type": "Northwood Space",
+      "category": "Chief of Staff",
+      "seniority": "Chief of Staff",
+      "comp_low": 100000,
+      "comp_high": 200000,
+      "location": "Torrance, CA",
+      "remote": "Onsite",
+      "apply_url": "https://jobs.ashbyhq.com/northwoodspace/88f836f9-ad73-46da-8953-bb894139e8f9/application",
+      "source": "a16z Portfolio",
+      "source_org_label": "Northwood Space",
+      "source_reported_date": "2026-09-02",
+      "canonical_job_id": "ashby:northwoodspace:88f836f9-ad73-46da-8953-bb894139e8f9",
+      "date_posted": "2026-09-02",
+      "posted_date_kind": "api_last_published",
+      "last_published_at": "2026-09-02T06:27:07.848+00:00",
+      "pay": {
+        "low": 100000,
+        "high": 200000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 100000,
+            "high": 200000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 100000, \"maxValue\": 200000}",
+      "benefits": [],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": true,
+        "structured_work_mode": "Onsite",
+        "scope_track": "Chief of Staff",
+        "scope_reason": "chief-of-staff title and role duties agree"
+      },
+      "summary": "Drive complex, cross-functional initiatives to completion, ensuring clear ownership, sequencing, and outcomes",
+      "metro": "LA",
       "source_type": "VC portfolio"
     },
     {
@@ -8370,7 +8430,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8382,66 +8442,6 @@
       },
       "summary": "Cross-Functional Alignment with Sales Strategy & Operations: Partner seamlessly with Sales Strategy & Operations by translating strategic outputs into operational workstreams, leadership narratives, and review frameworks.",
       "metro": "NYC",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn70tfggmfp7kw9m9ewd",
-      "title": "Chief of Staff to the CTO",
-      "org_type": "Northwood Space",
-      "category": "Chief of Staff",
-      "seniority": "Chief of Staff",
-      "comp_low": 100000,
-      "comp_high": 200000,
-      "location": "Torrance, CA",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.ashbyhq.com/northwoodspace/88f836f9-ad73-46da-8953-bb894139e8f9/application",
-      "source": "a16z Portfolio",
-      "source_org_label": "Northwood Space",
-      "source_reported_date": "2026-09-02",
-      "canonical_job_id": "ashby:northwoodspace:88f836f9-ad73-46da-8953-bb894139e8f9",
-      "date_posted": "2026-09-02",
-      "posted_date_kind": "api_last_published",
-      "last_published_at": "2026-09-02T06:27:07.848+00:00",
-      "pay": {
-        "low": 100000,
-        "high": 200000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 100000,
-            "high": 200000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 100000, \"maxValue\": 200000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Chief of Staff",
-        "scope_reason": "chief-of-staff title and role duties agree"
-      },
-      "summary": "Drive complex, cross-functional initiatives to completion, ensuring clear ownership, sequencing, and outcomes",
-      "metro": "LA",
       "source_type": "VC portfolio"
     },
     {
@@ -8492,7 +8492,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8560,7 +8560,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8621,7 +8621,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8634,6 +8634,72 @@
       },
       "summary": "Your mandate is to own the most complex cross-functional challenges, unblock technical and operational bottlenecks, and ensure that the core product, engineering, and organizational engines operate with speed, coherence, and precision.",
       "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn7by60bw7hympqdav9y",
+      "title": "Executive Assistant",
+      "org_type": "Harvey",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 127600,
+      "comp_high": 175500,
+      "location": "New York",
+      "remote": "Hybrid",
+      "apply_url": "https://jobs.ashbyhq.com/harvey/f855afb3-74d9-43f3-b7ff-964ea387db37/application",
+      "source": "a16z Portfolio",
+      "sources": [
+        "Lightspeed Portfolio",
+        "Sequoia Portfolio",
+        "a16z Portfolio"
+      ],
+      "source_org_label": "Harvey",
+      "source_reported_date": "2026-11-05",
+      "canonical_job_id": "ashby:harvey:f855afb3-74d9-43f3-b7ff-964ea387db37",
+      "date_posted": "2026-11-05",
+      "posted_date_kind": "api_last_published",
+      "last_published_at": "2026-11-05T15:41:18.347+00:00",
+      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
+      "pay": {
+        "low": 127600,
+        "high": 175500,
+        "currency": "USD",
+        "period": "year",
+        "basis": "unknown",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 127600,
+            "high": 175500,
+            "currency": "USD",
+            "period": "year",
+            "basis": "unknown",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "COMPENSATION $127,600 - $175,500 USD",
+      "benefits": [],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": false,
+        "structured_work_mode": "Hybrid",
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Manage a complex calendar: team syncs, customer and prospect meetings, and company events",
+      "metro": "NYC",
       "source_type": "VC portfolio"
     },
     {
@@ -8688,7 +8754,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8753,7 +8819,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -8765,138 +8831,6 @@
       },
       "summary": "This is a fast-paced, high-impact role where you’ll manage complex calendars, coordinate travel, plan events, act as a liaison for internal teams, and provide personal assistance as needed.",
       "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7405m2m94rfzxvpb37",
-      "title": "Executive Assistant",
-      "org_type": "Harvey",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 127600,
-      "comp_high": 175500,
-      "location": "San Francisco",
-      "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/harvey/1483470d-c402-4d26-8f11-e1a2e404ce79/application",
-      "source": "a16z Portfolio",
-      "sources": [
-        "Lightspeed Portfolio",
-        "Sequoia Portfolio",
-        "a16z Portfolio"
-      ],
-      "source_org_label": "Harvey",
-      "source_reported_date": "2026-11-05",
-      "canonical_job_id": "ashby:harvey:1483470d-c402-4d26-8f11-e1a2e404ce79",
-      "date_posted": "2026-11-05",
-      "posted_date_kind": "api_last_published",
-      "last_published_at": "2026-11-05T15:41:22.160+00:00",
-      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
-      "pay": {
-        "low": 127600,
-        "high": 175500,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 127600,
-            "high": 175500,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "COMPENSATION $127,600 - $175,500 USD",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": false,
-        "structured_work_mode": "Hybrid",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Manage a complex calendar: team syncs, customer and prospect meetings, and company events",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn7by60bw7hympqdav9y",
-      "title": "Executive Assistant",
-      "org_type": "Harvey",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 127600,
-      "comp_high": 175500,
-      "location": "New York",
-      "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/harvey/f855afb3-74d9-43f3-b7ff-964ea387db37/application",
-      "source": "a16z Portfolio",
-      "sources": [
-        "Lightspeed Portfolio",
-        "Sequoia Portfolio",
-        "a16z Portfolio"
-      ],
-      "source_org_label": "Harvey",
-      "source_reported_date": "2026-11-05",
-      "canonical_job_id": "ashby:harvey:f855afb3-74d9-43f3-b7ff-964ea387db37",
-      "date_posted": "2026-11-05",
-      "posted_date_kind": "api_last_published",
-      "last_published_at": "2026-11-05T15:41:18.347+00:00",
-      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
-      "pay": {
-        "low": 127600,
-        "high": 175500,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 127600,
-            "high": 175500,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "COMPENSATION $127,600 - $175,500 USD",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": false,
-        "structured_work_mode": "Hybrid",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Manage a complex calendar: team syncs, customer and prospect meetings, and company events",
-      "metro": "NYC",
       "source_type": "VC portfolio"
     },
     {
@@ -8944,7 +8878,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9017,7 +8951,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9033,39 +8967,45 @@
       "source_type": "VC portfolio"
     },
     {
-      "id": "consider-a16z-ats-mn72zb2jmrnf2a1bmfns",
-      "title": "Senior Executive Assistant",
-      "org_type": "Thyme Care",
+      "id": "consider-a16z-ats-mn7405m2m94rfzxvpb37",
+      "title": "Executive Assistant",
+      "org_type": "Harvey",
       "category": "Executive Assistant",
-      "seniority": "Senior Executive Assistant",
-      "comp_low": 119000,
-      "comp_high": 140000,
-      "location": "New York, NY ",
+      "seniority": "Executive Assistant",
+      "comp_low": 127600,
+      "comp_high": 175500,
+      "location": "San Francisco",
       "remote": "Hybrid",
-      "apply_url": "https://jobs.ashbyhq.com/thyme-care/f67e47e3-cf37-4a27-95b9-ca77b954f05d/application",
+      "apply_url": "https://jobs.ashbyhq.com/harvey/1483470d-c402-4d26-8f11-e1a2e404ce79/application",
       "source": "a16z Portfolio",
-      "source_org_label": "Thyme Care",
-      "source_reported_date": "2026-10-15",
-      "canonical_job_id": "ashby:thyme-care:f67e47e3-cf37-4a27-95b9-ca77b954f05d",
-      "date_posted": "2026-10-15",
+      "sources": [
+        "Lightspeed Portfolio",
+        "Sequoia Portfolio",
+        "a16z Portfolio"
+      ],
+      "source_org_label": "Harvey",
+      "source_reported_date": "2026-11-05",
+      "canonical_job_id": "ashby:harvey:1483470d-c402-4d26-8f11-e1a2e404ce79",
+      "date_posted": "2026-11-05",
       "posted_date_kind": "api_last_published",
-      "last_published_at": "2026-10-15T16:35:40.323+00:00",
+      "last_published_at": "2026-11-05T15:41:22.160+00:00",
+      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
-        "low": 119000,
-        "high": 140000,
+        "low": 127600,
+        "high": 175500,
         "currency": "USD",
         "period": "year",
-        "basis": "total_target",
+        "basis": "unknown",
         "bound": "range",
         "phase": "current",
         "geography": "",
         "bands": [
           {
-            "low": 119000,
-            "high": 140000,
+            "low": 127600,
+            "high": 175500,
             "currency": "USD",
             "period": "year",
-            "basis": "total_target",
+            "basis": "unknown",
             "bound": "range",
             "phase": "current",
             "geography": ""
@@ -9073,15 +9013,11 @@
         ],
         "selection_status": "selected"
       },
-      "comp_note": "Our salary ranges are based on paying competitively for our size and industry, and are one part of the total compensation package that also includes equity, benefits, and other opportunities at Thyme Care. The base salary for this role is $119,000 - $140,000.",
-      "benefits": [
-        "Equity",
-        "Health coverage",
-        "Paid time off"
-      ],
+      "comp_note": "COMPENSATION $127,600 - $175,500 USD",
+      "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9092,8 +9028,8 @@
         "scope_track": "Executive Assistant",
         "scope_reason": "executive-support duties establish the role track"
       },
-      "summary": "Thyme Care is looking for an exceptional Senior Executive Assistant to provide high-level support to our Co-Founder, President & Chief Medical Officer, as well as one or more other senior executives.",
-      "metro": "NYC",
+      "summary": "Manage a complex calendar: team syncs, customer and prospect meetings, and company events",
+      "metro": "SF Bay Area",
       "source_type": "VC portfolio"
     },
     {
@@ -9152,7 +9088,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9223,7 +9159,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9235,134 +9171,6 @@
       },
       "summary": "Provide direct support to our VP of Growth Marketing and our Director, B2B - Growth, Strategy, & Ops and the Growth Marketing team by attending leadership meetings, tracking agendas, capturing action items and following up on progress, heavy calendar management, inbox management, organizing all",
       "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn79xyyvhh5bhr6xr4h2",
-      "title": "Sr. Executive Assistant",
-      "org_type": "Databricks",
-      "category": "Executive Assistant",
-      "seniority": "Senior Executive Assistant",
-      "comp_low": 141100,
-      "comp_high": 194050,
-      "location": "Mountain View, California; San Francisco, California",
-      "remote": "",
-      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8487325002",
-      "source": "a16z Portfolio",
-      "sources": [
-        "General Catalyst Portfolio",
-        "Lightspeed Portfolio",
-        "a16z Portfolio"
-      ],
-      "source_org_label": "Databricks",
-      "source_reported_date": "2026-03-31",
-      "canonical_job_id": "greenhouse:databricks:8487325002",
-      "date_posted": "2026-03-31",
-      "posted_date_kind": "api_first_published",
-      "original_posted_at": "2026-03-31T18:31:33-04:00",
-      "source_updated_at": "2026-10-26T22:01:29-04:00",
-      "pay": {
-        "low": 141100,
-        "high": 194050,
-        "currency": "USD",
-        "period": "year",
-        "basis": "unknown",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 141100,
-            "high": 194050,
-            "currency": "USD",
-            "period": "year",
-            "basis": "unknown",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "Zone 1 Pay Range $141,100 - $194,050 USD",
-      "benefits": [
-        "Bonus",
-        "Equity"
-      ],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": false,
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "Additionally, you will drive strategic initiatives and community events that foster collaboration across the Engineering and Product organizations.",
-      "metro": "SF Bay Area",
-      "source_type": "VC portfolio"
-    },
-    {
-      "id": "consider-a16z-ats-mn77emgbjpbnz74pqn67",
-      "title": "Executive Assistant, Finance (R4688)",
-      "org_type": "Shield AI",
-      "category": "Executive Assistant",
-      "seniority": "Executive Assistant",
-      "comp_low": 80000,
-      "comp_high": 120000,
-      "location": "Dallas, Texas",
-      "remote": "Onsite",
-      "apply_url": "https://jobs.lever.co/shieldai/15dd87cc-7b43-439d-8266-94769514176e/apply",
-      "source": "a16z Portfolio",
-      "source_org_label": "Shield AI",
-      "source_reported_date": "2026-03-10",
-      "canonical_job_id": "url:https://jobs.lever.co/shieldai/15dd87cc-7b43-439d-8266-94769514176e/apply",
-      "date_posted": "2026-03-10",
-      "posted_date_kind": "api_created",
-      "original_posted_at": "2026-03-10T00:43:04.185000+00:00",
-      "pay": {
-        "low": 80000,
-        "high": 120000,
-        "currency": "USD",
-        "period": "year",
-        "basis": "base",
-        "bound": "range",
-        "phase": "current",
-        "geography": "",
-        "bands": [
-          {
-            "low": 80000,
-            "high": 120000,
-            "currency": "USD",
-            "period": "year",
-            "basis": "base",
-            "bound": "range",
-            "phase": "current",
-            "geography": ""
-          }
-        ],
-        "selection_status": "selected"
-      },
-      "comp_note": "salaryRange {\"currency\": \"USD\", \"interval\": \"per-year-salary\", \"min\": 80000, \"max\": 120000}",
-      "benefits": [],
-      "quality": {
-        "schema_version": 1,
-        "parser_version": "job-quality-15",
-        "identity_status": "verified",
-        "link_status": "active",
-        "scope_status": "verified",
-        "issues": [],
-        "observed_at": "2026-11-10",
-        "statistics_eligible": true,
-        "structured_work_mode": "Onsite",
-        "scope_track": "Executive Assistant",
-        "scope_reason": "executive-support duties establish the role track"
-      },
-      "summary": "This position is critical in ensuring smooth operations and providing seamless support for Finance leadership and key stakeholders.",
-      "metro": "Other",
       "source_type": "VC portfolio"
     },
     {
@@ -9419,7 +9227,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9431,6 +9239,198 @@
       },
       "summary": "Organize all meetings, including team meetings, customer engagements, and internal business partner discussions across international time zones.",
       "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn77emgbjpbnz74pqn67",
+      "title": "Executive Assistant, Finance (R4688)",
+      "org_type": "Shield AI",
+      "category": "Executive Assistant",
+      "seniority": "Executive Assistant",
+      "comp_low": 80000,
+      "comp_high": 120000,
+      "location": "Dallas, Texas",
+      "remote": "Onsite",
+      "apply_url": "https://jobs.lever.co/shieldai/15dd87cc-7b43-439d-8266-94769514176e/apply",
+      "source": "a16z Portfolio",
+      "source_org_label": "Shield AI",
+      "source_reported_date": "2026-03-10",
+      "canonical_job_id": "url:https://jobs.lever.co/shieldai/15dd87cc-7b43-439d-8266-94769514176e/apply",
+      "date_posted": "2026-03-10",
+      "posted_date_kind": "api_created",
+      "original_posted_at": "2026-03-10T00:43:04.185000+00:00",
+      "pay": {
+        "low": 80000,
+        "high": 120000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 80000,
+            "high": 120000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "salaryRange {\"currency\": \"USD\", \"interval\": \"per-year-salary\", \"min\": 80000, \"max\": 120000}",
+      "benefits": [],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": true,
+        "structured_work_mode": "Onsite",
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "This position is critical in ensuring smooth operations and providing seamless support for Finance leadership and key stakeholders.",
+      "metro": "Other",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn79xyyvhh5bhr6xr4h2",
+      "title": "Sr. Executive Assistant",
+      "org_type": "Databricks",
+      "category": "Executive Assistant",
+      "seniority": "Senior Executive Assistant",
+      "comp_low": 141100,
+      "comp_high": 194050,
+      "location": "Mountain View, California; San Francisco, California",
+      "remote": "",
+      "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8487325002",
+      "source": "a16z Portfolio",
+      "sources": [
+        "General Catalyst Portfolio",
+        "Lightspeed Portfolio",
+        "a16z Portfolio"
+      ],
+      "source_org_label": "Databricks",
+      "source_reported_date": "2026-03-31",
+      "canonical_job_id": "greenhouse:databricks:8487325002",
+      "date_posted": "2026-03-31",
+      "posted_date_kind": "api_first_published",
+      "original_posted_at": "2026-03-31T18:31:33-04:00",
+      "source_updated_at": "2026-10-26T22:01:29-04:00",
+      "pay": {
+        "low": 141100,
+        "high": 194050,
+        "currency": "USD",
+        "period": "year",
+        "basis": "unknown",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 141100,
+            "high": 194050,
+            "currency": "USD",
+            "period": "year",
+            "basis": "unknown",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Zone 1 Pay Range $141,100 - $194,050 USD",
+      "benefits": [
+        "Bonus",
+        "Equity"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": false,
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Additionally, you will drive strategic initiatives and community events that foster collaboration across the Engineering and Product organizations.",
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-a16z-ats-mn72zb2jmrnf2a1bmfns",
+      "title": "Senior Executive Assistant",
+      "org_type": "Thyme Care",
+      "category": "Executive Assistant",
+      "seniority": "Senior Executive Assistant",
+      "comp_low": 119000,
+      "comp_high": 140000,
+      "location": "New York, NY ",
+      "remote": "Hybrid",
+      "apply_url": "https://jobs.ashbyhq.com/thyme-care/f67e47e3-cf37-4a27-95b9-ca77b954f05d/application",
+      "source": "a16z Portfolio",
+      "source_org_label": "Thyme Care",
+      "source_reported_date": "2026-10-15",
+      "canonical_job_id": "ashby:thyme-care:f67e47e3-cf37-4a27-95b9-ca77b954f05d",
+      "date_posted": "2026-10-15",
+      "posted_date_kind": "api_last_published",
+      "last_published_at": "2026-10-15T16:35:40.323+00:00",
+      "pay": {
+        "low": 119000,
+        "high": 140000,
+        "currency": "USD",
+        "period": "year",
+        "basis": "total_target",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 119000,
+            "high": 140000,
+            "currency": "USD",
+            "period": "year",
+            "basis": "total_target",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Our salary ranges are based on paying competitively for our size and industry, and are one part of the total compensation package that also includes equity, benefits, and other opportunities at Thyme Care. The base salary for this role is $119,000 - $140,000.",
+      "benefits": [
+        "Equity",
+        "Health coverage",
+        "Paid time off"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": false,
+        "structured_work_mode": "Hybrid",
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Thyme Care is looking for an exceptional Senior Executive Assistant to provide high-level support to our Co-Founder, President & Chief Medical Officer, as well as one or more other senior executives.",
+      "metro": "NYC",
       "source_type": "VC portfolio"
     },
     {
@@ -9482,7 +9482,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9543,7 +9543,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9606,7 +9606,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9669,7 +9669,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9728,7 +9728,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9796,7 +9796,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9862,7 +9862,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9925,7 +9925,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -9988,7 +9988,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10051,7 +10051,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10114,7 +10114,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10177,7 +10177,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10243,7 +10243,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10306,7 +10306,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10332,6 +10332,10 @@
       "remote": "Onsite",
       "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5291343007?gh_jid=5291343007",
       "source": "a16z Portfolio",
+      "sources": [
+        "Lightspeed Portfolio",
+        "a16z Portfolio"
+      ],
       "source_org_label": "Anduril",
       "source_reported_date": "2026-11-10",
       "canonical_job_id": "greenhouse:andurilindustries:5291343007",
@@ -10369,7 +10373,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10431,7 +10435,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10461,6 +10465,10 @@
       "remote": "Onsite",
       "apply_url": "https://boards.greenhouse.io/andurilindustries/jobs/5291341007?gh_jid=5291341007",
       "source": "a16z Portfolio",
+      "sources": [
+        "Lightspeed Portfolio",
+        "a16z Portfolio"
+      ],
       "source_org_label": "Anduril",
       "source_reported_date": "2026-11-10",
       "canonical_job_id": "greenhouse:andurilindustries:5291341007",
@@ -10498,7 +10506,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10568,7 +10576,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10632,7 +10640,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10695,7 +10703,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10757,7 +10765,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10821,7 +10829,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10881,7 +10889,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -10942,7 +10950,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11006,7 +11014,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11077,7 +11085,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11136,7 +11144,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11199,7 +11207,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11260,7 +11268,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11329,7 +11337,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11341,6 +11349,75 @@
         "scope_reason": "executive-support duties establish the role track"
       },
       "summary": "Play a pivotal, high-trust role in a dynamic, fast-paced environment. You’ll partner closely with the existing executive support team to execute complex logistics, travel, meetings, events, and special projects with precision and foresight.",
+      "metro": "SF Bay Area",
+      "source_type": "VC portfolio"
+    },
+    {
+      "id": "consider-sequoia-8936206002",
+      "title": "Executive Business Partner",
+      "org_type": "Faire",
+      "category": "Executive Assistant",
+      "seniority": "Executive Business Partner",
+      "comp_low": 116000,
+      "comp_high": 159500,
+      "location": "San Francisco, CA",
+      "remote": "Hybrid",
+      "apply_url": "https://boards.greenhouse.io/faire/jobs/8936206002?gh_jid=8936206002",
+      "source": "Sequoia Portfolio",
+      "sources": [
+        "Lightspeed Portfolio",
+        "Sequoia Portfolio"
+      ],
+      "source_org_label": "Faire Wholesale, Inc.",
+      "source_reported_date": "2026-11-10",
+      "canonical_job_id": "greenhouse:faire:8936206002",
+      "date_posted": "2026-11-10",
+      "posted_date_kind": "api_first_published",
+      "original_posted_at": "2026-11-10T14:41:30-05:00",
+      "source_updated_at": "2026-11-10T14:41:30-05:00",
+      "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
+      "pay": {
+        "low": 116000,
+        "high": 159500,
+        "currency": "USD",
+        "period": "year",
+        "basis": "base",
+        "bound": "range",
+        "phase": "current",
+        "geography": "",
+        "bands": [
+          {
+            "low": 116000,
+            "high": 159500,
+            "currency": "USD",
+            "period": "year",
+            "basis": "base",
+            "bound": "range",
+            "phase": "current",
+            "geography": ""
+          }
+        ],
+        "selection_status": "selected"
+      },
+      "comp_note": "Salary Range San Francisco : the pay range for this role is $116,000 to $159,500 per year.",
+      "benefits": [
+        "Equity",
+        "Paid time off",
+        "Parental leave"
+      ],
+      "quality": {
+        "schema_version": 1,
+        "parser_version": "job-quality-16",
+        "identity_status": "verified",
+        "link_status": "active",
+        "scope_status": "verified",
+        "issues": [],
+        "observed_at": "2026-11-10",
+        "statistics_eligible": true,
+        "scope_track": "Executive Assistant",
+        "scope_reason": "executive-support duties establish the role track"
+      },
+      "summary": "Skillfully manage calendars across time zones with diplomacy, discretion, and excellent judgment",
       "metro": "SF Bay Area",
       "source_type": "VC portfolio"
     },
@@ -11389,7 +11466,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11456,7 +11533,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11522,7 +11599,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11585,7 +11662,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11645,7 +11722,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11707,7 +11784,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11772,7 +11849,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11838,7 +11915,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11904,7 +11981,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -11968,7 +12045,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12031,7 +12108,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12094,7 +12171,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12161,7 +12238,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12224,7 +12301,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12295,7 +12372,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12358,7 +12435,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12423,7 +12500,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12484,7 +12561,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12550,7 +12627,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12611,7 +12688,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12672,7 +12749,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12734,7 +12811,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12799,7 +12876,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12860,7 +12937,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12920,7 +12997,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -12980,7 +13057,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13042,7 +13119,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13106,7 +13183,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13174,7 +13251,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13240,7 +13317,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13301,7 +13378,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13371,7 +13448,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13432,7 +13509,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13494,7 +13571,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13554,7 +13631,7 @@
       "benefits": [],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13618,7 +13695,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13683,7 +13760,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13749,7 +13826,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13817,7 +13894,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13882,7 +13959,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13947,7 +14024,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -13967,8 +14044,8 @@
       "org_type": "Spring Health",
       "category": "Executive Assistant",
       "seniority": "Senior Executive Assistant",
-      "comp_low": 200000,
-      "comp_high": 200000,
+      "comp_low": 129780,
+      "comp_high": 164450,
       "location": "New York (Hybrid)",
       "remote": "Hybrid",
       "apply_url": "https://jobs.ashbyhq.com/deaa6ad2-d184-436b-b69e-17f761da1d94/1d2ee1e2-c8e6-4609-a3fc-e56ba4f131b1",
@@ -13982,29 +14059,29 @@
       "last_published_at": "2026-10-29T22:10:45.782+00:00",
       "work_mode_note": "Hybrid schedule with 3 onsite days per week.",
       "pay": {
-        "low": 200000,
-        "high": 200000,
+        "low": 129780,
+        "high": 164450,
         "currency": "USD",
         "period": "year",
-        "basis": "unknown",
-        "bound": "exact",
+        "basis": "base",
+        "bound": "range",
         "phase": "current",
         "geography": "",
         "bands": [
           {
-            "low": 200000,
-            "high": 200000,
+            "low": 129780,
+            "high": 164450,
             "currency": "USD",
             "period": "year",
-            "basis": "unknown",
-            "bound": "exact",
+            "basis": "base",
+            "bound": "range",
             "phase": "current",
             "geography": ""
           }
         ],
         "selection_status": "selected"
       },
-      "comp_note": "- Health, Dental, Vision benefits start on your first day at Spring. - $200 per year donation matching to support your favorite causes.",
+      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 129780, \"maxValue\": 164450}",
       "benefits": [
         "401(k)",
         "Paid time off",
@@ -14012,13 +14089,13 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
         "issues": [],
         "observed_at": "2026-11-10",
-        "statistics_eligible": false,
+        "statistics_eligible": true,
         "structured_work_mode": "Hybrid",
         "scope_track": "Executive Assistant",
         "scope_reason": "executive-support duties establish the role track"
@@ -14075,7 +14152,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14138,7 +14215,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14204,7 +14281,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14272,7 +14349,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14340,7 +14417,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14406,7 +14483,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14475,7 +14552,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14495,8 +14572,8 @@
       "org_type": "Spring Health",
       "category": "Executive Operations",
       "seniority": "Operations",
-      "comp_low": 200000,
-      "comp_high": 200000,
+      "comp_low": 135000,
+      "comp_high": 159500,
       "location": "Remote",
       "remote": "Remote",
       "apply_url": "https://jobs.ashbyhq.com/deaa6ad2-d184-436b-b69e-17f761da1d94/6c2effd8-9dfa-4198-b8b1-c5c4608298b7",
@@ -14509,29 +14586,29 @@
       "posted_date_kind": "api_last_published",
       "last_published_at": "2026-10-16T21:45:38.176+00:00",
       "pay": {
-        "low": 200000,
-        "high": 200000,
+        "low": 135000,
+        "high": 159500,
         "currency": "USD",
         "period": "year",
-        "basis": "unknown",
-        "bound": "exact",
+        "basis": "base",
+        "bound": "range",
         "phase": "current",
         "geography": "",
         "bands": [
           {
-            "low": 200000,
-            "high": 200000,
+            "low": 135000,
+            "high": 159500,
             "currency": "USD",
             "period": "year",
-            "basis": "unknown",
-            "bound": "exact",
+            "basis": "base",
+            "bound": "range",
             "phase": "current",
             "geography": ""
           }
         ],
         "selection_status": "selected"
       },
-      "comp_note": "- Health, Dental, Vision benefits start on your first day at Spring. - $200 per year donation matching to support your favorite causes.",
+      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 135000, \"maxValue\": 159500}",
       "benefits": [
         "401(k)",
         "Paid time off",
@@ -14539,13 +14616,13 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
         "issues": [],
         "observed_at": "2026-11-10",
-        "statistics_eligible": false,
+        "statistics_eligible": true,
         "structured_work_mode": "Remote",
         "scope_track": "Executive Operations",
         "scope_reason": "existing title classification and role duties agree"
@@ -14605,7 +14682,7 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
@@ -14625,8 +14702,8 @@
       "org_type": "Spring Health",
       "category": "Executive Operations",
       "seniority": "Operations",
-      "comp_low": 200000,
-      "comp_high": 200000,
+      "comp_low": 121500,
+      "comp_high": 140000,
       "location": "New York (Hybrid)",
       "remote": "Hybrid",
       "apply_url": "https://jobs.ashbyhq.com/deaa6ad2-d184-436b-b69e-17f761da1d94/336af452-7b72-4d78-b468-cc22c2704073",
@@ -14640,29 +14717,29 @@
       "last_published_at": "2026-10-13T21:03:49.672+00:00",
       "work_mode_note": "Hybrid schedule with 2 onsite days per week.",
       "pay": {
-        "low": 200000,
-        "high": 200000,
+        "low": 121500,
+        "high": 140000,
         "currency": "USD",
         "period": "year",
-        "basis": "unknown",
-        "bound": "exact",
+        "basis": "base",
+        "bound": "range",
         "phase": "current",
         "geography": "",
         "bands": [
           {
-            "low": 200000,
-            "high": 200000,
+            "low": 121500,
+            "high": 140000,
             "currency": "USD",
             "period": "year",
-            "basis": "unknown",
-            "bound": "exact",
+            "basis": "base",
+            "bound": "range",
             "phase": "current",
             "geography": ""
           }
         ],
         "selection_status": "selected"
       },
-      "comp_note": "- Health, Dental, Vision benefits start on your first day at Spring. - $200 per year donation matching to support your favorite causes.",
+      "comp_note": "Salary {\"compensationType\": \"Salary\", \"interval\": \"1 YEAR\", \"currencyCode\": \"USD\", \"minValue\": 121500, \"maxValue\": 140000}",
       "benefits": [
         "401(k)",
         "Paid time off",
@@ -14670,13 +14747,13 @@
       ],
       "quality": {
         "schema_version": 1,
-        "parser_version": "job-quality-15",
+        "parser_version": "job-quality-16",
         "identity_status": "verified",
         "link_status": "active",
         "scope_status": "verified",
         "issues": [],
         "observed_at": "2026-11-10",
-        "statistics_eligible": false,
+        "statistics_eligible": true,
         "structured_work_mode": "Hybrid",
         "scope_track": "Executive Operations",
         "scope_reason": "existing title classification and role duties agree"
