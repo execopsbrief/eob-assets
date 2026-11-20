@@ -116,7 +116,10 @@
   #eob-first90 .eob-fill-field input{
     width:100%;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--paper);
     padding:.65rem .85rem;font-family:'Public Sans',sans-serif;font-size:.95rem;color:var(--ink);resize:vertical;
+    display:block;min-height:2.7rem;line-height:1.45;overflow:hidden;
   }
+  #eob-first90 .eob-print-val{display:none}
+  #eob-first90 .eob-print-row{display:flex;justify-content:flex-end;margin:0 0 1.4rem}
   #eob-first90 .eob-fill-field textarea:focus,
   #eob-first90 .eob-fill-field input:focus{outline:none;border-color:var(--oxblood);background:var(--white)}
 
@@ -187,7 +190,9 @@
     #eob-first90 .eob-box{border-color:#333}
     #eob-first90 .eob-item input:checked + .eob-box{background:#000;border-color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
     #eob-first90 .eob-fill,#eob-first90 .eob-goal,#eob-first90 .eob-ref{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    #eob-first90 .eob-fill-field textarea,#eob-first90 .eob-fill-field input{border:1px solid #999;background:#fff}
+    #eob-first90 .eob-fill-field textarea,#eob-first90 .eob-fill-field input{display:none}
+    #eob-first90 .eob-print-val{display:block;border:1px solid #999;background:#fff;padding:.5rem .7rem;min-height:2.4rem;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.95rem;line-height:1.45;color:#000}
+    #eob-first90 .eob-print-row{display:none}
     #eob-first90 .eob-foot{display:none}
   }
 </style>
@@ -251,7 +256,7 @@
 
     <div class="eob-fill-field">
       <label for="eob-f-align1">Principal alignment (confirm in week 1)</label>
-      <input type="text" id="eob-f-align1" data-fk="align1" placeholder="What you and your principal agree this phase must produce.">
+      <textarea id="eob-f-align1" data-fk="align1" rows="1" placeholder="What you and your principal agree this phase must produce."></textarea>
     </div>
 
     <div class="eob-block">
@@ -314,7 +319,7 @@
 
     <div class="eob-fill-field">
       <label for="eob-f-align2">Principal alignment (confirm at day 30)</label>
-      <input type="text" id="eob-f-align2" data-fk="align2" placeholder="What you and your principal agree this phase must produce.">
+      <textarea id="eob-f-align2" data-fk="align2" rows="1" placeholder="What you and your principal agree this phase must produce."></textarea>
     </div>
 
     <div class="eob-block">
@@ -327,7 +332,7 @@
 
     <div class="eob-fill-field">
       <label for="eob-f-build">My first build</label>
-      <input type="text" id="eob-f-build" data-fk="build" placeholder="Name the one system you will ship this phase.">
+      <textarea id="eob-f-build" data-fk="build" rows="1" placeholder="Name the one system you will ship this phase."></textarea>
     </div>
 
     <div class="eob-block">
@@ -370,7 +375,7 @@
 
     <div class="eob-fill-field">
       <label for="eob-f-align3">Principal alignment (confirm at day 60)</label>
-      <input type="text" id="eob-f-align3" data-fk="align3" placeholder="What you and your principal agree this phase must produce.">
+      <textarea id="eob-f-align3" data-fk="align3" rows="1" placeholder="What you and your principal agree this phase must produce."></textarea>
     </div>
 
     <div class="eob-block">
@@ -409,6 +414,10 @@
       <label class="eob-item"><input type="checkbox" data-k="p3m-3"><span class="eob-box"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="eob-item-text">Your principal can point to specific things that improved because you were there.</span></label>
       <label class="eob-item"><input type="checkbox" data-k="p3m-4"><span class="eob-box"><svg viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="eob-item-text">You and your principal agree on the priorities for the next 90 days.</span></label>
     </div>
+  </div>
+
+  <div class="eob-print-row">
+    <button type="button" class="eob-btn eob-btn-primary" data-eob-print>Print my plan</button>
   </div>
 
   <!-- Newsletter call to action -->
@@ -533,20 +542,39 @@
   });
 
   // Restore + persist fill-in fields
+  // Each field grows to fit its text and keeps a plain-text copy for print,
+  // so a long note is never cut off on screen or on paper.
+  function fitField(f){
+    if (f.tagName !== "TEXTAREA" || !f.scrollHeight) return;
+    f.style.height = "auto";
+    f.style.height = (f.scrollHeight + 2) + "px";
+  }
   fields.forEach(function(f){
     var k = f.getAttribute("data-fk");
+    var printCopy = document.createElement("div");
+    printCopy.className = "eob-print-val";
+    printCopy.setAttribute("aria-hidden", "true");
+    f.parentNode.insertBefore(printCopy, f.nextSibling);
+    f.eobSync = function(){ printCopy.textContent = f.value; fitField(f); };
     if (typeof state.fields[k] === "string") f.value = state.fields[k];
+    f.eobSync();
     f.addEventListener("input", function(){
       state.fields[k] = f.value;
       saveState(state);
+      f.eobSync();
     });
   });
+  function fitAllFields(){ fields.forEach(fitField); }
+  window.addEventListener("resize", fitAllFields);
+  window.addEventListener("load", fitAllFields);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAllFields);
 
   updateProgress();
 
   // Print. No dialogs.
-  var printBtn = root.querySelector("#eob-print");
-  if (printBtn) printBtn.addEventListener("click", function(){ window.print(); });
+  Array.prototype.forEach.call(root.querySelectorAll("#eob-print,[data-eob-print]"), function(btn){
+    btn.addEventListener("click", function(){ window.print(); });
+  });
 
   // Reset: clears checks and fields with a two-step confirm on the button itself (no confirm dialog).
   var resetBtn = root.querySelector("#eob-reset");
@@ -574,7 +602,7 @@
       state = { checks:{}, fields:{}, na:{} };
       saveState(state);
       checks.forEach(function(c){ c.checked = false; c.eobRenderApplicability(); });
-      fields.forEach(function(f){ f.value = ""; });
+      fields.forEach(function(f){ f.value = ""; f.eobSync(); });
       updateProgress();
     });
   }

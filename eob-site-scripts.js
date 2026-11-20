@@ -61,7 +61,10 @@
     {s:'how-to-become-a-fractional-chief-of-staff', t:'How to Become a Fractional Chief of Staff', p:'The Role, Defined'},
     {s:'will-ai-replace-executive-assistants', t:'Will AI Replace Executive Assistants?', p:'The Role, Defined'},
     {s:'executive-assistant-salary-and-how-to-get-a-raise', t:'Executive Assistant Salary and How to Get a Raise', p:'Comp & Careers'},
-    {s:'how-to-grow-your-career-as-an-executive-assistant', t:'How to Grow Your Career as an Executive Assistant', p:'The Path In'}
+    {s:'how-to-grow-your-career-as-an-executive-assistant', t:'How to Grow Your Career as an Executive Assistant', p:'The Path In'},
+    {s:'executive-business-partner-role', t:'Executive Business Partner: What the Title Means and What It Pays', p:'The Role, Defined'},
+    {s:'executive-assistant-interview-questions', t:'Executive Assistant Interview Questions: What They Ask by Stage', p:'The Path In'},
+    {s:'senior-executive-assistant-leveling', t:'Senior Executive Assistant: What Actually Changes at the Senior Level', p:'Comp & Careers'}
   ];
 
   /* Keyword-routed active callouts. First matching live destination wins. */
@@ -401,7 +404,7 @@
           [
             "Proxy",
             "The leader's trusted stand-in",
-            "The leader is the single point of failure"
+            "The leader needs representation in defined settings and will delegate the matching authority"
           ]
         ]
       }
@@ -418,16 +421,16 @@
             "d": "Is it execution, strategy, or the leader's own bandwidth?"
           },
           {
-            "h": "Match seniority to the type",
-            "d": "A proxy needs the experience to be credible speaking for the leader; an operator can be earlier in their career."
+            "h": "Match experience and authority to the assignment",
+            "d": "A proxy needs relevant context and clearly delegated authority. An operator needs enough credibility and process skill for the teams involved."
           },
           {
             "h": "Write the job around the type",
             "d": "Describe the actual work and the outcomes you expect, not a vague title."
           },
           {
-            "h": "Expect the type to evolve",
-            "d": "Many start as operators and grow into strategist or proxy work as trust builds."
+            "h": "Review the remit as needs change",
+            "d": "A chief of staff may move among operating, strategy, and proxy work. Revisit the scope with the principal instead of assuming a fixed progression."
           }
         ]
       }
@@ -456,7 +459,7 @@
     },
     {
       "slug": "the-trust-equation",
-      "after": "The Trust Equation",
+      "after": "Use the equation as a prompt",
       "type": "note",
       "data": {
         "title": "The Trust Equation",
@@ -531,11 +534,11 @@
     },
     {
       "slug": "prioritization-frameworks-for-operators",
-      "after": "RICE: Scoring Ideas Against One Another",
+      "after": "RICE: compare a backlog",
       "type": "note",
       "data": {
         "title": "The RICE score",
-        "body": "RICE score = (Reach times Impact times Confidence) divided by Effort. The confidence multiplier is the point: it explicitly discounts ideas built on shaky assumptions.",
+        "body": "RICE score = (Reach times Impact times Confidence) divided by Effort. Lower confidence reduces the score, which helps separate an evidence-backed idea from one built on several assumptions. It doesn't make the number objectively true.",
         "variant": "info"
       }
     },
@@ -604,7 +607,7 @@
     },
     {
       "slug": "how-to-build-an-operating-cadence",
-      "after": "Design Principles That Keep a Cadence Healthy",
+      "after": "Keep the cadence stable enough to trust",
       "type": "checklist",
       "data": {
         "title": "Principles that keep a cadence healthy",
@@ -612,8 +615,8 @@
           "Protect the strategic layers from the tactical",
           "Keep the schedule stable so people can plan around it",
           "Make inputs flow between layers",
-          "Move reporting out of live time and into pre-reads or dashboards",
-          "Prune regularly; kill or merge meetings that no longer earn their place"
+          "Move reporting out of live time and into written pre-reads",
+          "Review recurring meetings regularly and kill, combine, or shorten the ones that no longer earn the time"
         ]
       }
     },
@@ -638,7 +641,7 @@
           ],
           [
             "RSUs",
-            "A promise of actual shares delivered at vesting; more common at later-stage and public companies"
+            "A promise of actual shares delivered at settlement; more common at later-stage and public companies"
           ]
         ]
       }
@@ -662,7 +665,7 @@
     },
     {
       "slug": "what-does-a-chief-of-staff-do",
-      "after": "The five functions at the core of the job",
+      "after": "Five functions at the center of the role",
       "type": "table",
       "data": {
         "title": "The five core functions",
@@ -685,27 +688,293 @@
           ],
           [
             "Honest broker",
-            "Gives the leader a wide, unbiased read on an issue"
+            "Gives the principal a wider view of an issue"
           ],
           [
             "Confidant",
             "Holds sensitive context and unfinished thinking discreetly"
           ]
         ],
-        "caption": "Dan Ciampa, Harvard Business Review, 2020."
+        "caption": "Patrick Aylward's framework, from Dan Ciampa's Harvard Business Review article."
       }
     },
     {
       "slug": "what-does-a-chief-of-staff-do",
-      "after": "How to tell a real chief of staff role from a title",
+      "after": "How to evaluate a chief of staff job",
       "type": "checklist",
       "data": {
         "title": "Signals of a real role",
         "items": [
-          "Direct access to the principal, not three layers down",
+          "Direct access to the principal, not several layers away",
           "Ownership of priorities and outcomes, not just meeting logistics",
           "A seat in the room where the leadership team sets direction"
         ]
+      }
+    },
+    {
+      "slug": "chief-of-staff-exit-paths",
+      "after": "Why the role can support several paths",
+      "type": "table",
+      "data": {
+        "title": "Six paths and what to show for each",
+        "headers": [
+          "Path",
+          "What to show"
+        ],
+        "rows": [
+          [
+            "Operations leadership",
+            "An operating cadence, company-wide program or measurable process"
+          ],
+          [
+            "Functional leadership",
+            "A defined project with a result and a reference"
+          ],
+          [
+            "General management",
+            "Direct ownership of a defined outcome, end to end"
+          ],
+          [
+            "Early-stage operator or founder",
+            "What you've built, sold and managed"
+          ],
+          [
+            "Another chief of staff role",
+            "How the new mandate differs from the one you held"
+          ],
+          [
+            "Internal leadership role",
+            "Evidence you can own the new mandate"
+          ]
+        ],
+        "caption": "Exposure alone isn't experience."
+      }
+    },
+    {
+      "slug": "chief-of-staff-certifications-compared",
+      "after": "do you even need one",
+      "type": "table",
+      "data": {
+        "title": "What a certificate does and doesn't do",
+        "headers": [
+          "Can help with",
+          "Doesn't do"
+        ],
+        "rows": [
+          [
+            "Structured frameworks when breaking in from adjacent work",
+            "Guarantee a job"
+          ],
+          [
+            "A common vocabulary and the language of the job",
+            "Substitute for demonstrated judgment"
+          ],
+          [
+            "Instruction, deadlines and a cohort, if you learn better that way",
+            "Replace your track record"
+          ]
+        ],
+        "caption": "A credential can support your story. Your track record still carries it."
+      }
+    },
+    {
+      "slug": "ea-to-chief-of-staff-path",
+      "after": "Compare the mandates",
+      "type": "table",
+      "data": {
+        "title": "Two mandates side by side",
+        "headers": [
+          "Compare",
+          "Executive assistant",
+          "Chief of staff"
+        ],
+        "rows": [
+          [
+            "Accountable for",
+            "The executive-office workflow",
+            "A defined set of the principal's priorities"
+          ],
+          [
+            "Typically owns",
+            "Time, access, communication, preparation, logistics, follow-through",
+            "Cross-functional priorities and the leadership process"
+          ],
+          [
+            "Can also include",
+            "Advising on priorities and running programs (senior EAs)",
+            "More time on decision framing and leadership follow-through"
+          ]
+        ],
+        "caption": "The shift is in mandate and capacity."
+      }
+    },
+    {
+      "slug": "chief-of-staff-interview-questions",
+      "after": "Prepare for the format",
+      "type": "checklist",
+      "data": {
+        "title": "Before the interview loop",
+        "items": [
+          "Ask the recruiter what the process includes",
+          "Expect interviews, a memo, a case or a presentation",
+          "Confirm whether a work sample uses company information",
+          "Ask how much time candidates should spend",
+          "In a case, state your assumptions",
+          "Keep the recommendation proportional to the evidence",
+          "When presenting, leave room for discussion"
+        ]
+      }
+    },
+    {
+      "slug": "day-in-the-life-chief-of-staff",
+      "after": "why the day varies",
+      "type": "steps",
+      "data": {
+        "title": "A representative day, not a universal one",
+        "items": [
+          {
+            "h": "7:45 a.m.: orient",
+            "d": "Scan what changed overnight and what's pending, then prepare the principal."
+          },
+          {
+            "h": "10:00 a.m.: run the rhythm",
+            "d": "Set the agenda, capture decisions, and record owners and next steps."
+          },
+          {
+            "h": "1:00 p.m.: move the projects",
+            "d": "Move project work forward, and absorb the unplanned deliberately."
+          },
+          {
+            "h": "End of day: close the loops",
+            "d": "Follow up on decisions, brief the principal, and reset for tomorrow."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "how-to-read-exec-ops-job-post",
+      "after": "Read compensation in context",
+      "type": "checklist",
+      "data": {
+        "title": "What to confirm about a posted range",
+        "items": [
+          "Is it base salary or total cash?",
+          "Is any bonus discretionary?",
+          "Is equity listed separately?",
+          "Fully diluted ownership, or grant count and fully diluted shares",
+          "Vesting schedule, cliff and exercise window",
+          "Current 409A common-share value and its date",
+          "Change-of-control terms"
+        ]
+      }
+    },
+    {
+      "slug": "managing-up-chief-of-staff",
+      "after": "Know which adaptations need consent",
+      "type": "table",
+      "data": {
+        "title": "Adjust quietly or align first",
+        "headers": [
+          "Change",
+          "Needs alignment?"
+        ],
+        "rows": [
+          [
+            "The length of an update",
+            "Often not"
+          ],
+          [
+            "A cleaner agenda",
+            "Often not"
+          ],
+          [
+            "Closing loops more visibly",
+            "Often not"
+          ],
+          [
+            "Delegated authority, or how you represent the principal",
+            "Yes"
+          ],
+          [
+            "Who gets sensitive information, or what you withhold",
+            "Yes"
+          ],
+          [
+            "Recurring workarounds for an ignored process",
+            "Yes"
+          ]
+        ]
+      }
+    },
+    {
+      "slug": "run-effective-leadership-team-meeting",
+      "after": "Decide what the meeting is for",
+      "type": "table",
+      "data": {
+        "title": "Sort each topic by the meeting's job",
+        "headers": [
+          "Topic",
+          "Where it belongs"
+        ],
+        "rows": [
+          [
+            "A detailed departmental update",
+            "The pre-read"
+          ],
+          [
+            "A decision about next year's operating model",
+            "A longer strategic session"
+          ],
+          [
+            "A cross-functional issue blocking this month's priority",
+            "The weekly leadership meeting"
+          ]
+        ],
+        "caption": "Status, weekly tactics and strategy need different kinds of attention."
+      }
+    },
+    {
+      "slug": "executive-assistant-salary-and-how-to-get-a-raise",
+      "after": "Choose comparisons that resemble your job",
+      "type": "checklist",
+      "data": {
+        "title": "Before you pick a pay comparison",
+        "items": [
+          "Name the executives you support",
+          "Note travel, vendors, budgets or processes you own",
+          "Note how much you can decide within agreed limits",
+          "Look for employers and markets with similar requirements",
+          "Don't make up a city premium or remote-work discount",
+          "Say which parts of the evidence match and which don't",
+          "Keep base salary, bonus, equity and benefits separate"
+        ]
+      }
+    },
+    {
+      "slug": "how-to-write-an-executive-memo",
+      "after": "Write for the actual reader",
+      "type": "table",
+      "data": {
+        "title": "What each reader may look for first",
+        "headers": [
+          "Reader",
+          "Likely focus"
+        ],
+        "rows": [
+          [
+            "CFO",
+            "Cost, financial risk and forecast assumptions"
+          ],
+          [
+            "Head of product",
+            "Customer effect, technical dependencies and team capacity"
+          ],
+          [
+            "Several decision makers",
+            "Write for the group and name conflicting criteria"
+          ]
+        ],
+        "caption": "Keep the facts consistent. Let the order follow the reader's decision."
       }
     }
   ];
@@ -1576,7 +1845,7 @@
       if(ok){
         status.textContent=form.dataset.eobSuccess || 'Request confirmed. Check your inbox.';
         try { if(email) localStorage.setItem('eob_sub_email',email); } catch(e){}
-        try { if(typeof window.gtag==='function') window.gtag('event','newsletter_signup',{method:'mailerlite',form_id:new URL(form.action).pathname.split('/')[4],measurement_version:'eob_funnel_v3'}); } catch(e){}
+        try { if(typeof window.gtag==='function') window.gtag('event','newsletter_signup',{method:'mailerlite',form_id:new URL(form.action).pathname.split('/')[4],placement:form.getAttribute('data-eob-placement')||null,measurement_version:'eob_funnel_v3'}); } catch(e){}
       }else{
         status.textContent="We couldn't confirm your subscription. Check your connection and try again.";
         // Retire the old submit-means-subscribed memory if a legacy handler populated it.
@@ -1586,6 +1855,536 @@
   },true);
 })();
 
+
+  // ---- 9. Site audit pass (2026-11-18) --------------------------------------
+  // Library index heading, topic chips and search; article meta, takeaway box,
+  // contents list, progress bar and end-of-article Brief signup; product-page
+  // list and image alt repair; homepage start-here doors. Every part is
+  // idempotent, DOM-only, and removable by deleting this module and its calls.
+  var PILLARS = [
+    {n:'The Role, Defined',     h:'/library/category/The+Role%2C+Defined'},
+    {n:'The Path In',           h:'/library/category/The+Path+In'},
+    {n:'The Craft / Playbooks', h:'/library/category/The+Craft+%2F+Playbooks'},
+    {n:'The Career',            h:'/library/category/The+Career'},
+    {n:'Comp & Careers',        h:'/library/category/Comp+%26+Careers'},
+    {n:'Operator Mindset',      h:'/library/category/Operator+Mindset'}
+  ];
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function escHtml(s){
+    return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function auditEvent(name, params){
+    try { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); } catch(e){}
+  }
+  function auditStyle(){
+    if (byId('eob-audit-style')) return;
+    var mono = '"IBM Plex Mono",ui-monospace,monospace', serif = '"Spectral",Georgia,serif', sans = '"Public Sans",system-ui,sans-serif';
+    var css =
+      /* library head */
+      '#eob-lib-head{box-sizing:border-box;margin:0 auto;padding-bottom:8px}' +
+      '#eob-lib-head .lh-k{font-family:' + mono + ';font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A2129;margin:0 0 14px}' +
+      '#eob-lib-head .lh-h{font-family:' + serif + ';font-weight:600;font-size:46px;line-height:1.08;letter-spacing:-.01em;color:#1B1712;margin:0 0 14px;max-width:20em}' +
+      '#eob-lib-head .lh-p{font-family:' + sans + ';font-size:18px;line-height:1.55;color:#3A342B;margin:0 0 26px;max-width:40em}' +
+      '#eob-lib-head .lh-bar{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;border-top:2px solid #1B1712;border-bottom:1px solid #D8D0BF;padding:14px 0}' +
+      '#eob-lib-head .lh-chips{display:flex;flex-wrap:wrap;gap:8px}' +
+      '#eob-lib-head .lh-chips a{font-family:' + mono + ';font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#3A342B;text-decoration:none;border:1px solid #CFC7B4;border-radius:999px;padding:10px 14px;line-height:1.2;background:transparent}' +
+      '#eob-lib-head .lh-chips a:hover{border-color:#7A2129;color:#7A2129}' +
+      '#eob-lib-head .lh-chips a[aria-current="page"]{background:#1B1712;border-color:#1B1712;color:#F3F0E9}' +
+      '#eob-lib-head .lh-search{display:flex;gap:6px;margin:0}' +
+      '#eob-lib-head .lh-search input{font-family:' + sans + ';font-size:15px;color:#1B1712;background:#fff;border:1px solid #CFC7B4;border-radius:2px;padding:10px 12px;min-width:210px;height:44px;box-sizing:border-box}' +
+      '#eob-lib-head .lh-search button{font-family:' + sans + ';font-weight:600;font-size:14px;color:#F3F0E9;background:#7A2129;border:none;border-radius:2px;padding:0 16px;height:44px;cursor:pointer}' +
+      '#eob-lib-head .lh-search button:hover{background:#5E181F}' +
+      '.blog-list time.blog-date,.blog-list .blog-author{display:none !important}' +
+      '@media(max-width:640px){#eob-lib-head .lh-h{font-size:32px}#eob-lib-head .lh-p{font-size:16.5px}#eob-lib-head .lh-search{width:100%}#eob-lib-head .lh-search input{flex:1;min-width:0}}' +
+      /* article furniture */
+      '#eob-progress{position:fixed;left:0;top:0;height:3px;width:0;background:#7A2129;z-index:9999;pointer-events:none}' +
+      '.blog-item-content p.eob-takeaway{background:#EBE6DA;border-left:3px solid #7A2129;padding:16px 20px;margin:0 0 1.4em;color:#1B1712}' +
+      '#eob-toc{border-top:1px solid #D8D0BF;border-bottom:1px solid #D8D0BF;padding:16px 0 14px;margin:1.6em 0 0.4em}' +
+      '#eob-toc .tc-k{font-family:' + mono + ';font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#6B6255;margin:0 0 8px}' +
+      '#eob-toc ol{list-style:none;margin:0;padding:0;columns:2;column-gap:32px}' +
+      '#eob-toc li{font-family:' + sans + ';font-size:15px !important;line-height:1.4 !important;margin:0 0 7px;break-inside:avoid;padding:0}' +
+      '#eob-toc li a{color:#1B1712 !important;text-decoration:none !important}' +
+      '#eob-toc li a:hover{color:#7A2129 !important;text-decoration:underline !important}' +
+      '@media(max-width:640px){#eob-toc ol{columns:1}}' +
+      '#eob-art-signup{background:#1C2C3A;color:#F3F0E9;padding:30px 30px 26px;margin:3.2rem 0 0;border-radius:2px}' +
+      '#eob-art-signup .as-k{font-family:' + mono + ';font-size:11px !important;letter-spacing:.13em;text-transform:uppercase;color:#D9B8A8 !important;margin:0 0 10px}' +
+      '#eob-art-signup .as-h{font-family:' + serif + ';font-weight:600;font-size:26px !important;line-height:1.2 !important;color:#F3F0E9 !important;margin:0 0 8px}' +
+      '#eob-art-signup .as-p{font-family:' + sans + ';font-size:16px !important;line-height:1.55 !important;color:#C9D0D8 !important;margin:0 0 18px;max-width:34em}' +
+      '#eob-art-signup form{display:flex;flex-wrap:wrap;gap:8px;max-width:30rem;margin:0}' +
+      '#eob-art-signup input[type="email"]{flex:1;min-width:12rem;height:46px;box-sizing:border-box;border:1px solid #33465A;border-radius:2px;padding:0 12px;font-family:' + sans + ';font-size:15px;color:#1B1712;background:#F3F0E9}' +
+      '#eob-art-signup button[type="submit"]{height:46px;border:none;border-radius:2px;cursor:pointer;padding:0 18px;background:#7A2129;color:#F3F0E9;font-family:' + sans + ';font-weight:600;font-size:15px;white-space:nowrap}' +
+      '#eob-art-signup button[type="submit"]:hover{background:#5E181F}' +
+      '#eob-art-signup .as-n{font-family:' + mono + ';font-size:11px !important;letter-spacing:.04em;color:#A9B2BD !important;margin:12px 0 0}' +
+      '#eob-art-signup .eob-form-status{color:#F3F0E9}' +
+      '@media(max-width:520px){#eob-art-signup{padding:24px 20px}#eob-art-signup form{flex-direction:column}#eob-art-signup button[type="submit"]{width:100%}#eob-art-signup input[type="email"]{flex:none;width:100%}}' +
+      /* product list */
+      '.product-description ul.eob-plist{list-style:none;margin:0 0 1em;padding:0}' +
+      '.product-description ul.eob-plist li{position:relative;padding:0 0 0 20px;margin:0 0 10px}' +
+      '.product-description ul.eob-plist li:before{content:"";position:absolute;left:0;top:.72em;width:9px;height:1px;background:#7A2129}' +
+      /* start here */
+      '#eob-start{border-bottom:1px solid var(--line,#D8D0BF);padding:56px 0 60px}' +
+      '#eob-start .st-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#D8D0BF;border:1px solid #D8D0BF;margin-top:1.6rem}' +
+      '#eob-start .st-door{background:#F3F0E9;padding:22px 20px 20px}' +
+      '#eob-start .st-door h3{font-family:' + serif + ';font-weight:600;font-size:1.18rem;line-height:1.25;color:#1B1712;margin:0 0 12px}' +
+      '#eob-start .st-door ul{list-style:none;margin:0;padding:0}' +
+      '#eob-start .st-door li{border-top:1px solid #E4DECF;margin:0;padding:0}' +
+      '#eob-start .st-door li a{display:block;padding:11px 0;font-family:' + sans + ';font-size:.93rem;line-height:1.35;color:#3A342B;text-decoration:none}' +
+      '#eob-start .st-door li a:hover{color:#7A2129}' +
+      '#eob-start .st-kind{font-family:' + mono + ';font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#7A2129;display:block;margin-bottom:2px}' +
+      '@media(max-width:980px){#eob-start .st-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}' +
+      '@media(max-width:560px){#eob-start .st-grid{grid-template-columns:1fr}#eob-start{padding:40px 0 44px}}';
+    var st = document.createElement('style');
+    st.id = 'eob-audit-style';
+    st.textContent = css;
+    (document.head || document.documentElement).appendChild(st);
+  }
+
+  // 9a. Library index and category pages.
+  function libraryCategory(){
+    var p = location.pathname.replace(/\/+$/, '');
+    if (p.indexOf('/library/category/') !== 0) return '';
+    var raw = p.substring('/library/category/'.length);
+    try { return decodeURIComponent(raw.replace(/\+/g, ' ')); } catch(e){ return ''; }
+  }
+  function libraryIndex(){
+    var p = location.pathname.replace(/\/+$/, '');
+    if (p !== '/library' && p.indexOf('/library/category/') !== 0) return;
+    var list = document.querySelector('.blog-list');
+    if (!list) return;
+    auditStyle();
+    // One page heading: card titles become h2.
+    var titles = list.querySelectorAll('h1.blog-title');
+    for (var i = 0; i < titles.length; i++){
+      var h = titles[i], n = document.createElement('h2');
+      n.className = h.className;
+      n.innerHTML = h.innerHTML;
+      h.parentNode.replaceChild(n, h);
+    }
+    var cards = list.querySelectorAll('article');
+    for (var c = 0; c < cards.length; c++){
+      var t = cards[c].querySelector('.blog-title'), img = cards[c].querySelector('img');
+      if (img && t && !(img.getAttribute('alt') || '').trim())
+        img.setAttribute('alt', 'Illustration for the article: ' + (t.textContent || '').trim());
+    }
+    if (byId('eob-lib-head')) return;
+    var cat = libraryCategory();
+    var chips = '<a href="/library"' + (cat ? '' : ' aria-current="page"') + '>All</a>';
+    for (var k = 0; k < PILLARS.length; k++){
+      chips += '<a href="' + PILLARS[k].h + '"' + (PILLARS[k].n === cat ? ' aria-current="page"' : '') + '>' + escHtml(PILLARS[k].n) + '</a>';
+    }
+    var head = document.createElement('header');
+    head.id = 'eob-lib-head';
+    head.innerHTML =
+      '<p class="lh-k">The Exec Ops Library' + (cat ? ' / Topic' : '') + '</p>' +
+      '<h1 class="lh-h">' + (cat ? escHtml(cat) : 'Playbooks for the work of executive operations') + '</h1>' +
+      '<p class="lh-p">' + (cat
+        ? 'Every guide filed under this topic. Pick another topic below, or search the whole library.'
+        : 'Sourced guides to the Chief of Staff and Executive Assistant roles: what the work is, how to get in, what it pays, and how to do it well.') + '</p>' +
+      '<div class="lh-bar"><nav class="lh-chips" aria-label="Browse the library by topic">' + chips + '</nav>' +
+      '<form class="lh-search" action="/search" method="get" role="search">' +
+        '<input type="search" name="q" placeholder="Search the library" aria-label="Search the library">' +
+        '<button type="submit">Search</button></form></div>';
+    try {
+      var cs = window.getComputedStyle(list);
+      head.style.paddingLeft = cs.paddingLeft;
+      head.style.paddingRight = cs.paddingRight;
+      head.style.paddingTop = cs.paddingTop;
+      list.style.paddingTop = '28px';
+    } catch(e){}
+    list.parentNode.insertBefore(head, list);
+    head.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest ? ev.target.closest('.lh-chips a') : null;
+      if (a) auditEvent('library_filter', { topic: (a.textContent || '').trim() });
+    });
+  }
+
+  // 9b. Article furniture. Runs on every /library/<slug> article page.
+  function isArticlePage(){
+    return location.pathname.indexOf(CFG.blogBase) === 0 &&
+           location.pathname.indexOf('/category/') === -1 &&
+           !!document.querySelector('.blog-item-wrapper .blog-item-content');
+  }
+  function articleModified(){
+    var nodes = document.querySelectorAll('script[type="application/ld+json"]');
+    for (var i = 0; i < nodes.length; i++){
+      try {
+        var j = JSON.parse(nodes[i].textContent);
+        if (j && j['@type'] === 'Article' && j.dateModified){
+          var m = /^(\d{4})-(\d{2})/.exec(j.dateModified);
+          if (m) return MONTHS[parseInt(m[2], 10) - 1] + ' ' + m[1];
+        }
+      } catch(e){}
+    }
+    return '';
+  }
+  function articleFurniture(){
+    if (!isArticlePage()) return;
+    auditStyle();
+    var content = document.querySelector('.blog-item-wrapper .blog-item-content');
+    var meta = document.querySelector('.blog-item-wrapper .blog-item-meta-wrapper');
+    // Meta strip: month and year of the last update, read time, byline to /about.
+    if (meta && !meta.getAttribute('data-eob-meta')){
+      meta.setAttribute('data-eob-meta', '1');
+      var time = meta.querySelector('time'), upd = articleModified();
+      if (time && upd){ var sp = time.querySelector('span') || time; sp.textContent = 'Updated ' + upd; }
+      var by = meta.querySelector('.blog-meta-item--author a');
+      if (by) by.setAttribute('href', '/about');
+      var words = ((content.innerText || content.textContent || '').trim().split(/\s+/).length) || 0;
+      if (words > 200){
+        var rt = document.createElement('div');
+        rt.className = 'blog-meta-item eob-readtime';
+        rt.style.display = 'inline-block';
+        rt.textContent = Math.max(2, Math.round(words / 230)) + ' min read';
+        (meta.querySelector('.blog-item-author-date-wrapper') || meta).appendChild(rt);
+      }
+    }
+    var hdr = content.querySelector('.eob-auto-header img'), h1 = document.querySelector('.blog-item-wrapper h1.entry-title');
+    if (hdr && h1 && !(hdr.getAttribute('alt') || '').trim()) hdr.setAttribute('alt', 'Illustration for the article: ' + (h1.textContent || '').trim());
+    // Takeaway box.
+    var paras = content.querySelectorAll('p');
+    var takeaway = null;
+    for (var i = 0; i < paras.length && i < 4; i++){
+      var s = paras[i].querySelector('strong');
+      if (s && /^\s*Takeaway/i.test(s.textContent || '') && paras[i].firstElementChild === s){ takeaway = paras[i]; break; }
+    }
+    if (takeaway) takeaway.classList.add('eob-takeaway');
+    // Contents list for longer pieces.
+    if (!byId('eob-toc')){
+      var heads = [], all = content.querySelectorAll('h2');
+      for (var h = 0; h < all.length; h++){
+        var hd = all[h];
+        if (hd.closest('aside, #eob-keep-reading, #eob-art-signup, #eob-toc, [id^="eob-gfx-"]')) continue;
+        var label = (hd.textContent || '').trim();
+        if (!label) continue;
+        if (!hd.id) hd.id = 'eob-h-' + label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+        heads.push({ id: hd.id, label: label });
+      }
+      if (heads.length >= 5){
+        var toc = document.createElement('nav');
+        toc.id = 'eob-toc';
+        toc.setAttribute('aria-label', 'In this article');
+        var items = '';
+        for (var q = 0; q < heads.length; q++) items += '<li><a href="#' + heads[q].id + '">' + escHtml(heads[q].label) + '</a></li>';
+        toc.innerHTML = '<p class="tc-k">In this article</p><ol>' + items + '</ol>';
+        var first = content.querySelector('h2');
+        if (takeaway && takeaway.parentNode) takeaway.parentNode.insertBefore(toc, takeaway.nextSibling);
+        else if (first && first.parentNode) first.parentNode.insertBefore(toc, first);
+      }
+    }
+    // Reading progress.
+    if (!byId('eob-progress')){
+      var bar = document.createElement('div');
+      bar.id = 'eob-progress';
+      bar.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(bar);
+      var tick = false;
+      var paint = function(){
+        tick = false;
+        var r = content.getBoundingClientRect(), total = r.height - window.innerHeight * 0.6;
+        var done = total > 0 ? Math.min(1, Math.max(0, (-r.top) / total)) : 0;
+        bar.style.width = (done * 100).toFixed(1) + '%';
+      };
+      window.addEventListener('scroll', function(){ if (!tick){ tick = true; window.requestAnimationFrame(paint); } }, { passive: true });
+      paint();
+    }
+    // End-of-article Brief signup.
+    if (!byId('eob-art-signup')){
+      var host = contentEl() || content;
+      var box = document.createElement('section');
+      box.id = 'eob-art-signup';
+      box.innerHTML =
+        '<p class="as-k">The Brief / Weekly</p>' +
+        '<p class="as-h">Get the next playbook in your inbox.</p>' +
+        '<p class="as-p">One email a week: up to six roles with published pay at a $100K midpoint or better, one practical playbook, and one market signal. Free.</p>' +
+        '<form class="eob-ml-form" data-eob-placement="article_end" action="https://assets.mailerlite.com/jsonp/2493859/forms/' + BRIEF_FORM_ID + '/subscribe" method="post" target="eob-ml-frame">' +
+          '<input type="email" name="fields[email]" placeholder="you@work.com" aria-label="Email address" autocomplete="email" required>' +
+          '<input type="hidden" name="ml-submit" value="1">' +
+          '<input type="hidden" name="anticsrf" value="true">' +
+          '<button type="submit">Subscribe to The Brief</button>' +
+        '</form>' +
+        '<p class="as-n">No spam. Unsubscribe in one click.</p>';
+      var keep = byId('eob-keep-reading');
+      if (keep && keep.parentNode) keep.parentNode.insertBefore(box, keep);
+      else host.appendChild(box);
+      try { formFeedback(); } catch(e){}
+    }
+  }
+
+  // 9c. Product pages: real lists and descriptive image alt text.
+  var PRODUCT_SHOTS = [
+    [/cover/i, 'cover'], [/inside/i, 'inside pages'], [/pages/i, 'sample pages'],
+    [/modules/i, 'module overview'], [/databases/i, 'database views'], [/trackers/i, 'tracker views'],
+    [/difference/i, 'what the paid edition adds'], [/howitworks|how-it-works/i, 'how it works']
+  ];
+  function looksLikeFilename(s){ return !s || /\.(png|jpe?g|webp)$/i.test(s) || /^[a-z0-9]+(-[a-z0-9]+){2,}$/i.test(s); }
+  function productPolish(){
+    if (!document.body.classList.contains('collection-type-products')) return;
+    auditStyle();
+    var desc = document.querySelectorAll('.product-description');
+    for (var d = 0; d < desc.length; d++){
+      if (desc[d].getAttribute('data-eob-list')) continue;
+      desc[d].setAttribute('data-eob-list', '1');
+      var ps = desc[d].querySelectorAll('p'), run = [];
+      var flush = function(){
+        if (run.length < 2){ run = []; return; }
+        var ul = document.createElement('ul');
+        ul.className = 'eob-plist';
+        run[0].parentNode.insertBefore(ul, run[0]);
+        for (var r = 0; r < run.length; r++){
+          var li = document.createElement('li');
+          li.innerHTML = run[r].innerHTML.replace(/^\s*-\s*/, '');
+          ul.appendChild(li);
+          run[r].parentNode.removeChild(run[r]);
+        }
+        run = [];
+      };
+      for (var i = 0; i < ps.length; i++){
+        if (/^\s*-\s*\S/.test(ps[i].textContent || '') && (!run.length || run[run.length - 1].nextElementSibling === ps[i])) run.push(ps[i]);
+        else { flush(); if (/^\s*-\s*\S/.test(ps[i].textContent || '')) run.push(ps[i]); }
+      }
+      flush();
+    }
+    var titleEl = document.querySelector('.product-detail h1, h1.product-title');
+    var title = titleEl ? (titleEl.textContent || '').trim() : '';
+    var imgs = document.querySelectorAll('.product-gallery img, .product-list img, main img');
+    for (var m = 0; m < imgs.length; m++){
+      var img = imgs[m], alt = (img.getAttribute('alt') || '').trim();
+      if (!looksLikeFilename(alt)) continue;
+      var name = title;
+      if (!name){
+        var card = img.parentNode, ct = null, hops = 0;
+        while (card && card !== document.body && hops < 6 && !ct){ ct = card.querySelector ? card.querySelector('[class*="title"]') : null; card = card.parentNode; hops++; }
+        name = ct ? (ct.textContent || '').trim() : '';
+      }
+      if (!name) continue;
+      var src = alt || img.getAttribute('data-src') || img.getAttribute('src') || '', what = 'preview';
+      for (var s2 = 0; s2 < PRODUCT_SHOTS.length; s2++){ if (PRODUCT_SHOTS[s2][0].test(src)){ what = PRODUCT_SHOTS[s2][1]; break; } }
+      img.setAttribute('alt', name + ': ' + what);
+    }
+  }
+
+  // 9d. Homepage start-here doors by reader type.
+  var DOORS = [
+    { h: 'I\'m an EA leveling up', links: [
+      ['Guide', 'How to grow your career as an Executive Assistant', '/library/how-to-grow-your-career-as-an-executive-assistant'],
+      ['Guide', 'What changes at the senior EA level', '/library/senior-executive-assistant-leveling'],
+      ['Pay', 'EA salary and how to get a raise', '/library/executive-assistant-salary-and-how-to-get-a-raise'],
+      ['Path', 'The EA to Chief of Staff path', '/library/ea-to-chief-of-staff-path'] ] },
+    { h: 'I want to become a Chief of Staff', links: [
+      ['Guide', 'How to become a Chief of Staff', '/how-to-become-a-chief-of-staff-static'],
+      ['Tool', 'Take the readiness quiz', '/readiness-quiz'],
+      ['Guide', 'The skills that get you hired', '/library/skills-to-get-hired-as-chief-of-staff'],
+      ['Prep', 'Chief of Staff interview questions', '/library/chief-of-staff-interview-questions'] ] },
+    { h: 'I\'m a Chief of Staff now', links: [
+      ['Tool', 'Work the first 90 days plan', '/first-90-days'],
+      ['Playbook', 'Build an operating cadence', '/library/how-to-build-an-operating-cadence'],
+      ['Playbook', 'Run the leadership team meeting', '/library/run-effective-leadership-team-meeting'],
+      ['Playbook', 'Managing up as a Chief of Staff', '/library/managing-up-chief-of-staff'] ] },
+    { h: 'I\'m hiring a Chief of Staff', links: [
+      ['Guide', 'When a company needs a Chief of Staff', '/library/when-does-a-company-need-a-chief-of-staff'],
+      ['Guide', 'How to create the role', '/library/how-to-create-a-chief-of-staff-role'],
+      ['Guide', 'The three types of Chief of Staff', '/library/three-types-of-chief-of-staff'],
+      ['Service', 'Executive operations consulting', '/consulting'] ] }
+  ];
+  function startHere(){
+    var home = byId('eob-home');
+    if (!home || byId('eob-start')) return;
+    var sections = home.querySelectorAll('section');
+    if (!sections.length) return;
+    auditStyle();
+    var grid = '';
+    for (var i = 0; i < DOORS.length; i++){
+      var lis = '';
+      for (var j = 0; j < DOORS[i].links.length; j++){
+        var L = DOORS[i].links[j];
+        lis += '<li><a href="' + L[2] + '" data-eob-door="' + (i + 1) + '"><span class="st-kind">' + L[0] + '</span>' + escHtml(L[1]) + '</a></li>';
+      }
+      grid += '<div class="st-door"><h3>' + escHtml(DOORS[i].h) + '</h3><ul>' + lis + '</ul></div>';
+    }
+    var sec = document.createElement('section');
+    sec.id = 'eob-start';
+    sec.innerHTML = '<div class="wrap"><div class="sectag">Start here &nbsp;/&nbsp; Pick your seat</div>' +
+      '<h2 class="sec-h">Where are you right now?</h2>' +
+      '<p class="sec-intro">Four ways in, depending on the seat you\'re in or the one you want.</p>' +
+      '<div class="st-grid">' + grid + '</div></div>';
+    var hero = sections[0];
+    hero.parentNode.insertBefore(sec, hero.nextSibling);
+    sec.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[data-eob-door]') : null;
+      if (a) auditEvent('start_here_click', { door: a.getAttribute('data-eob-door'), destination: a.getAttribute('href') });
+    });
+  }
+
+  // ---- 10. Shop guide and download cover tiles (2026-11-18) ------------------
+  // /shop: "Which one do I need?" picks above the grid and a comparison of all
+  // eight products below it. Every fact is taken from the live listings and the
+  // 2026-11-18 download audit; update SHOP_GUIDE when a product changes.
+  // /resources: a small document tile beside each download. DOM-only, idempotent.
+  var SHOP_PICKS = [
+    ['I have an interview coming up', 'interview-prep-kit', 'The five hiring stages and the questions asked at each, four work-sample formats, and a story structure built to hold up under follow-up questions.'],
+    ['I have an offer and want to negotiate it', 'salary-leveling-playbook', 'How to read base, bonus and equity, where you sit on a three-level ladder, and six word-for-word negotiation scripts.'],
+    ['I\'m new in the role and need the core systems', 'operator-toolkit', 'Each of its 25 systems comes with when to use it, how to run it, a worked example, the failure modes, and a template you can copy into a doc.'],
+    ['My memos and updates aren\'t landing', 'executive-memo-pack', 'Four fill-in templates with guidance for every section, plus three weak memos rewritten in full with each change named.']
+  ];
+  var SHOP_GUIDE = [
+    ['interview-prep-kit', 'The Exec Ops Interview Prep Kit', '$29', 'Designed PDF, 16 pages', 'A live Chief of Staff or exec-ops interview process', 'Also included in Job Search HQ.'],
+    ['salary-leveling-playbook', 'The Salary and Leveling Playbook', '$24', 'Designed PDF, 17 pages', 'Reading and negotiating a real offer', 'Also included in Job Search HQ.'],
+    ['job-search-hq', 'Job Search HQ', '$49', 'Notion template, spreadsheet workbook and PDFs', 'Running a whole search from first outreach to signed offer', 'Includes the Salary and Leveling Playbook and the Interview Prep Kit.'],
+    ['operator-toolkit', 'The Operator\'s Toolkit (Complete Edition)', '$39', 'Designed PDF, 31 pages', 'A working reference for the systems a Chief of Staff runs', 'Also included in The Exec Ops OS.'],
+    ['template-library', 'The Exec-Ops Template Library', '$29', 'Designed PDF, 25 pages', 'Six core operating templates in one file', 'Also included in The Exec Ops OS.'],
+    ['exec-ops-os', 'The Exec Ops OS', '$79', 'Notion workspace, Google Workspace folder and PDFs', 'Setting up a connected operating system for an executive\'s office', 'Includes the Operator\'s Toolkit and the Template Library.'],
+    ['executive-memo-pack', 'The Executive Memo Pack', '$24', 'Designed PDF, 23 pages', 'Memos, updates and briefs that executives read', ''],
+    ['board-meeting-prep-kit', 'The Board Meeting Prep Kit', '$29', 'Designed PDF, 24 pages', 'Owning the prep for a recurring board meeting', '']
+  ];
+  function shopGuideStyle(){
+    if (byId('eob-shop-guide-style')) return;
+    var mono = '"IBM Plex Mono",ui-monospace,monospace', serif = '"Spectral",Georgia,serif', sans = '"Public Sans",system-ui,sans-serif';
+    var st = document.createElement('style');
+    st.id = 'eob-shop-guide-style';
+    st.textContent =
+      '#eob-shop-picks{grid-column:1 / -1;margin:8px 0 34px;border-top:2px solid #1B1712;padding-top:22px}' +
+      '#eob-shop-picks .sg-k,#eob-shop-compare .sg-k{font-family:' + mono + ';font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#7A2129;margin:0 0 8px}' +
+      '#eob-shop-picks .sg-h,#eob-shop-compare .sg-h{font-family:' + serif + ';font-weight:600;font-size:30px;line-height:1.15;color:#1B1712;margin:0 0 8px}' +
+      '#eob-shop-picks .sg-p,#eob-shop-compare .sg-p{font-family:' + sans + ';font-size:16px;line-height:1.55;color:#3A342B;margin:0 0 20px;max-width:46em}' +
+      '#eob-shop-picks .sg-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#CFC7B4;border:1px solid #CFC7B4}' +
+      '#eob-shop-picks a.sg-pick{display:block;background:#F3F0E9;padding:18px 18px 16px;text-decoration:none;color:#3A342B}' +
+      '#eob-shop-picks a.sg-pick:hover{background:#EBE6DA}' +
+      '#eob-shop-picks .sg-sit{font-family:' + serif + ';font-weight:600;font-size:18px;line-height:1.25;color:#1B1712;margin:0 0 8px;display:block}' +
+      '#eob-shop-picks .sg-why{font-family:' + sans + ';font-size:14px;line-height:1.5;color:#5A5348;display:block;margin:0 0 12px}' +
+      '#eob-shop-picks .sg-go{font-family:' + mono + ';font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7A2129;display:block}' +
+      '#eob-shop-compare{box-sizing:border-box;margin:26px 0 0;padding-bottom:56px}' +
+      '#eob-shop-compare .sg-inner{border-top:2px solid #1B1712;padding-top:24px}' +
+      '#eob-shop-compare table{width:100%;border-collapse:collapse;font-family:' + sans + ';font-size:14.5px;line-height:1.45}' +
+      '#eob-shop-compare th{font-family:' + mono + ';font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-align:left;color:#6B6255;padding:10px 14px 10px 0;border-bottom:1px solid #1B1712;vertical-align:bottom}' +
+      '#eob-shop-compare td{padding:13px 14px 13px 0;border-bottom:1px solid #CFC7B4;vertical-align:top;color:#3A342B}' +
+      '#eob-shop-compare td.sg-t a{font-family:' + serif + ';font-weight:600;font-size:17px;color:#1B1712;text-decoration:none}' +
+      '#eob-shop-compare td.sg-t a:hover{color:#7A2129}' +
+      '#eob-shop-compare td.sg-price{font-family:' + mono + ';color:#7A2129;white-space:nowrap}' +
+      '#eob-shop-compare .sg-note{font-family:' + sans + ';font-size:15px;line-height:1.55;color:#3A342B;margin:20px 0 0;max-width:52em}' +
+      '#eob-shop-compare .sg-g{font-family:' + mono + ';font-size:11.5px;letter-spacing:.04em;color:#6B6255;margin:12px 0 0}' +
+      '@media(max-width:1000px){#eob-shop-picks .sg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}' +
+      '@media(max-width:760px){#eob-shop-picks .sg-grid{grid-template-columns:1fr}#eob-shop-picks .sg-h,#eob-shop-compare .sg-h{font-size:25px}' +
+        '#eob-shop-compare thead{display:none}#eob-shop-compare tr{display:block;padding:14px 0;border-bottom:1px solid #CFC7B4}' +
+        '#eob-shop-compare td{display:block;border:none;padding:2px 0}#eob-shop-compare td:empty{display:none}}' +
+      /* download tiles */
+      '#eob-resources .item .kind .eob-doc{display:block;width:62px;height:80px;background:#fff;border:1px solid #CFC7B4;box-shadow:3px 3px 0 #E4DECF;margin:0 0 12px;position:relative;box-sizing:border-box}' +
+      '#eob-resources .item .kind .eob-doc:before{content:"";position:absolute;left:8px;right:8px;top:9px;height:1px;background:#1B1712}' +
+      '#eob-resources .item .kind .eob-doc:after{content:"";position:absolute;left:8px;top:26px;width:12px;height:2px;background:#7A2129}' +
+      '#eob-resources .item .kind .eob-doc i{position:absolute;left:8px;height:3px;background:#3A342B;border-radius:1px}' +
+      '#eob-resources .item .kind .eob-doc i.l1{top:35px;width:38px}#eob-resources .item .kind .eob-doc i.l2{top:42px;width:28px}' +
+      '#eob-resources .item .kind .eob-doc i.l3{top:53px;width:44px;height:2px;background:#CFC7B4}#eob-resources .item .kind .eob-doc i.l4{top:59px;width:34px;height:2px;background:#CFC7B4}' +
+      '#eob-resources .item .kind .eob-doc.is-notion i.l3,#eob-resources .item .kind .eob-doc.is-notion i.l4{width:20px;height:9px;top:52px;background:#EBE6DA;border:1px solid #CFC7B4;box-sizing:border-box}' +
+      '#eob-resources .item .kind .eob-doc.is-notion i.l4{left:32px}' +
+      '@media(max-width:720px){#eob-resources .item .kind .eob-doc{display:none}}';
+    (document.head || document.documentElement).appendChild(st);
+  }
+  function shopGuide(){
+    if (location.pathname.replace(/\/+$/, '') !== '/shop') return;
+    var list = document.querySelector('.product-list');
+    if (!list || byId('eob-shop-picks')) return;
+    shopGuideStyle();
+    var cards = '';
+    for (var i = 0; i < SHOP_PICKS.length; i++){
+      var P = SHOP_PICKS[i], title = '';
+      for (var t = 0; t < SHOP_GUIDE.length; t++){ if (SHOP_GUIDE[t][0] === P[1]) title = SHOP_GUIDE[t][1]; }
+      cards += '<a class="sg-pick" href="/shop/p/' + P[1] + '" data-eob-pick="' + P[1] + '">' +
+        '<span class="sg-sit">' + escHtml(P[0]) + '</span><span class="sg-why">' + escHtml(P[2]) + '</span>' +
+        '<span class="sg-go">' + escHtml(title) + ' &rarr;</span></a>';
+    }
+    var picks = document.createElement('section');
+    picks.id = 'eob-shop-picks';
+    picks.innerHTML = '<p class="sg-k">Shop guide</p><p class="sg-h">Which one do I need?</p>' +
+      '<p class="sg-p">Start with what\'s in front of you right now. Two of the products are bundles that include other guides in this shop, so check the comparison below the shelf before you buy more than one.</p>' +
+      '<div class="sg-grid">' + cards + '</div>';
+    var header = list.querySelector('header');
+    if (header && header.parentNode === list) list.insertBefore(picks, header.nextSibling);
+    else list.insertBefore(picks, list.firstChild);
+    var rows = '';
+    for (var r = 0; r < SHOP_GUIDE.length; r++){
+      var G = SHOP_GUIDE[r];
+      rows += '<tr><td class="sg-t"><a href="/shop/p/' + G[0] + '">' + escHtml(G[1]) + '</a></td><td class="sg-price">' + G[2] + '</td>' +
+        '<td>' + escHtml(G[4]) + '</td><td>' + escHtml(G[3]) + '</td><td>' + escHtml(G[5]) + '</td></tr>';
+    }
+    var cmp = document.createElement('section');
+    cmp.id = 'eob-shop-compare';
+    cmp.innerHTML = '<div class="sg-inner"><p class="sg-k">Compare</p><p class="sg-h">All eight, side by side</p>' +
+      '<table><thead><tr><th>Product</th><th>Price</th><th>Best for</th><th>Format</th><th>Overlap</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+      '<p class="sg-note">The Exec Ops OS includes The Operator\'s Toolkit (Complete Edition) and The Exec-Ops Template Library as full PDFs, and Job Search HQ includes The Salary and Leveling Playbook and The Exec Ops Interview Prep Kit. If you\'re buying a bundle, you don\'t need the guides inside it separately. The Template Library\'s interview chapter is a short template, not the separate Interview Prep Kit.</p>' +
+      '<p class="sg-g">30-day money-back guarantee on every product.</p></div>';
+    try {
+      var cs = window.getComputedStyle(list);
+      cmp.style.paddingLeft = cs.paddingLeft; cmp.style.paddingRight = cs.paddingRight;
+      cmp.style.maxWidth = cs.maxWidth; cmp.style.marginLeft = cs.marginLeft; cmp.style.marginRight = cs.marginRight;
+    } catch(e){}
+    list.parentNode.insertBefore(cmp, list.nextSibling);
+    picks.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[data-eob-pick]') : null;
+      if (a) auditEvent('shop_guide_click', { product_id: a.getAttribute('data-eob-pick') });
+    });
+  }
+  function resourceTiles(){
+    var root = byId('eob-resources');
+    if (!root) return;
+    var kinds = root.querySelectorAll('.ledger .item .kind');
+    if (!kinds.length) return;
+    shopGuideStyle();
+    for (var i = 0; i < kinds.length; i++){
+      if (kinds[i].querySelector('.eob-doc')) continue;
+      var tile = document.createElement('span');
+      tile.className = 'eob-doc' + (/notion/i.test(kinds[i].textContent || '') ? ' is-notion' : '');
+      tile.setAttribute('aria-hidden', 'true');
+      tile.innerHTML = '<i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i>';
+      kinds[i].insertBefore(tile, kinds[i].firstChild);
+    }
+  }
+
+  // ---- 11. Hub hero illustrations and board sample tidy (2026-11-18) ---------
+  // Reuses two illustrations already published on the site's own image CDN.
+  var HERO_ART = {
+    'eob-tools-hub': 'https://static1.squarespace.com/static/6a48079e16f34d0399d0bba8/6a4813f96255cd272ded2397/6a481b346255cd272defb964/1790441505533/three-types-of-chief-of-staff.png',
+    'eob-resources': 'https://static1.squarespace.com/static/6a48079e16f34d0399d0bba8/6a4813f96255cd272ded2397/6a497e34427d8759a2e21ff4/1788830297894/what-an-executive-assistant-to-a-ceo-does.png'
+  };
+  function heroArt(){
+    for (var id in HERO_ART){
+      if (!HERO_ART.hasOwnProperty(id)) continue;
+      var root = byId(id);
+      if (!root) continue;
+      var wrap = root.querySelector('.hero .wrap');
+      if (!wrap || wrap.querySelector('.eob-hero-art')) continue;
+      if (!byId('eob-hero-art-style')){
+        var st = document.createElement('style');
+        st.id = 'eob-hero-art-style';
+        st.textContent = '.eob-hero-art{display:none}' +
+          '@media(min-width:1180px){.eob-hero-art{display:block;position:absolute;right:28px;top:50%;transform:translateY(-50%);width:236px;height:auto;border:1px solid #D8D0BF;border-radius:2px}}';
+        (document.head || document.documentElement).appendChild(st);
+      }
+      if (window.getComputedStyle(wrap).position === 'static') wrap.style.position = 'relative';
+      var img = document.createElement('img');
+      img.className = 'eob-hero-art';
+      img.src = HERO_ART[id] + '?format=500w';
+      img.alt = '';
+      img.setAttribute('aria-hidden', 'true');
+      img.setAttribute('loading', 'lazy');
+      img.width = 236;
+      wrap.appendChild(img);
+    }
+  }
+  // Homepage board sample: a blank location cell reads as a broken row.
+  function boardSampleTidy(){
+    var body = byId('eob-roles-body');
+    if (!body || body.getAttribute('data-eob-tidy')) return;
+    body.setAttribute('data-eob-tidy', '1');
+    var fill = function(){
+      var rows = body.querySelectorAll('tr');
+      for (var i = 0; i < rows.length; i++){
+        var cells = rows[i].querySelectorAll('td');
+        if (cells.length !== 3) continue;
+        if (!(cells[2].textContent || '').trim()){ cells[2].textContent = 'See posting'; cells[2].style.color = '#8A8172'; }
+      }
+    };
+    fill();
+    try { new MutationObserver(fill).observe(body, { childList: true }); } catch(e){}
+  }
 
   // ---- boot --------------------------------------------------------------
   function run(){
@@ -1604,6 +2403,14 @@
     try { rolesOptIn(); } catch(e){}           // /roles weekly new-roles trade (dark until form id set)
     try { breadcrumbs(); } catch(e){}          // BreadcrumbList JSON-LD (site-wide, non-home)
     try { trackClicks(); } catch(e){}          // tool + download intent events (site-wide)
+    try { libraryIndex(); } catch(e){}         // library index heading, topic chips, search (2026-11-18)
+    try { productPolish(); } catch(e){}        // product lists and image alt text (2026-11-18)
+    try { startHere(); } catch(e){}            // homepage reader-type doors (2026-11-18)
+    try { shopGuide(); } catch(e){}            // /shop picks and comparison (2026-11-18)
+    try { resourceTiles(); } catch(e){}        // /resources document tiles (2026-11-18)
+    try { heroArt(); } catch(e){}              // Tools and Resources hero illustration (2026-11-18)
+    try { boardSampleTidy(); } catch(e){}      // homepage board sample blank locations (2026-11-18)
+    try { articleFurniture(); } catch(e){}     // article meta, contents, progress, end signup (2026-11-18)
     if (!slug || !findArticle(slug)) return;   // only on known article pages (path-agnostic)
     var host = contentEl();
     if (!host) return;

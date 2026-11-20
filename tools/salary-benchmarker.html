@@ -128,8 +128,8 @@
     color:var(--oxblood);line-height:1.25;margin:.25rem 0 .35rem;
   }
   #eob-salary .eob-cite{font-size:.76rem!important;color:var(--muted)!important;margin-top:.55rem!important}
-  #eob-salary .eob-cite a,#eob-salary .eob-method a{color:var(--oxblood);font-weight:600;text-decoration:underline;text-underline-offset:2px}
-  #eob-salary .eob-cite a:hover,#eob-salary .eob-method a:hover{color:var(--oxblood-deep)}
+  #eob-salary .eob-cite a,#eob-salary .eob-tc p a,#eob-salary .eob-method a{color:var(--oxblood);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+  #eob-salary .eob-cite a:hover,#eob-salary .eob-tc p a:hover,#eob-salary .eob-method a:hover{color:var(--oxblood-deep)}
   #eob-salary .eob-confidence{
     display:inline-block;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.6rem;
     font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);
@@ -162,7 +162,7 @@
   #eob-salary .eob-method .eob-derive{
     font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.8rem;color:var(--navy);
     background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);
-    padding:.6rem .8rem;margin:.2rem 0 .7rem;overflow-x:auto;white-space:nowrap;
+    padding:.6rem .8rem;margin:.2rem 0 .7rem;overflow-wrap:anywhere;
   }
   #eob-salary .eob-sources{
     list-style:none;padding:0;margin:.2rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem;
@@ -291,7 +291,7 @@
       <li><a href="https://askachiefofstaff.substack.com/p/issue-84-how-much-does-a-chief-of" target="_blank" rel="noopener noreferrer">Ask a Chief of Staff 2025</a></li>
       <li><a href="https://csuiteassistants.com/2026-salary-report/" target="_blank" rel="noopener noreferrer">C-Suite Assistants 2026</a></li>
       <li><a href="https://www.easalarysurvey.com/" target="_blank" rel="noopener noreferrer">2025 U.S. Admin Professionals</a></li>
-      <li><a href="https://www.bls.gov/oes/2025/may/oes436011.htm" target="_blank" rel="noopener noreferrer">BLS May 2025</a></li>
+      <li><a href="https://data.bls.gov/oesprofile/?year=2025&amp;major_group=430000&amp;occupation=436011&amp;measure=01&amp;areas=INDUSTRY,STATE,MSA" target="_blank" rel="noopener noreferrer">BLS May 2025</a></li>
       <li><a href="https://www.roberthalf.com/us/en/job-details/executive-assistant" target="_blank" rel="noopener noreferrer">Robert Half 2026</a></li>
       <li><a href="https://www.pave.com/blog-posts/chief-of-staff-compensation" target="_blank" rel="noopener noreferrer">Pave 2025</a></li>
       <li><a href="https://www.chiefofstaff.network/blog/chief-of-staff-salary-report-2025" target="_blank" rel="noopener noreferrer">CoS Network 2025</a></li>
@@ -379,11 +379,30 @@
       + '<div class="eob-stat">' + esc(stat) + '</div><p>' + esc(body) + '</p>' + citation + '</div>';
   }
 
+  /* BLS serves May 2025 occupation pages from its OEWS profile tool. The old
+     /oes/2025/may/oesNNNNNN.htm addresses redirect to the OEWS home page, so
+     the links are set here rather than read from the dataset's sourceUrl.
+     Each proxy occupation links to its own profile. They used to share the
+     Executive Assistant link, which does not carry these figures. */
+  var BLS_EA_URL = "https://data.bls.gov/oesprofile/?year=2025&major_group=430000&occupation=436011&measure=01&areas=INDUSTRY,STATE,MSA";
+  var BLS_PROXY_URLS = {
+    "Management Analysts": "https://data.bls.gov/oesprofile/?year=2025&major_group=130000&occupation=131111&measure=01&areas=INDUSTRY,STATE,MSA",
+    "General and Operations Managers": "https://data.bls.gov/oesprofile/?year=2025&major_group=110000&occupation=111021&measure=01&areas=INDUSTRY,STATE,MSA",
+    "Administrative Services Managers": "https://data.bls.gov/oesprofile/?year=2025&major_group=110000&occupation=113012&measure=01&areas=INDUSTRY,STATE,MSA"
+  };
+  function proxyCite(list){
+    var links = list.map(function(p){
+      var url = BLS_PROXY_URLS[p.label];
+      return url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(p.label) + '</a>' : esc(p.label);
+    }).join(", ");
+    return '<p class="eob-cite">Source: BLS May 2025 OEWS, ' + links + ' · employer-reported wages</p>';
+  }
+
   function premiumAvailable(p){
     return p && p.status !== "insufficient_sample" && [p.p25,p.median,p.p75].every(function(v){ return typeof v === "number" && Number.isFinite(v); });
   }
-  function premiumUnavailable(p){
-    return sourceCard("Posted-pay snapshot","Unavailable",
+  function premiumUnavailable(p, title){
+    return sourceCard(title || "Posted-pay snapshot","Unavailable",
       "Too few eligible annual base-pay postings to show a salary comparison (n=" + p.sample + "; minimum " + (p.minSample || 10) + "). Figures are withheld, not zero.",premiumCite(p),"Insufficient sample");
   }
 
@@ -405,9 +424,11 @@
         cite(ea.cSuiteNational.source,ea.cSuiteNational.sourceUrl,"self-reported base; geographic n not disclosed"),
         "Limited local sample detail"
       );
-      html += '<div class="eob-source-grid">'
+      /* City posted pay is read from the live board in liveBlockHTML(). The
+         compiled dataset's city posting fields are not refreshed with the
+         board, so they are deliberately not shown here. */
+      html += '<div class="eob-source-grid" style="grid-template-columns:1fr">'
         + sourceCard("Independent city cross-check",money(geo.independentMean),"All-administrative-professional city mean, not an EA-only median.",cite(ea.independentNational.source,ea.independentNational.sourceUrl,"city cell n not disclosed"),"Context only")
-        + sourceCard("Posted-pay snapshot",money(geo.premiumMedian),"Posted midpoint P25 " + money(geo.premiumP25) + "; P75 " + money(geo.premiumP75) + ".",cite(ea.premium.source,ea.premium.sourceUrl,"n=" + geo.premiumSample + "; $100k midpoint floor"),"Moderate confidence")
         + '</div>';
     } else if (titleKey === "ea"){
       html += rangeBlock(
@@ -419,7 +440,7 @@
         "Moderate confidence"
       );
       html += '<div class="eob-source-grid">'
-        + sourceCard("Broad employer market",money(ea.bls.medianAnnualized),"Annualized occupation median; employer-reported and not startup-specific.",cite(ea.bls.source,ea.bls.sourceUrl,ea.bls.measure),"Broad baseline")
+        + sourceCard("Broad employer market",money(ea.bls.medianAnnualized),"Annualized occupation median; employer-reported and not startup-specific.",cite(ea.bls.source,BLS_EA_URL,ea.bls.measure),"Broad baseline")
         + sourceCard("Projected starting pay",money(ea.robertHalfStarting.ea.low) + " - " + money(ea.robertHalfStarting.ea.high),"National EA low, midpoint " + money(ea.robertHalfStarting.ea.mid) + ", and high starting pay.",cite(ea.robertHalfStarting.source,ea.robertHalfStarting.sourceUrl,ea.robertHalfStarting.measure),"Starting pay")
         + sourceCard("Independent incumbent survey",money(ea.titleMeans.ea.meanBase),"EA mean base. The all-admin national median is " + money(ea.independentNational.allAdminMedian) + ".",cite(ea.independentNational.source,ea.independentNational.sourceUrl,"n=" + ea.independentNational.sample + " overall; EA title n not disclosed"),"Contextual mean")
         + (premiumAvailable(ea.premium) ? sourceCard("Posted-pay snapshot",money(ea.premium.median),"Posted midpoint P25 " + money(ea.premium.p25) + "; P75 " + money(ea.premium.p75) + ".",premiumCite(ea.premium),"Moderate confidence") : premiumUnavailable(ea.premium))
@@ -496,15 +517,15 @@
     var proxyText = ops.blsProxies.map(function(p){ return p.label + ": " + money(p.medianAnnualized); }).join(" · ");
     els.output.innerHTML =
       (premiumAvailable(ops.premium) ? rangeBlock(
-        "Posted-pay snapshot",
+        "Posted-pay snapshot, Executive Operations titles only",
         ops.premium.p25,ops.premium.median,ops.premium.p75,
         ["P25","Median","P75"],
-        "Eligible annual base-pay midpoints from the dated posting snapshot. Title ambiguity and the $100k midpoint floor mean this is not a national occupation median.",
+        "Eligible annual base-pay midpoints for postings categorized as Executive Operations only. The board benchmark at the end of this result also counts operations-leadership titles, so its median differs. Title ambiguity and the $100k midpoint floor mean this is not a national occupation median.",
         premiumCite(ops.premium),
         "Moderate confidence"
-      ) : premiumUnavailable(ops.premium))
+      ) : premiumUnavailable(ops.premium, "Posted-pay snapshot, Executive Operations titles only"))
       + '<div class="eob-source-grid">'
-      + sourceCard("Broad occupation proxies","$102k - $114k",proxyText + ". These occupations are context, not direct equivalents.",cite("BLS May 2025 OEWS",bls.sourceUrl,"employer-reported wages"),"Proxy only")
+      + sourceCard("Broad occupation proxies","$102k - $114k",proxyText + ". These occupations are context, not direct equivalents.",proxyCite(ops.blsProxies),"Proxy only")
       + sourceCard("CoS versus BizOps relationship","About 15% ±5%",ops.paveContext.label + ". Do not convert this into a universal role multiplier.",cite(ops.paveContext.source,ops.paveContext.sourceUrl,ops.paveContext.coverage),"Employer records")
       + '</div>'
       + '<div class="eob-notice">There is no clean national Executive Operations occupation series. Level, scope, and title normalization are more reliable than the word operations alone.</div>';
@@ -584,7 +605,7 @@
     if (role === "ops"){
       return {
         label: "Executive Operations and operations leadership postings",
-        note: "Executive Operations plus the operations-leadership categories.",
+        note: "Executive Operations plus Director, VP, and COO-level operations titles. That is a wider group than the Executive Operations-only snapshot at the top of this result, so the two medians differ.",
         test: function(r){ return XOPS_CATEGORIES.indexOf(r.category) !== -1; }
       };
     }

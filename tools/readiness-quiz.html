@@ -32,6 +32,9 @@
     max-width:760px; margin:0 auto; padding:0 4px; box-sizing:border-box;
   }
   #eob-quiz *{box-sizing:border-box}
+  /* Contain the last card's bottom margin so the height reported to the host page
+     covers it. Without this the frame was 3px short and showed an inner scrollbar. */
+  #eob-quiz{display:flow-root}
   #eob-quiz h1,#eob-quiz h2,#eob-quiz h3,#eob-quiz h4{
     font-family:'Spectral',Georgia,serif;font-weight:600;line-height:1.15;color:var(--ink);letter-spacing:-.01em;margin:0;
   }
@@ -130,6 +133,7 @@
     padding:1.4rem 1.6rem 1.5rem;margin:-1.6rem -1.6rem 1.4rem;
   }
   #eob-quiz .eob-result-head .eob-eyebrow{color:#d69a8f}
+  #eob-quiz .eob-result-head .eob-meta-note{color:#d9cdb9;font-size:.76rem;line-height:1.55}
   #eob-quiz .eob-result-head h3{color:#fff;font-size:clamp(1.5rem,3.6vw,2rem);margin:.45rem 0 1rem}
   #eob-quiz .eob-score-line{display:flex;align-items:baseline;justify-content:space-between;gap:.6rem;margin-bottom:.5rem}
   #eob-quiz .eob-score-cap{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#c9b7a0}
@@ -322,7 +326,7 @@
       tag: "Business acumen",
       focus: "Business fluency is often the biggest gap for people moving up from a support or specialist track. Learn how your organization actually makes money, read the board deck if you can, and be able to reason about the metrics leadership watches. That is the line between shaping priorities and coordinating logistics.",
       rec: { tag:"Article", title:"The Skills That Actually Get You Hired",
-             desc:"The five hard-to-fake skills that guide names, including business fluency, and how to show evidence of each.",
+             desc:"Five hard-to-fake skills, including business fluency, and how to show evidence of each.",
              url:"https://www.execopsbrief.com/library/skills-to-get-hired-as-chief-of-staff" }
     },
     comm: {
@@ -362,7 +366,7 @@
       tag: "Ambiguity",
       focus: "The role keeps changing shape, so the person who adapts fastest and asks the best questions wins. Get reps taking undefined problems and deciding what matters, rather than waiting for clear instructions before you move.",
       rec: { tag:"Article", title:"What Does a Chief of Staff Actually Do?",
-             desc:"A clear, honest picture of the shape-shifting reality of the role, so you know what you are signing up for.",
+             desc:"A clear picture of how the role changes shape from one company to the next, so you know what you're signing up for.",
              url:"https://www.execopsbrief.com/library/what-does-a-chief-of-staff-do" }
     }
   };
@@ -407,7 +411,7 @@
     nearly: {
       eyebrow: "Your result",
       title: "Target the thinner areas",
-      para: "Your responses suggest you already have examples in several competencies. Use the lower-scoring areas below as prompts for targeted practice and stronger stories. Interviewers will test for specifics, so focus on the evidence you can describe rather than treating this result as a pass-or-fail assessment.",
+      para: "Your responses suggest you already have examples in several competencies. Use the breakdown below as a prompt for targeted practice and stronger stories. Interviewers will test for specifics, so focus on the evidence you can describe rather than treating this result as a pass-or-fail assessment.",
       download: { tag:"Free download", title:"The Chief of Staff Interview Prep Checklist",
                   desc:"A free kit that maps the questions companies actually ask to the skills behind them, so you walk in with evidence ready. Delivered when you join The Brief.",
                   url:"https://www.execopsbrief.com/resources" },
@@ -421,7 +425,7 @@
       title: "Map your evidence",
       para: "Your responses point to examples across several core competencies. This self-assessment cannot tell you whether you are ready, likely to be hired, or suited to every Chief of Staff role; scope, principal, company, and demonstrated results all matter. Use the prompts below to turn your strongest examples into clear interview stories and identify any evidence you still need.",
       download: { tag:"Free download", title:"The First 90 Days Operating Plan",
-                  desc:"A free operating plan strong Chiefs of Staff run from day one, so you land ready to deliver. Delivered when you join The Brief.",
+                  desc:"A free 30/60/90 operating plan to work from on day one. Delivered when you join The Brief.",
                   url:"https://www.execopsbrief.com/resources" },
       anchorSlug: "negotiate-chief-of-staff-offer",
       anchor: { tag:"Article", title:"How to Negotiate a Chief of Staff Offer",
@@ -525,6 +529,7 @@
   }
 
   var COUNT_WORD = ["", "one", "two", "three", "four", "five", "six"];
+  function sentenceCase(word){ return word.charAt(0).toUpperCase() + word.slice(1); }
   function labelsFor(keys){
     return keys.map(function(k){ return DIMS[k].label.toLowerCase(); }).join(", ");
   }
@@ -548,6 +553,11 @@
     var maxTotal = QUESTIONS.length * 4;
     var pct = Math.round(total / maxTotal * 100);
     var bandKey = bandFor(pct);
+    /* A high total must not mask a thin area. With any competency at 4 of 8 or
+       lower the result stays in the middle band, so it never routes someone
+       with a clear gap to offer negotiation. */
+    var minDim = Math.min.apply(null, Object.keys(dimScore).map(function(key){ return dimScore[key]; }));
+    if (bandKey === "stronger" && minDim <= 4) bandKey = "nearly";
     var band = BANDS[bandKey];
 
     /* Rank dimensions lowest first. Source order breaks a tie, which is
@@ -604,7 +614,7 @@
         + DIMS[lowest].focus;
     } else {
       var tiedSecond = focusGroup.length > 2
-        ? " " + COUNT_WORD[focusGroup.length - 1] + " other areas share the next score, so the second suggestion below is one of several equally placed."
+        ? " " + sentenceCase(COUNT_WORD[focusGroup.length - 1]) + " other areas share the next score, so the second suggestion below is one of several equally placed."
         : "";
       els.focusBody.textContent = DIMS[lowest].focus + tiedSecond;
     }
