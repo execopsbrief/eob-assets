@@ -707,8 +707,9 @@
       subPending = true;
       if (subMsg) subMsg.textContent = "Sending...";
       if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }
-      fetch(action.origin + action.pathname + "?" + params.toString(), {
-        method: "GET",
+      fetch(action.origin + action.pathname, {
+        method: "POST",
+        body: params,
         mode: "cors",
         credentials: "omit",
         referrerPolicy: "no-referrer",

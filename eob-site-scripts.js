@@ -1472,71 +1472,16 @@
   }
 
   // ---- 8. Subscriber memory ------------------------------------------------
-  // Free tools never re-gate a known subscriber. Contract shared with the
-  // /resources picker page script (do not rename):
-  //   localStorage eob_sub_email = subscriber email (plain string)
-  //   localStorage eob_sub_tools = JSON array of MailerLite form ids requested
-  // An email is learned from (a) a ?e=<email> param carried by links in our
-  // own emails ({$email} personalization) or (b) any .eob-ml-form submit.
-  var LS_EMAIL = "eob_sub_email", LS_TOOLS = "eob_sub_tools";
   var BRIEF_FORM_ID = "192281502704207669";
-  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  function lsGet(k){ try { return window.localStorage.getItem(k); } catch(e){ return null; } }
-  function lsSet(k, v){ try { window.localStorage.setItem(k, v); } catch(e){} }
-  function subEmail(){ var v = lsGet(LS_EMAIL); return (v && EMAIL_RE.test(v)) ? v : ""; }
-  function rememberSub(email, formId){
-    if (email && EMAIL_RE.test(email)) lsSet(LS_EMAIL, email.trim());
-    if (formId && formId !== BRIEF_FORM_ID){
-      var t;
-      try { t = JSON.parse(lsGet(LS_TOOLS) || "[]"); } catch(e){ t = []; }
-      if (!Array.isArray(t)) t = [];
-      if (t.indexOf(formId) === -1){ t.push(formId); lsSet(LS_TOOLS, JSON.stringify(t)); }
+  // Retire the old subscriber handoff, including bookmarks and links in sent emails.
+  try { window.localStorage.removeItem("eob_sub_email"); } catch (e) {}
+  try {
+    var handoffUrl = new URL(window.location.href);
+    if (handoffUrl.searchParams.has("e")) {
+      handoffUrl.searchParams.delete("e");
+      window.history.replaceState(window.history.state, "", handoffUrl.pathname + handoffUrl.search + handoffUrl.hash);
     }
-  }
-  function subMemory(){
-    // (a) email-link handoff: any page ?e=you@work.com -> store, strip from URL
-    try {
-      var m = /[?&]e=([^&]+)/.exec(window.location.search);
-      if (m){
-        var em = "";
-        try { em = decodeURIComponent(m[1]); } catch(e){}
-        if (EMAIL_RE.test(em)) rememberSub(em, "");
-        var clean = window.location.search.replace(/[?&]e=[^&]+/, "").replace(/^&/, "?");
-        window.history.replaceState(null, "", window.location.pathname + (clean.length > 1 ? clean : "") + window.location.hash);
-      }
-    } catch(e){}
-    // Remember email only after provider confirmation (EOBForms), never on an attempt.
-    // (c) known-subscriber transform for opt-in forms site-wide. The
-    // /resources picker page owns its own UI (its bar id marks the new markup).
-    var email = subEmail();
-    if (!email || byId("eob-pick-bar")) return;
-    document.querySelectorAll(".eob-ml-form").forEach(function(form){
-      if (form.dataset.eobKnown === "1") return;
-      var inp = form.querySelector('input[type="email"]');
-      var btn = form.querySelector('button[type="submit"]');
-      if (!inp || !btn) return;
-      form.dataset.eobKnown = "1";
-      var idm = /\/forms\/(\d+)\/subscribe/.exec(form.getAttribute("action") || "");
-      // A stored address is a convenience, not proof of current subscription.
-      inp.value = email;
-      inp.hidden = false;
-      btn.dataset.eobOrig = btn.textContent;
-      if (!idm || idm[1] !== BRIEF_FORM_ID) btn.textContent = "Send to my inbox";
-      var esc = document.createElement("button");
-      esc.type = "button";
-      esc.textContent = "Not you? Use a different email";
-      esc.style.cssText = "background:none;border:none;cursor:pointer;font:400 .7rem 'IBM Plex Mono',monospace;color:#6B6255;text-decoration:underline;padding:.2rem 0;";
-      esc.addEventListener("click", function(){
-        try { window.localStorage.removeItem(LS_EMAIL); } catch(e){}
-        inp.value = "";
-        inp.hidden = false;
-        btn.textContent = btn.dataset.eobOrig || "Get the download";
-        if (esc.parentNode) esc.parentNode.removeChild(esc);
-        form.dataset.eobKnown = "";
-      });
-      form.appendChild(esc);
-    });
-  }
+  } catch (e) {}
 
   // Move the fixed picker bar outside transformed Squarespace wrappers.
   // Carry its CSS to body; idempotent on pages without the bar.
@@ -1816,9 +1761,8 @@
     var params = new URLSearchParams(new FormData(form));
     params.set('ajax','1'); params.set('guid','eob_' + Date.now() + '_' + Math.random().toString(36).slice(2));
     // MailerLite's public form endpoint returns JSON with Access-Control-Allow-Origin: *.
-    // No API key, callback, cookie, analytics payload or logged URL carries this request.
-    var request = fetch(action.origin + action.pathname + '?' + params.toString(),{
-      method:'GET',mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal
+    var request = fetch(action.origin + action.pathname,{
+      method:'POST',body:params,mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal
     }).then(function(response){ if(!response.ok || response.type==='opaque') throw new Error('Unconfirmed'); return response.json(); })
       .then(function(response){ return !!response && response.success===true; })
       .catch(function(){ return false; })
@@ -1833,7 +1777,6 @@
     event.preventDefault(); event.stopImmediatePropagation();
     if (form.dataset.eobPending === '1' || !form.reportValidity()) return;
     form.dataset.eobBound = '1'; form.dataset.eobPending = '1';
-    var input = form.querySelector('input[type="email"]'), email = input ? input.value.trim() : '';
     var button = form.querySelector('button[type="submit"]'), label = button ? button.textContent : '';
     var status = form.querySelector('.eob-form-status');
     if (!status){ status=document.createElement('div');status.className='eob-form-status';status.setAttribute('role','status');status.style.cssText='flex-basis:100%;font-size:.85rem;line-height:1.5;margin-top:.6rem;';form.style.flexWrap='wrap';form.appendChild(status); }
@@ -1844,12 +1787,9 @@
       if(button){button.disabled=false;button.textContent=label;}
       if(ok){
         status.textContent=form.dataset.eobSuccess || 'Request confirmed. Check your inbox.';
-        try { if(email) localStorage.setItem('eob_sub_email',email); } catch(e){}
         try { if(typeof window.gtag==='function') window.gtag('event','newsletter_signup',{method:'mailerlite',form_id:new URL(form.action).pathname.split('/')[4],placement:form.getAttribute('data-eob-placement')||null,measurement_version:'eob_funnel_v3'}); } catch(e){}
       }else{
         status.textContent="We couldn't confirm your subscription. Check your connection and try again.";
-        // Retire the old submit-means-subscribed memory if a legacy handler populated it.
-        try { if(localStorage.getItem('eob_sub_email')===email) localStorage.removeItem('eob_sub_email'); } catch(e){}
       }
     });
   },true);
@@ -2392,7 +2332,6 @@
     try { jobBoardMetrics(); } catch(e){}
     try { fixLinks(); } catch(e){}             // stale slug rewrite (site-wide)
     try { formFeedback(); } catch(e){}         // opt-in form success feedback backstop (site-wide)
-    try { subMemory(); } catch(e){}            // subscriber memory: ?e= handoff + known-sub one-click (site-wide)
     try { pickBarFix(); } catch(e){}           // /resources send bar: escape the transformed fe-block wrapper
     try { homePolish(); } catch(e){}           // home page mobile overflow + live counts
     try { autoHeader(); } catch(e){}           // featured image -> in-article header (any article page)

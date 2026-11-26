@@ -744,8 +744,8 @@
       params.set("ajax","1");
       params.set("guid",requestGuid);
       timeout = setTimeout(function(){ if (controller) controller.abort(); finish(false); },10000);
-      fetch(action.href + (action.search ? "&" : "?") + params.toString(),{
-        method:"GET",mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
+      fetch(action.origin + action.pathname,{
+        method:"POST",body:params,mode:"cors",credentials:"omit",referrerPolicy:"no-referrer",
         signal:controller ? controller.signal : undefined
       }).then(function(response){
         if (!response.ok) throw new Error("MailerLite request failed");
